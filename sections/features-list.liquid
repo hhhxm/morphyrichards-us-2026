@@ -1,0 +1,66 @@
+{%- if product.metafields.custom.features != blank -%}
+  <div class="t4s-section-inner t4s-container-wrap">
+    <div class="t4s-container">
+      <h3 class="t4s-section-title t4s-title"><span>Product Specification</span></h3>
+      {%- liquid 
+        assign features = product.metafields.custom.features | strip | newline_to_br | strip_newlines | split: '<br /><br />'
+        assign arr_text = ""
+        for item in features
+          if forloop.index == 1
+            assign image_url = item
+          else
+            assign arr_text = arr_text | append: item
+          endif
+        endfor
+        assign arr = arr_text | split: '<br />'
+        assign image_name = image_url | split: "/" | last | split: "?v" | first
+        assign image = images[image_name]
+      -%}
+      <div class="t4s-row">
+        <div class="t4s-col-item">
+          <div class="sheet">
+            {%- for text in  arr-%}
+              {%- assign features = text | strip | split: ':' -%}
+              <div class='item'>
+                <span>{{ features[0] }}</span>
+                <span>{{ features[1] }}</span>
+              </div>
+            {%-endfor-%}
+          </div>
+        </div>
+        <div class="t4s-col-item">
+          {% comment %} <img src="{{ image_url }}" loading="lazy"> {% endcomment %}
+          <img {% if image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{ image.presentation.focal_point }}"{% endif %} class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff" data-pswp-src="{{ image | image_url }}" data-pswp-w="{{ image.width }}" data-pswp-h="{{ image.height }}" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+          <span class="lazyloadt4s-loader is-bg-img" style="background: url({{ image | image_url: width: 1 }});"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+  
+  {%- style -%}
+  {%- endstyle -%}
+  
+  {%- javascript -%}
+  {%- endjavascript -%}
+  
+  {%- schema -%}
+  {
+    "name": "Mibao Product Features",
+    "tag": "section",
+    "class": "t4s-section t4s-section-all mibao-features-list",
+    "settings": [
+
+    ],
+    "blocks": [
+    ],
+    "presets": [
+      {
+        "name": "Mibao Product Features",
+        "category": "product  ",
+        "blocks": [
+        ]
+      }
+    ]
+  }
+{% endschema %}

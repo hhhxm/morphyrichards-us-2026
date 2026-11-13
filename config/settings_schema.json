@@ -858,6 +858,10 @@
           {
             "value": "2",
             "label": "t:settings_schema.typography.settings.font_source.options.google"
+          },
+          {
+            "value": "3",
+            "label": "Custom Font"
           }
         ],
         "label": "t:settings_schema.typography.settings.font_source.label"
@@ -908,6 +912,32 @@
         "label": "t:settings_schema.typography.settings.fnt_fm_gg3.label",
         "default": "Poppins",
         "visible_if": "{{ settings.font_source == '2' }}"
+      },
+      {
+        "type": "header",
+        "content": "Custom Font Setting",
+        "visible_if": "{{ settings.font_source == '3' }}"
+      },
+      {
+        "type": "text",
+        "id": "fnt_fm_cu1",
+        "label": "Font Family #1",
+        "default": "Jeko-Regular",
+        "visible_if": "{{ settings.font_source == '3' }}"
+      },
+      {
+        "type": "text",
+        "id": "fnt_fm_cu2",
+        "label": "Font Family #2",
+        "default": "Jeko-SemiBold",
+        "visible_if": "{{ settings.font_source == '3' }}"
+      },
+      {
+        "type": "text",
+        "id": "fnt_fm_cu3",
+        "label": "Font Family #3",
+        "default": "Jeko-Bold",
+        "visible_if": "{{ settings.font_source == '3' }}"
       },
       {
         "type": "header",

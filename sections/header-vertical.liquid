@@ -76,42 +76,9 @@
   }
   .t4s-site-nav__cart >a,.t4s-push-menu-btn,.t4s-col__textSocial,.t4s-col__textSocial a {color: var(--h-text-color)}
   .t4s-site-nav__cart >a:hover,.t4s-col__textSocial a:hover {color: var(--h-text-color-hover)}
-  .t4s-section-header .t4s-top-bar__currencies,
-  .t4s-section-header .t4s-top-bar__languages {
-    margin: 15px 7.5px 0;
-  }
-  .t4s-section-header .t4s-top-bar__currencies button,
-  .t4s-section-header .t4s-top-bar__languages button{
-    background: transparent;
-    color: var(--h-text-color);
-    display: flex;
-    padding: 0;
-    align-items: center;
-    line-height: 20px;
-    font-size: inherit;
-  }
-  .t4s-section-header .t4s-top-bar__currencies button svg, .t4s-section-header .t4s-top-bar__languages button svg {
-    width: 8px;
-    margin-inline-start: 5px;
-  }
-  .rtl_true .t4s-section-header .t4s-top-bar__currencies button svg, .rtl_true .t4s-section-header .t4s-top-bar__languages button svg {
-    margin-inline-start: 0;
-    margin-inline-end: 5px;
-  }
-  .t4s-section-header .t4s-top-bar__currencies .t4s-dropdown__wrapper, .t4s-section-header .t4s-top-bar__languages .t4s-dropdown__wrapper {
-    padding: 15px;
-  }
-  .t4s-section-header .t4s-top-bar__currencies .t4s-dropdown__wrapper button.is--selected, .t4s-section-header .t4s-top-bar__languages .t4s-dropdown__wrapper button.is--selected {
-    color: var(--h-text-color-hover)
-  }
   @media (min-width: 768px) {
     .t4s-site-nav__icons .t4s-site-nav__icon {
       padding: 0 8px;
-    }
-    .t4s-section-header .t4s-top-bar__currencies .t4s-dropdown__wrapper, .t4s-section-header .t4s-top-bar__languages .t4s-dropdown__wrapper {
-      min-width: 100px;
-      max-width: 300px;
-      width: auto;
     }
   }
   @media (min-width: 1025px) {
@@ -193,17 +160,6 @@
         <div class="t4s-col-3 t4s-col-item t4s-d-lg-none">{%- render 'push_menu' -%}</div>
         <div class="t4s-col-lg-12 t4s-col-md-4 t4s-col-6 t4s-text-center t4s-col-item">{%- render 't4s_logo', tag: 'div', isTransparent: false -%}</div>
         <div class="t4s-col-lg-12 t4s-col-md-4 t4s-col-3 t4s-text-lg-center t4s-text-end t4s-col-group_btns t4s-col-item t4s-lh-1">{%- render 't4s_group_btns', se_stts: se_stts -%}</div>
-        <div class="t4s-col-12 t4s-d-none t4s-d-lg-block t4s-col-item t4s-text-center">
-            {%- if se_stts.show_language and shop.published_locales.size > 1 -%}
-               <link rel="stylesheet" href="{{ 'base_drop.min.css' | asset_url }}" media="all">
-              {%- render 'languages', sid: section.id -%}
-            {%- endif -%}
-
-            {%- if se_stts.show_currency -%}
-               <link rel="stylesheet" href="{{ 'base_drop.min.css' | asset_url }}" media="all">
-              {%- render 'currencies', sid: section.id -%}
-            {%- endif -%}
-        </div>
         <div class="t4s-col-12 t4s-d-none t4s-d-lg-block t4s-col-item">{%- render 'menu_blocks', placement: 'right', admin_sp: admin_sp, se_blocks: se_blocks, se_stts: se_stts -%}</div>
         <div class="t4s-col-12 t4s-d-none t4s-d-lg-block t4s-text-center t4s-col__textSocial t4s-col-item">
             {%- if source == '1' -%}{{- se_stts.txt -}}
@@ -226,20 +182,6 @@
       {
         "type": "header",
         "content": "+ Options only working desktop"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_language",
-        "label": "Show language selector",
-        "info": "To add a language, go to your [language settings.](/admin/settings/languages)",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_currency",
-        "label": "Show currency selector",
-        /*"info": "To add a currency, go to your [payment settings.](/admin/settings/payments)",*/
-        "default": true
       },
       {
         "type": "checkbox",

@@ -1,0 +1,16 @@
+# 凭证与本地配置（严禁提交）
+.env
+.env.*
+*.env
+config.yml
+
+# Shopify CLI 本地状态
+.shopify/
+node_modules/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

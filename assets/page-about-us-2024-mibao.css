@@ -1,0 +1,211 @@
+.the_origin_of_smart_ides .t4s-slideshow-item:nth-of-type(1) .t4s-content-position .t4s-raw-html svg{
+  width: 60px;
+  height: 60px;
+}
+
+.innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type){
+  border: 1px solid #D8D8D8;
+}
+.innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(3){
+  --heading-color: #fff !important;
+  color: #fff !important
+}
+.innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(4) .t4s-raw-html>span{
+  width: 50%;
+  margin-bottom:20px;
+  float: left;
+  font-weight: 600;
+}
+.milestones_in_the_history.t4s-section-inner{
+  position: relative;
+  /* border: 1px solid green; */
+}
+.milestones_in_the_history.t4s-section-inner::before{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #D8D8D8;
+  position: absolute;
+  top:124px;
+}
+
+.milestones_in_the_history .t4s-col-item h3{
+  margin: 10px 0;
+}
+.milestones_in_the_history .t4s-col-item .t4s-feature-columns__sub__title{
+  border-bottom: 2px solid var(--text-color);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.milestones_in_the_history .t4s-col-item .t4s-feature-columns__text{
+  line-height: 16px;
+}
+
+.award_winning_Innovation .t4s-content-position{
+  position: unset;
+  display:block;
+  transform: none ;
+  padding: 20px 0 20px 0;
+}
+.award_winning_Innovation .t4s-content-position .t4s-btn{
+  margin-top: 20px;
+}
+.milestones_in_the_history_tips.t4s-btn.t4s-btn-style-left_arrow_link {
+  padding-left: 0px !important;
+  font-size: 12px;
+}
+.milestones_in_the_history_tips.t4s-btn.t4s-btn-style-left_arrow_link::after {
+  /* border: 1px solid red; */
+  position: unset;
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+  background: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"%3e%3cpath d="M0,11 L30,11 L20,5" stroke="rgb(0,0,0)" stroke-width="1.5" fill="none"/%3e%3c/svg%3e') no-repeat left center / cover;
+}
+/*---------------- Custom CSS for tablet, mobile -------------------*/
+@media (min-width: 768px) {
+  .the_origin_of_smart_ides .t4s-slideshow-item:nth-of-type(1) .t4s-content-position{
+    width: 600px;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-raw-html{
+    padding: 25px;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-raw-html>h3{
+    margin-bottom:20px;
+  }
+
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(2) .t4s-col-inner,
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(4) .t4s-col-inner
+  {
+    justify-content: start;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(3) .t4s-col-inner{
+    justify-content: end;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(2) .t4s-w-100,
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(4) .t4s-w-100
+  {
+    padding-bottom: 20px;
+    align-items: start;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(3){
+    border-left: none;
+    border-right: none;
+    
+  } 
+
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(4) .t4s-raw-html>div{
+    margin-bottom:30px;
+  }
+
+  .milestones_in_the_history .t4s-col-item{
+    --ts-gutter-x: 60px !important;
+  }
+  .milestones_in_the_history .t4s-col-item:hover{
+    --heading-color: red !important;
+    --text-color: red !important;
+    color: red !important;
+  }
+  .milestones_in_the_history_tips{
+    display: none !important;
+  }
+
+  .works_of_art .t4s-col-item .t4s-feature-columns__title{
+    /* border: 1px solid red; */
+    --show-lines:2;
+    height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:var(--show-lines);
+  }
+  .works_of_art .t4s-col-item .t4s-feature-columns__text{
+    --show-lines:3;
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:var(--show-lines);
+  }
+
+  .award_winning_Innovation .t4s-col-item:last-child .t4s-banner-inner{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .award_winning_Innovation .t4s-col-item .t4s-banner-inner .t4s-banner-content{
+    margin: 20px;
+  }
+  .award_winning_Innovation .t4s-col-item:last-child .t4s-banner-inner .t4s-banner-content{
+    order: -1;
+  }
+}
+/*---------------- Custom CSS for only mobile -------------------*/
+@media (max-width: 767px){
+  .the_origin_of_smart_ides .t4s-slideshow-item:nth-of-type(1) .t4s-content-position{
+    width: 85%;
+  }
+  .innovate_for_enlightening_progress .t4s-container{
+    --ts-gutter-x: 0px !important;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-w-100{
+    display: flex;
+    overflow: hidden;
+    height: 50vw;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-img-child{
+    flex: 0 0 auto;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-img-child img{
+    width: 45vw;
+    height: 50vw;
+    object-fit: cover;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-raw-html{
+    padding: 15px;
+    
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-raw-html>h3{
+    margin-bottom:10px;
+    font-size: 16px;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:not(:first-of-type) .t4s-raw-html>div{
+    font-size: 12px;
+    line-height: 16px;
+    
+    --show-lines:6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:var(--show-lines);
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(3){
+    border-top: none;
+    border-bottom: none;
+  } 
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(4) .t4s-raw-html>div{
+    margin-bottom:10px;
+  }
+  .innovate_for_enlightening_progress .t4s-custom-col:nth-of-type(4) .t4s-raw-html>span{
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom:15px;
+    float: left;
+  }
+
+  .milestones_in_the_history .t4s-col-item.is-selected{
+    --heading-color: red !important;
+    --text-color: red !important;
+    color: red !important;
+  }
+
+  .award_winning_Innovation .t4s-col-item:last-child {
+    margin-top: 50px;
+  }
+
+}

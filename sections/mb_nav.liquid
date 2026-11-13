@@ -21,132 +21,13 @@ endif -%}
             {%- when 'help' -%}
                <li id="item_mb_help" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-infos"><p class="t4s-menu_infos_title">{{ block_stts.title }}</p><div class="t4s-menu_infos_text t4s-rte--list">{{ block_stts.text }}</div></li>
             
-            {%- when 'cur' -%}
-
-              {%- liquid 
-                if settings.flag_currency
-                  assign fl = 'flagst4s'
-                endif
-                assign sz = settings.size_currency
-                assign cart_iso_code = cart.currency.iso_code
-              -%}
-
-              {%- if settings.flag_currency %}
-                <style>.flagst4s>img {margin-inline-end: 7px;border-radius: 2px;height: 15px;width: auto;}.flagst4s [data-current]{display: inline-block;}.flagst4s [data-img-current]{margin-inline-end: 0; margin-bottom: 2px;}[data-flagst4s="sm"] img[data-img-current] {height: 12px;width: auto;}[data-flagst4s="md"] img {height: 18.5px;width: auto;margin-inline-end: 7px;}.flagst4s[data-flagst4s="md"] [data-img-current]{height: 15.5px;}</style>
-              {% endif -%}
-
-              {%- if shop.enabled_currencies.size > 1 and settings.currency_type == '1' -%}
-                {%- if linklists.currency-the4.links.size > 0 -%}
-                  {%- assign ck_iso_code = '#' | append: cart_iso_code -%}{%- assign links_cur = linklists.currency-the4.links | where: "url", ck_iso_code -%}
-                  <li data-currency-wrap id="item_mb_cur" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-has-children t4s-only_icon_false t4s-currencies" {{ block.shopify_attributes }}>
-                    <a rel="nofollow" data-no-instant href="{{ routes.root_url }}">
-                      <span data-flagst4s="{{ sz }}" class="t4s-d-inline-block {{ fl }}">
-                        {%- if settings.flag_currency %}{{ localization.country | image_url: width: 30 | image_tag: loading: 'lazy', data-img-current: '' }}{% endif %}
-                        <span data-current>{{- localization.country.currency.iso_code }}</span>
-                      </span>
-                      <span class="t4s-mb-nav__icon"></span>
-                    </a>
-                    <ul class="t4s-sub-menu">
-                    {%- assign list_curr = linklists.currency-the4.links | map: 'url' | join: ',' | remove: routes.root_url | remove: '#' | remove: ' ' | upcase | split: ',' | json -%}
-                    {%- for country in localization.available_countries -%}
-                      {%- unless list_curr contains country.currency.iso_code -%}{%- continue -%}{%- endunless -%}
-                      <li>
-                        <a data-flagst4s="{{ sz }}" data-currency-item class="t4s-currency-item {{ fl }}{% if country.iso_code == localization.country.iso_code %} is--selected{% endif %}" href="/" data-no-instant data-iso="{{ country.currency.iso_code }}" data-country="{{ country.iso_code }}">
-                          {%- if settings.flag_currency %}{{ country | image_url: width: 30 | image_tag: loading: 'lazy' }}{% endif %}
-                          <span>{{ country.name }} - {{ country.currency.iso_code }} {{ country.currency.symbol }}</span>
-                        </a>
-                      </li>
-                    {%- endfor -%}
-                    </ul>
-                  </li>
-                {%- else -%}
-                  <li data-currency-wrap id="item_mb_cur" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-has-children t4s-only_icon_false t4s-currencies" {{ block.shopify_attributes }}>
-                    <a rel="nofollow" data-no-instant href="/">
-                      <span data-flagst4s="{{ sz }}" class="t4s-d-inline-block {{ fl }}">
-                        {%- if settings.flag_currency %}{{ localization.country | image_url: width: 30 | image_tag: loading: 'lazy', data-img-current: '' }}{% endif %}
-                        <span data-current>{{- localization.country.currency.iso_code }}</span>
-                      </span>
-                      <span class="t4s-mb-nav__icon"></span>
-                    </a>
-                    <ul class="t4s-sub-menu">
-                      {% for country in localization.available_countries %}
-                        <li>
-                          <a data-flagst4s="{{ sz }}" data-currency-item class="t4s-currency-item {{ fl }}{% if country.iso_code == localization.country.iso_code %} is--selected{% endif %}" href="/" data-no-instant data-iso="{{ country.currency.iso_code }}" data-country="{{ country.iso_code }}">
-                            {%- if settings.flag_currency %}{{ country | image_url: width: 30 | image_tag: loading: 'lazy' }}{% endif %}
-                            <span>{{ country.name }} - {{ country.currency.iso_code }} {{ country.currency.symbol }}</span>
-                          </a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                {%- endif -%}
-
-               {%- elsif settings.currency_type == '2' -%}
-                {% comment %} {%- if settings.flag_currency %}{{ 'currencies.min.css' | asset_url | stylesheet_tag }}{% endif -%} {% endcomment %}
-                {%- # theme-check-enable RemoteAsset -%}
-                  {%- assign supported_codes = settings.supported_currencies | split: '|' -%}
-                  <li data-currency-wrap id="item_mb_cur" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-has-children t4s-only_icon_false t4s-currencies" {{ block.shopify_attributes }}>
-                     <a rel="nofollow" data-no-instant href="/">
-                      <span data-flagst4s="{{ sz }}" class="t4s-d-inline-block {{ fl }}">
-                        {%- if settings.flag_currency %}<img data-img-current width="30" height="23" src="//cdn.shopify.com/static/images/flags/{{ cart_iso_code | slice: 0, 2 | join: '' | downcase }}.svg" alt="{{ cart_iso_code }}" loading="lazy">{% endif %}
-                        <span data-current>{{- localization.country.currency.iso_code }}</span>
-                      </span>
-                      <span class="t4s-mb-nav__icon"></span>
-                    </a>
-                     <ul class="t4s-sub-menu">
-                      <li>
-                        <a data-flagst4s="{{ sz }}" data-currency-item class="t4s-currency-item {{ fl }} t4s-d-none" href="/" data-no-instant rel="nofollow" data-currency-temp>
-                          {%- if settings.flag_currency %}<img width="30" height="22.5" src="//cdn.shopify.com/static/images/flags/{{ cart_iso_code | slice: 0, 2 | downcase }}.svg" alt="{{ cart_iso_code }}" loading="lazy">{% endif %}
-                          <span>{{ cart_iso_code }}</span>
-                        </a>
-                      </li>
-                      {%- for code in supported_codes -%}
-                        {%- assign array_money = code | split: '-' -%}
-                        {%- assign data_currency = array_money | first | upcase | strip | remove: ' ' -%}
-                        {%- assign name_money = array_money | last | strip -%}
-                          <li>
-                            <a data-flagst4s="{{ sz }}" data-currency-item class="t4s-currency-item {{ fl }} flagst4s-{{ data_currency }}{% if data_currency == cart_iso_code %} is--selected{% endif %}" href="/" data-no-instant rel="nofollow" data-currency="{{ data_currency }}">
-                              {%- if settings.flag_currency %}<img width="30" height="22.5" src="//cdn.shopify.com/static/images/flags/{{ name_money | slice: 0, 2 | downcase }}.svg" alt="{{ name_money }}" loading="lazy">{% endif %}
-                              <span>{{ name_money }}</span>
-                            </a>
-                          </li>
-                      {%- endfor -%}
-                    </ul>
-                  </li>
-                  {%- # theme-check-enable RemoteAsset -%}
-                {%- endif -%}
-
-            {%- when 'lang' -%}
-                {%- liquid
-                  unless shop.published_locales.size > 1
-                    continue
-                  endunless
-                  assign fl = ''
-                  assign current_locale = request.locale
-                  assign current_locale_iso_code = current_locale.iso_code
-                  -%}
-                <li data-locale-wrap id="item_mb_lang" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-has-children t4s-only_icon_false t4s-languages" {{ block.shopify_attributes }}>
-                   <a rel="nofollow" data-no-instant href="/"><span data-flagst4s="{{ sz }}" data-current class="t4s-languages__current t4s-d-inline-block {{ fl }} lazyloadt4s flagst4s-{{ current_locale_iso_code }}">{{ current_locale.endonym_name }}</span><span class="t4s-mb-nav__icon"></span></a>
-                   <ul class="t4s-sub-menu">
-                    {%- for locale in shop.published_locales -%}{%- assign iso_code = locale.iso_code -%}
-                      <li><a data-flagst4s="{{ sz }}" data-locale-item class="t4s-lang-item {{ fl }} lazyloadt4s flagst4s-{{ iso_code }}{% if iso_code == current_locale_iso_code %} is--selected{% endif %}" href="/" data-no-instant rel="nofollow" data-iso="{{ iso_code }}">{{ locale.endonym_name }}</a></li>
-                   {%- endfor -%}
-                   </ul>
-               </li>
-            
-            {%- when 'wis' -%}{% if settings.wishlist_mode == '0' %}{% continue %}{% endif -%} 
-               <li id="item_mb_wis" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-wishlist"><a data-link-wishlist href="{% if settings.wishlist_mode != '3' %}{{ routes_search_url }}/?view=wishlist{%- else -%}/pages/wishlist{%- endif -%}"><span class="t4s-d-inline-block"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>{{ 'general.mobile_menu.wishlist' | t }}</span></a></li>
-            
             {%- when 'compe' -%}
               {%- unless settings.enable_compe %}{% continue %}{% endunless %}<li id="item_mb_compe" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-compare"><a data-link-compare href="{{ routes_search_url }}/?view=compare"><span class="t4s-d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>{{ 'general.mobile_menu.compare' | t }}</span></a></li>
 
             {%- when 'sea' -%}<li id="item_mb_sea" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-sea" data-drawer-delay- data-drawer-options='{ "id":"#t4s-search-hidden" }'><a href="{{ routes_search_url }}"><span class="t4s-d-inline-block"><svg width="24" viewBox="0 0 18 19" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"></path></svg>{{ 'general.mobile_menu.search' | t }}</span></a></li>
             
-            {%- when 'acc' -%}
-              {%- unless shop.customer_accounts_enabled %}{% continue %}{% endunless -%}
+            {%- when 'acc' -%}{%- continue -%}
 
-                {%- capture the_snippet_auth %}{% render 'socialshopwave-widget-auth' %}{% endcapture -%}
-                 {%- if the_snippet_auth contains 'Liquid error' or settings.growave_social_login == false or settings.enable_growave == false %}
                     {%- if customer -%}
                       <li id="item_mb_acc" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-acount t4s-menu-item-has-children t4s-only_icon_false">
                          <a href="{{ routes.account_url }}"><span class="t4s-d-inline-block"><svg width="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>{{ 'general.mobile_menu.my_account' | t }}</span><span class="t4s-mb-nav__icon"></span></a>
@@ -157,38 +38,10 @@ endif -%}
                          </ul>
                       </li>
                     {%- else -%}
-                      <li id="item_mb_acc" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-acount"><a href="{{ routes.account_register_url }}" {% unless customer or request.page_type contains 'customers' or settings.login_side == false %} data-drawer-delay- data-drawer-options='{ "id":"#t4s-login-sidebar" }' {% endunless %}><svg width="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span class="t4s-d-inline-block">{{ 'general.mobile_menu.login_register' | t }}</span></a></li>
+                      <li id="item_mb_acc" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-acount"><a href="{{ routes.account_register_url }}"><svg width="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span class="t4s-d-inline-block">{{ 'general.mobile_menu.login_register' | t }}</span></a></li>
                     {%- endif -%}
 
-                 {%- else -%}
-                  
-                    {%- if customer -%}
-                    <li class="ssw-tprofile ssw-dropdown">
-                      <a class="ssw-dropdown-toggle" data-toggle="ssw-dropdown" href="javascript:void(0);">
-                        <i class="ssw-icon-user"></i>
-                        {{ customer.first_name }}
-                        {% if customer.last_name != 'Unknown' %}
-                        {{ customer.last_name | slice: 0 | upcase }}.
-                        {% endif %}
-                        <i class="ssw-icon-down-open-big"></i>
-                      </a>
-                      <ul class="ssw-dropdown-menu" role="menu" aria-labelledby="dLabel">
-                        <li id="customer_myorders_li"><a tabindex="-1" href="{{ routes.account_url }}">{{ 'socialshopwave.my_orders' | t }}</a></li>
-                        {% render 'ssw-widget-dropdown' %}
-                        <li class="ssw-divider"></li>
-                        <li><a id="customer_logout_link" tabindex="-1" href="{{ routes.account_logout_url }}" data-no-instant>{{ 'socialshopwave.logout' | t }}</a></li>
-                      </ul>
-                    </li>
-                    {%- else -%}
-                    <li>
-                      <a id="customer_login_link" href="javascript:void(0);" data-toggle="ssw-modal" data-target="#login_modal" onclick="trackShopStats('login_popup_view', 'all')">{{ 'socialshopwave.log_in' | t }}</a>
-                    </li>
-                    <li>
-                      <a id="customer_register_link" data-toggle="ssw-modal" data-target="#signup_modal" href="javascript:void(0);" onclick="trackShopStats('login_popup_view', 'all')">{{ 'socialshopwave.sign_up' | t }}</a>
-                    </li>
-                    {%- endif -%}
-
-                 {%- endif -%}
+            {%- endif -%}
             
             {%- when 'menu' -%}
 
@@ -478,11 +331,6 @@ endif -%}
         ]
       },
       {
-        "type": "wis",
-        "name": "Wishlist",
-        "limit": 1
-      },
-      {
         "type": "compe",
         "name": "Compare",
         "limit": 1
@@ -515,16 +363,6 @@ endif -%}
             "default": "<i class=\"pegk pe-7s-call fwb mr__10\"><\/i>+01 23456789<br><i class=\"pegk pe-7s-mail fwb mr__10\"><\/i><a class=\"cg\" href=\"mailto:kalles@domain.com\">kalles@domain.com<\/a>"
          }
         ]
-      },
-      {
-        "type": "cur",
-        "name": "Currency",
-        "limit": 1
-      },
-      {
-        "type": "lang",
-        "name": "Languages",
-        "limit": 1
       }
     ],
     "default": {
@@ -533,12 +371,9 @@ endif -%}
         { "type": "menu" },
         { "type": "menu" },
         { "type": "menu" },
-        { "type": "wis" },
         { "type": "sea" },
         { "type": "acc" },
-        { "type": "help" },
-        { "type": "lang" },
-        { "type": "cur" }
+        { "type": "help" }
       ]
     }
   }

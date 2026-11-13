@@ -63,7 +63,7 @@
   assign app_review = settings.app_review
   assign use_countdown = se_stts.use_cdt
   
-  assign txt_cd = 'products.grid_items.offer_end_in' | t  
+  assign txt_cd = 'products.product_card.offer_end_in' | t  
   
   assign t4s_se_class = 't4s_nt_se_' | append: sid
   if se_stts.use_cus_css and se_stts.code_cus_css != blank

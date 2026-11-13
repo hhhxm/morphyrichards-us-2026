@@ -20,7 +20,7 @@
                     {%- if show_txt -%}<span class="t4s-toolbar-label">{{ bk_stts.title }}</span>{%- endif -%}
                 </a>
             </div>
-            {%- when 'wish' %}{% if settings.wishlist_mode == '0' %}{% continue %}{% endif -%} 
+            {%- when 'wish' %}{%- continue -%}
             <div class="t4s-toolbart-{{ block_type }} t4s-toolbar-item">
                 <a data-link-wishlist href="{% if settings.wishlist_mode != '3' %}{{ search_url }}/?view=wishlist{%- else -%}/pages/wishlist{%- endif -%}">
                     <span class="t4s-toolbar-icon t4s-pr">
@@ -41,7 +41,7 @@
                     {%- if show_txt -%}<span class="t4s-toolbar-label">{{ bk_stts.title }}</span>{%- endif -%}
                 </a>
               </div>
-            {%- when 'cart' -%}
+            {%- when 'cart' -%}{%- continue -%}
                 <div class="t4s-toolbart-{{ block_type }} t4s-toolbar-item">
                     <a href="{{ routes.cart_url }}"{% if request.page_type != 'cart' and settings.cart_type != 'disable' %} data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'{% endif %}>
                         <span class="t4s-toolbar-icon t4s-pr">
@@ -51,9 +51,9 @@
                         {%- if show_txt -%}<span class="t4s-toolbar-label">{{ bk_stts.title }}</span>{%- endif -%}
                     </a>
                 </div>
-            {%- when 'account' -%}{%- unless shop.customer_accounts_enabled %}{% continue %}{% endunless -%} 
+            {%- when 'account' -%}{%- continue -%}
                 <div class="t4s-toolbart-{{ block_type }} t4s-toolbar-item">
-                    <a href="{{ routes.account_url }}" {% unless customer or request.page_type contains 'customers' or settings.login_side == false %} data-drawer-delay- data-drawer-options='{ "id":"#t4s-login-sidebar" }' {% endunless %}>
+                    <a href="{{ routes.account_url }}">
                         <span class="t4s-toolbar-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                         </span>
@@ -118,7 +118,7 @@
             {%- else -%}
             <div class="t4s-toolbart-{{ block_type }} t4s-toolbar-item">
                 {%- assign image = bk_stts.image -%}
-                <a href="{{ bk_stts.link | default: routes.account_url }}">
+                <a href="{{ bk_stts.link | default: routes.root_url }}">
                     <span class="t4s-toolbar-icon t4s-pr">
                         {%- if image != blank %}
                             <img class="lazyloadt4s t4s-lz--fadeIn" data-src="{{ image | image_url: height: img_size }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src=" {%- render 'img_svg', w: image.img_size, h: image.img_size -%} " width="{{ image.img_size }}" height="{{ image.img_size }}" alt="{{ image.alt | escape }}">

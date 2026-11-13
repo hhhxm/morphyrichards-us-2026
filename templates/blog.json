@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "heading": {
@@ -35,8 +35,9 @@
         },
         "190dccc0-921d-4bc6-8dbb-51e27461095d": {
           "type": "2",
+          "disabled": true,
           "settings": {
-            "content": "<p>Sub title page content<\/p>",
+            "content": "<p>Sub title page content</p>",
             "fontf": "inherit",
             "text_cl": "#ffffff",
             "text_fs": 16,
@@ -67,8 +68,9 @@
         "190dccc0-921d-4bc6-8dbb-51e27461095d",
         "9c516f81-c531-4ce6-903a-a0493715b39a"
       ],
-      "disabled": true,
       "settings": {
+        "heading_fullwidth": false,
+        "use_specify_image": true,
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
@@ -87,14 +89,14 @@
     "slider": {
       "type": "blog_slider",
       "settings": {
-        "blog": "fashion",
+        "blog": "news",
         "limit": 6,
         "date": "date",
         "col_dk": "3",
         "col_tb": "2",
         "col_mb": "1",
-        "show_author": true,
-        "show_date": true,
+        "show_author": false,
+        "show_date": false,
         "show_comment": false,
         "image_ratio": "ratio4_3",
         "image_position": "8",
@@ -126,6 +128,8 @@
         "cl_bg_gradient": "",
         "mg": ",,,",
         "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
         "mg_mb": ",,30px,",
         "pd_mb": "",
         "use_cus_css": false,
@@ -134,18 +138,30 @@
     },
     "main": {
       "type": "main-blog",
+      "blocks": {
+        "808329e5-4818-4499-b4f5-3d964649ce01": {
+          "type": "tag",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "808329e5-4818-4499-b4f5-3d964649ce01"
+      ],
       "settings": {
         "layout_des": "1",
         "art_des": "1",
         "limit": 6,
         "date": "abbreviated_date",
-        "show_cate": false,
-        "show_tags": false,
+        "show_cate": true,
+        "show_tags": true,
         "show_cnt": false,
-        "show_au": true,
-        "show_dt": true,
+        "show_au": false,
+        "show_dt": false,
         "show_cm": false,
-        "show_rm": false,
+        "show_rm": true,
+        "show_irm": true,
         "text_align": "start",
         "col_dk": "2",
         "col_tb": "2",
@@ -174,6 +190,8 @@
         "cl_bg_gradient": "",
         "mg": "60px,,60px,",
         "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
         "mg_mb": "30px,,30px,",
         "pd_mb": ""
       }
@@ -185,7 +203,7 @@
           "type": "blog_cate",
           "settings": {
             "title": "Blog categories",
-            "cat_link_list": "main-menu",
+            "cat_link_list": "",
             "count": true
           }
         },
@@ -200,7 +218,7 @@
           "type": "collection",
           "settings": {
             "title": "Sale Products",
-            "collection": "women",
+            "collection": "portable-air-conditioners",
             "limit_pr": 3,
             "image_ratio": "t4s_ratioadapt",
             "image_size": "t4s_cover",
@@ -215,7 +233,7 @@
       ],
       "disabled": true,
       "settings": {
-        "enable_drawer": true,
+        "enable_drawer": false,
         "space": 50,
         "size": "medium",
         "br_style": "none",

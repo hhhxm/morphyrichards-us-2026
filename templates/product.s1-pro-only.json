@@ -1,0 +1,1171 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "11440601-e17e-4c53-b27f-d2b2d9fabb1a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ 'products-mibao.css' | asset_url | stylesheet_tag }}{{ 'products-mibao.js' | asset_url | script_tag }}",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "sidebar": {
+      "type": "sidebar-product",
+      "blocks": {
+        "f01b181b-62ee-4735-8e25-32cb71ccfaba": {
+          "type": "category",
+          "settings": {
+            "title_category": "Product Categories",
+            "cat_source": "1",
+            "cat_link_list": "",
+            "count": true
+          }
+        },
+        "f65f464b-9487-43be-9c91-8688a098bb6f": {
+          "type": "collection",
+          "settings": {
+            "title_fea_pr": "Products",
+            "collection": "portable-air-conditioners",
+            "limit_pr": 5,
+            "image_ratio": "t4s_ratioadapt",
+            "image_size": "t4s_cover",
+            "image_position": "t4s_position_8"
+          }
+        },
+        "83340bb8-58d2-4148-89e2-a4c7a01cf792": {
+          "type": "instagram",
+          "settings": {
+            "title_ins": "Instagram",
+            "mode": "2",
+            "acc": "",
+            "limit": 12,
+            "open_link": "_blank",
+            "round": 0,
+            "col_dk": "3",
+            "space_item": "6"
+          }
+        },
+        "9ce9ded8-1cef-4e32-b98b-47364ffa328c": {
+          "type": "shipping",
+          "settings": {
+            "title": "Shipping & Delivery",
+            "shipping_1": "las la-truck,FREE SHIPPING,Free shipping for all US order",
+            "shipping_2": "las la-headset,SUPPORT 24/7,We support 24 hours a day",
+            "shipping_3": "las la-exchange-alt,30 DAYS RETURN,You have 30 days to return",
+            "shipping_4": "",
+            "shipping_5": "",
+            "shipping_6": ""
+          }
+        },
+        "4a9c6ae8-f3b4-4192-a6d1-82d01670bce6": {
+          "type": "image",
+          "settings": {
+            "b_link": "",
+            "open_link": "_self",
+            "img_effect": "none",
+            "date": "2022/12/26",
+            "content_align": "center",
+            "cdt_des": "2",
+            "countdown_pos": "2",
+            "cdt_size": "medium",
+            "box_bdr": 0,
+            "bd_width": 0,
+            "space_item": 10,
+            "number_cl": "#ffffff",
+            "text_cl": "#ffffff",
+            "border_cl": "#000000",
+            "bg_cl": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "f01b181b-62ee-4735-8e25-32cb71ccfaba",
+        "f65f464b-9487-43be-9c91-8688a098bb6f",
+        "83340bb8-58d2-4148-89e2-a4c7a01cf792",
+        "9ce9ded8-1cef-4e32-b98b-47364ffa328c",
+        "4a9c6ae8-f3b4-4192-a6d1-82d01670bce6"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_drawer": true,
+        "space": 50,
+        "size": "medium",
+        "br_style": "none",
+        "brcolor": "#222222",
+        "sidebar_bdr": 5,
+        "sidebar_pd": 10
+      }
+    },
+    "breadcrumb": {
+      "type": "brc-nav-product",
+      "disabled": true,
+      "settings": {
+        "breadcrumb_pr": true,
+        "back_next_pr": true,
+        "cl_bg": "#f6f6f6",
+        "cl_link": "#222222"
+      }
+    },
+    "525c5753-af0a-483f-9070-e9a11fa1ca89": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19449800393010__525c5753-af0a-483f-9070-e9a11fa1ca89-1689780427cfaf1f2c-0": {
+          "type": "image_parent",
+          "settings": {
+            "image": "{{ product.metafields.custom.top_banner_image_pc.value }}",
+            "image_mb": "{{ product.metafields.custom.top_banner_image_mobile.value }}",
+            "use_lazy_image": true,
+            "image_position": "8",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_self",
+            "animate_slide": "none",
+            "text_align": "center",
+            "text_align_mb": "center",
+            "content_width": "container",
+            "cv_pos": 57,
+            "ch_pos": 50,
+            "cv_pos_mb": 50,
+            "ch_pos_mb": 50,
+            "bg_overlay": "#000000",
+            "bg_opacity": 0,
+            "bg_content_cl": "#ffffff",
+            "bg_content_op": 0,
+            "content_radius": 0,
+            "box_square": false,
+            "content_pd_tb": 15,
+            "content_pd_lr": 15,
+            "content_pd_tb_tb": 15,
+            "content_pd_lr_tb": 15,
+            "content_pd_tb_mb": 10,
+            "content_pd_lr_mb": 10,
+            "border_bl": false,
+            "br_color": "#222222",
+            "br_bg": "#ffffff",
+            "br_opacity": 50,
+            "br_style": "solid",
+            "br_pd": 20,
+            "br_pd_mb": 10,
+            "time_animation": 1,
+            "animation_delay": 40
+          }
+        },
+        "6c3e461d-5fb3-4bed-b08e-3a358ba95710": {
+          "type": "custom_text",
+          "settings": {
+            "text": "{{ product.metafields.custom.top_banner_title.value }}",
+            "remove_br_tag": false,
+            "tag": "h3",
+            "fontf": "inherit",
+            "text_cl": "#ffffff",
+            "text_fs": 50,
+            "text_lh": 0,
+            "text_fw": 600,
+            "text_ls": 0,
+            "text_mgb": 40,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 24,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 30,
+            "animation": "none"
+          }
+        },
+        "16a4e04d-62c7-4752-9090-cc223515e938": {
+          "type": "custom_text",
+          "settings": {
+            "text": "{{ product.metafields.custom.top_banner_desc.value }}",
+            "remove_br_tag": true,
+            "tag": "p",
+            "fontf": "inherit",
+            "text_cl": "#ffffff",
+            "text_fs": 22,
+            "text_lh": 34,
+            "text_fw": 400,
+            "text_ls": 0,
+            "text_mgb": 40,
+            "font_italic": false,
+            "text_shadow": false,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 24,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 50,
+            "animation": "none"
+          }
+        },
+        "a1e64c5f-7b37-45d6-9d48-4a09c88bd26f": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "{{ product.metafields.custom.top_banner_button_label.value }}",
+            "button_link": "/",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "default",
+            "button_effect": "default",
+            "pri_cl": "#ffffff",
+            "second_cl": "#000000",
+            "pri_cl_hover": "#ec0101",
+            "second_cl_hover": "#ffffff",
+            "fsbutton": 18,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 20,
+            "button_pd_lr": 40,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 10,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0,
+            "animation": "none"
+          }
+        }
+      },
+      "block_order": [
+        "template--19449800393010__525c5753-af0a-483f-9070-e9a11fa1ca89-1689780427cfaf1f2c-0",
+        "6c3e461d-5fb3-4bed-b08e-3a358ba95710",
+        "16a4e04d-62c7-4752-9090-cc223515e938",
+        "a1e64c5f-7b37-45d6-9d48-4a09c88bd26f"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_where_no_image": true,
+        "se_height": "t4s_ratioadapt",
+        "custom_dk": true,
+        "height_dk": 600,
+        "custom_tb": true,
+        "height_tb": 400,
+        "custom_mb": true,
+        "height_mb": 250,
+        "eff": "slide",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_position": "default",
+        "dots_cl": "dark",
+        "dots_round": false,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": "top_banner{}"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_NkmYAc": {
+          "type": "breadcrumb",
+          "settings": {
+            "breadcrumb_pr": true,
+            "back_next_pr": true,
+            "cl_bg": "rgba(0,0,0,0)",
+            "cl_link": "#222222"
+          }
+        },
+        "2fed2bfc-ba96-49ad-9593-cfdd58b97174": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.model.value }}</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "txt_tr_pr": "none",
+            "fnt_df_pr": "3",
+            "size_pr": 28,
+            "fw_pr": 600,
+            "lh_pr": 35,
+            "ls_pr": 0,
+            "pr_title_color": "#222222"
+          }
+        },
+        "147f5c9d-87cb-47b5-b772-9905de5e6865": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.info_selling_point | metafield_tag }}"
+          }
+        },
+        "price_review": {
+          "type": "price_review",
+          "disabled": true,
+          "settings": {
+            "price": "0",
+            "type_sale": "1",
+            "tax_ship": false,
+            "rating": true,
+            "review_liquid": "",
+            "size_price_pr": 22,
+            "fw_price_pr": 400,
+            "price_color": "#171717",
+            "price_sale_color": "#ec0101"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "des": "2",
+            "text": "<p>Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>",
+            "length": 31,
+            "readm": false,
+            "readm_txt": "Read more"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "selector_mode": "circle",
+            "color_mode": "color is-sw-cl__round",
+            "enable_fit_ratio_img": false,
+            "color_size": "medium",
+            "show_qty": false,
+            "enable_wishlist": false,
+            "enable_compare": false,
+            "btn_atc_full": false,
+            "pr_btn_round": 40,
+            "btn_enable": false,
+            "ani": "none",
+            "time": 6,
+            "btn_txt": "3",
+            "btn_icon": false,
+            "button_style": "outline",
+            "button_color": "primary",
+            "button_effect": "sweep-to-top",
+            "wishlist_color": "#222222",
+            "wishlist_color_hover": "#56cfe1",
+            "wishlist_color_active": "#e81e1e",
+            "compare_color": "#222222",
+            "compare_color_hover": "#56cfe1",
+            "compare_color_active": "#222222",
+            "show_dynamic_checkout": false,
+            "btn_txt2": "3",
+            "button_color_payment": "primary",
+            "show_gift_card_recipient": true,
+            "product_list": [],
+            "show_product_current": true,
+            "qty_val": "0",
+            "advance_label": "Choose style",
+            "advance_pr_list": []
+          }
+        },
+        "meta": {
+          "type": "meta",
+          "settings": {
+            "show_options": false,
+            "show_vendor": false,
+            "show_type": false,
+            "show_sku": false,
+            "show_barcode": false,
+            "show_available": false,
+            "show_category": false,
+            "show_tags": true
+          }
+        },
+        "video_popup_button_twyyx7": {
+          "type": "video_popup_button",
+          "settings": {
+            "button_image": "{{ product.metafields.custom.top_banner_image_pc.value }}",
+            "video": "{{ product.metafields.custom.video_banner.value }}"
+          }
+        },
+        "94011ade-ec25-4d68-b37a-70660ede49dd": {
+          "type": "social",
+          "settings": {
+            "socials_align": "start",
+            "social_mode": "1",
+            "social_style": "1",
+            "social_size": "extra_small",
+            "bd_radius": 0,
+            "use_color_set": true,
+            "icon_cl": "#222222",
+            "bg_cl": "#ec0101",
+            "space_h_item": "20",
+            "space_v_item": "5",
+            "space_h_item_mb": "10",
+            "space_v_item_mb": "2",
+            "mgb": 20,
+            "mgb_mb": 20
+          }
+        },
+        "size_delivery_ask": {
+          "type": "size_delivery_ask",
+          "disabled": true,
+          "settings": {
+            "size_chart": "3",
+            "pos_sizeg": "1",
+            "sc_type": "1",
+            "page": "",
+            "size_ck": "",
+            "delivery": false,
+            "page_dr": "delivery-return",
+            "ask": true,
+            "phone": true
+          }
+        },
+        "23551ebc-3be1-40d6-81b2-30f03478cccb": {
+          "type": "img",
+          "disabled": true,
+          "settings": {
+            "al": "start",
+            "mess": "",
+            "size": 16,
+            "source": "1",
+            "wimg": 70,
+            "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
+            "height": 44
+          }
+        },
+        "59db60b5-063d-45a1-95f0-4a1e65663c53": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "page": "delivery-return"
+          }
+        },
+        "95d4f334-8ea7-4cd2-b609-2373b1e848b8": {
+          "type": "tab_des",
+          "disabled": true,
+          "settings": {
+            "title": "Description"
+          }
+        },
+        "e36839f5-0847-44e2-97d3-2885597bd1ff": {
+          "type": "tab_add",
+          "disabled": true,
+          "settings": {
+            "title": "Additional Information"
+          }
+        },
+        "754ad4a0-7308-4a3e-b325-e2f2c0b85d4c": {
+          "type": "tab_html",
+          "disabled": true,
+          "settings": {
+            "title": "Custom tab",
+            "content": "",
+            "page": "wash-care"
+          }
+        },
+        "56e67368-7424-4d73-8f14-dacdda4c59be": {
+          "type": "tab_rivui",
+          "disabled": true,
+          "settings": {
+            "title": "Reviews",
+            "review_liquid": ""
+          }
+        },
+        "1e8c05dd-a0a8-4e7e-b9b1-6e3572ad24e3": {
+          "type": "store_pickup",
+          "disabled": true,
+          "settings": {}
+        },
+        "e4b51a9f-da65-41ce-b434-4a19a98a857a": {
+          "type": "properties",
+          "disabled": true,
+          "settings": {
+            "type": "file",
+            "heading": "Your name",
+            "options": "option1, option2",
+            "required": false,
+            "show_at_checkout": true,
+            "visibility": "all",
+            "collection_based": [],
+            "type_based": "",
+            "tag_based": "",
+            "product_based": [
+              "bean-to-cup",
+              "gevi-brewone-premium-pour-over-coffee-machine",
+              "gevi-cleandeep-cordless-vacuum-cleaner",
+              "gvei-4-in-1-smart-pourover-coffee-machine-2",
+              "gvei-4-in-1-smart-pourover-coffee-machine-3"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_NkmYAc",
+        "2fed2bfc-ba96-49ad-9593-cfdd58b97174",
+        "title",
+        "147f5c9d-87cb-47b5-b772-9905de5e6865",
+        "price_review",
+        "description",
+        "form",
+        "meta",
+        "video_popup_button_twyyx7",
+        "94011ade-ec25-4d68-b37a-70660ede49dd",
+        "size_delivery_ask",
+        "23551ebc-3be1-40d6-81b2-30f03478cccb",
+        "59db60b5-063d-45a1-95f0-4a1e65663c53",
+        "95d4f334-8ea7-4cd2-b609-2373b1e848b8",
+        "e36839f5-0847-44e2-97d3-2885597bd1ff",
+        "754ad4a0-7308-4a3e-b325-e2f2c0b85d4c",
+        "56e67368-7424-4d73-8f14-dacdda4c59be",
+        "1e8c05dd-a0a8-4e7e-b9b1-6e3572ad24e3",
+        "e4b51a9f-da65-41ce-b434-4a19a98a857a"
+      ],
+      "settings": {
+        "pr_layout": "default",
+        "enable_sticky_info": true,
+        "media_layout": "thumbnails_left",
+        "media_size": "medium",
+        "thumb_lr_size": "small",
+        "image_ratio": "ratio1_1",
+        "image_size": "contain",
+        "image_position": "8",
+        "main_click": "pswp",
+        "zoom_tp": "inner2",
+        "enable_zoom_icon": false,
+        "enable_zoom_click_mb": true,
+        "enable_video_looping": false,
+        "enable_video_muting": true,
+        "enable_video_autoplaying": true,
+        "eff": "slide",
+        "nav_btn": true,
+        "btn_vi": "always",
+        "btn_owl": "simple",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "medium",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "elessi",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "tabs_design": "accordion",
+        "tabs_design_mb": "accordion",
+        "tabs_position": "external",
+        "enable_first_tab": false,
+        "tabs_layout_fix": "content_full",
+        "bg": "rgba(0,0,0,0)",
+        "bg_mb": "#ffffff",
+        "product_list": [],
+        "sticky_mode": "0",
+        "sticky_show": "2",
+        "sticky_layout_mb": "minimal",
+        "enable_select": true,
+        "ani": "none",
+        "time": 6
+      }
+    },
+    "shipping_3RJYBn": {
+      "type": "shipping",
+      "blocks": {
+        "shipping_77Wgrx": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "car",
+            "image_icon": "shopify://shop_images/2_Year_Warranty.svg",
+            "icon": "las la-shipping-fast",
+            "title": "2-Year Warranty",
+            "text": "",
+            "html": ""
+          }
+        },
+        "shipping_CDRJNF": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "help",
+            "image_icon": "shopify://shop_images/ic_launcher_APP2.svg",
+            "icon": "las la-life-ring",
+            "title": "30-Day Return Policy",
+            "text": "",
+            "html": ""
+          }
+        },
+        "shipping_m6Kc8M": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "refesh",
+            "image_icon": "shopify://shop_images/ic_launcher_APP3.svg",
+            "icon": "las la-undo-alt",
+            "title": "24/7 Customer Service",
+            "text": "",
+            "html": ""
+          }
+        },
+        "shipping_yFq8VA": {
+          "type": "shipping",
+          "disabled": true,
+          "settings": {
+            "icon_themes": "door-lock",
+            "image_icon": "shopify://shop_images/ce01a6fecbb4c748a69004d61543c2bc.svg",
+            "icon": "las la-lock",
+            "title": "24/7 Customer Service",
+            "text": "",
+            "html": ""
+          }
+        }
+      },
+      "block_order": [
+        "shipping_77Wgrx",
+        "shipping_CDRJNF",
+        "shipping_m6Kc8M",
+        "shipping_yFq8VA"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "content_align": "text-start",
+        "align_vertical": true,
+        "design_padding": "1",
+        "source": "get_image",
+        "icon_des": "default",
+        "icon_size": "small",
+        "col_dk": "3",
+        "col_tb": "3",
+        "col_mb": "1",
+        "border": false,
+        "cl_bd": "#dddddd",
+        "cl_ic": "#9e9e9e",
+        "cl_hd": "#222222",
+        "cl_cot": "#878787",
+        "bg_item": "#ffffff",
+        "hd_fs": 16,
+        "hd_fw": 500,
+        "txt_fs": 13,
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "carousel_mobile": false,
+        "dots_cl": "dark",
+        "dots_round": true,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#fafafa",
+        "cl_bg_gradient": "",
+        "mg": "50px,,0px,",
+        "pd": "30px,,30px,",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,0px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": "policy_list{}"
+      }
+    },
+    "dcde4406-704c-4e33-bd9d-1e501d5eb5d2": {
+      "type": "custom-section",
+      "blocks": {
+        "template--19449800425778__dcde4406-704c-4e33-bd9d-1e501d5eb5d2-16865714350bf62da6-0": {
+          "type": "bl_col",
+          "settings": {
+            "col_dk": "12",
+            "col_tb": "12",
+            "col_mb": "12",
+            "align_vertical": false,
+            "content_align": "center",
+            "content_align_tablet": "center",
+            "content_align_mobile": "center",
+            "padding_inner": "",
+            "padding_inner_tb": "",
+            "padding_inner_mb": "",
+            "bg_cl": "rgba(0,0,0,0)"
+          }
+        },
+        "49556b53-bd4c-4bce-90eb-2414c4d70e99": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Features",
+            "button_link": "/",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "link",
+            "button_effect": "default",
+            "pri_cl": "#222222",
+            "second_cl": "",
+            "pri_cl_hover": "#329499",
+            "second_cl_hover": "#ffffff",
+            "fsbutton": 14,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 20,
+            "button_pd_lr": 30,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 12,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0
+          }
+        },
+        "a96cda1b-00f2-48b3-a585-564eb43ec216": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Product Details",
+            "button_link": "/",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "link",
+            "button_effect": "default",
+            "pri_cl": "#222222",
+            "second_cl": "",
+            "pri_cl_hover": "#329499",
+            "second_cl_hover": "#ffffff",
+            "fsbutton": 12,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 20,
+            "button_pd_lr": 30,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 12,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0
+          }
+        },
+        "5a34a95e-275c-44b5-82c9-fdb753d20c37": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "Product Specification",
+            "button_link": "/",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "link",
+            "button_effect": "default",
+            "pri_cl": "#222222",
+            "second_cl": "",
+            "pri_cl_hover": "#329499",
+            "second_cl_hover": "#ffffff",
+            "fsbutton": 12,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 20,
+            "button_pd_lr": 30,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 12,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0
+          }
+        },
+        "c27e5abc-48d4-4b7d-b055-79e89761f371": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "FAQs",
+            "button_link": "/",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "link",
+            "button_effect": "default",
+            "pri_cl": "#222222",
+            "second_cl": "",
+            "pri_cl_hover": "#329499",
+            "second_cl_hover": "#ffffff",
+            "fsbutton": 12,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 20,
+            "button_pd_lr": 30,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 12,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0
+          }
+        },
+        "custom_button_edifTU": {
+          "type": "custom_button",
+          "settings": {
+            "button_text": "User Guides",
+            "button_link": "/",
+            "target_link": "_self",
+            "fontf": "inherit",
+            "button_icon_w": 0,
+            "button_style": "link",
+            "button_effect": "default",
+            "pri_cl": "#222222",
+            "second_cl": "",
+            "pri_cl_hover": "#329499",
+            "second_cl_hover": "#ffffff",
+            "fsbutton": 12,
+            "fwbutton": 400,
+            "button_ls": 0,
+            "button_mh": 42,
+            "button_bdr": 20,
+            "button_pd_lr": 30,
+            "button_mgb": 0,
+            "hidden_mobile": false,
+            "button_icon_w_mb": 0,
+            "fsbutton_mb": 12,
+            "button_mh_mb": 36,
+            "button_pd_lr_mb": 15,
+            "button_ls_mb": 0,
+            "button_mgb_mb": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19449800425778__dcde4406-704c-4e33-bd9d-1e501d5eb5d2-16865714350bf62da6-0",
+        "49556b53-bd4c-4bce-90eb-2414c4d70e99",
+        "a96cda1b-00f2-48b3-a585-564eb43ec216",
+        "5a34a95e-275c-44b5-82c9-fdb753d20c37",
+        "c27e5abc-48d4-4b7d-b055-79e89761f371",
+        "custom_button_edifTU"
+      ],
+      "disabled": true,
+      "settings": {
+        "space_h_item": "0",
+        "space_v_item": "0",
+        "space_h_item_mb": "0",
+        "space_v_item_mb": "0",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#ffffff",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "20px,0px,20px,0px",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": "",
+        "use_cus_css": true,
+        "code_cus_css": "fast_just_buttons{}"
+      }
+    },
+    "feature_columns2_pTH3zi": {
+      "type": "feature_columns2",
+      "blocks": {
+        "text_block_Vr4Km3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/vp1_2x_ba03dc79-d1de-4cf4-87d2-663c6d7ec52c.jpg",
+            "title": "Venture Pyramid Kettle White",
+            "text": "<p>Sometimes you simply can’t beat the classic designs. With its timeless pyramid silhouette and vintage finish, the Venture Kettle won’t look out of place in any kitchen</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade",
+            "col_dk": "4",
+            "col_tb": "4",
+            "col_mb": "12"
+          }
+        },
+        "text_block_AkBBaj": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/vp2_2x_4e749be4-38b0-44a5-83bb-497e69d26260.jpg",
+            "title": "Venture Pyramid Kettle White",
+            "text": "<p>Sometimes you simply can’t beat the classic designs. With its timeless pyramid silhouette and vintage finish, the Venture Kettle won’t look out of place in any kitchen</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade",
+            "col_dk": "4",
+            "col_tb": "4",
+            "col_mb": "12"
+          }
+        },
+        "text_block_pT6apq": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/vp3_2x_9e4498d3-d97a-4cb9-9fd5-41597372e5ac.jpg",
+            "title": "Venture Pyramid Kettle White",
+            "text": "<p>Sometimes you simply can’t beat the classic designs. With its timeless pyramid silhouette and vintage finish, the Venture Kettle won’t look out of place in any kitchen</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "large",
+            "btn_cl": "dark",
+            "button_effect": "fade",
+            "col_dk": "4",
+            "col_tb": "4",
+            "col_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_Vr4Km3",
+        "text_block_AkBBaj",
+        "text_block_pT6apq"
+      ],
+      "disabled": true,
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "text_align": "start",
+        "pos_text": "default",
+        "fs_title": 22,
+        "fs_text": 14,
+        "fs_title_mb": 22,
+        "fs_text_mb": 12,
+        "image_ratio": "ratio16_9",
+        "image_size": "cover",
+        "image_position": "8",
+        "img_effect": "none",
+        "b_effect": "none",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "e890c558-073b-43ae-8f62-ffbd9ffaf8e4": {
+      "type": "mibao-product-description",
+      "custom_css": [],
+      "settings": {
+        "layout": "t4s-container-wrap",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "74e7a4ee-81f3-4187-b8c9-cf76d8ee559f": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"mibao_tags_features\">\n{{ product.description }}\n</div>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "029e2732-939a-4c80-ae9a-ea98a03fca98": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-description-images-mibao', product:product -%}",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "14929243-0537-41b7-9fdf-1f4ae432e870": {
+      "type": "features-list",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show": true,
+        "design_heading": "1",
+        "heading_align": "t4s-text-start",
+        "top_heading": "What else you might discover?",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "product_des": "12",
+        "show_vendor": false,
+        "use_cdt": false,
+        "limit": 3,
+        "display_type": "6",
+        "image_ratio": "ratiocus1",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "content_align": "default",
+        "col_dk": "3",
+        "col_tb": "3",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "2",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "1",
+        "btn_owl": "outline",
+        "btn_shape": "round",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": true,
+        "dot_owl": "elessi",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "75px,,100px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently_viewed",
+      "disabled": true,
+      "settings": {
+        "show": true,
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Recently viewed products",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "product_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "limit": 14,
+        "sortby": "1",
+        "unavailable_prs": "show",
+        "image_ratio": "rationt",
+        "image_size": "cover",
+        "image_position": "8",
+        "content_align": "default",
+        "col_dk": "5",
+        "col_tb": "4",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "layout_des": "2",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "always",
+        "btn_owl": "outline",
+        "btn_shape": "round",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "75px,,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "11440601-e17e-4c53-b27f-d2b2d9fabb1a",
+    "sidebar",
+    "breadcrumb",
+    "525c5753-af0a-483f-9070-e9a11fa1ca89",
+    "main",
+    "shipping_3RJYBn",
+    "dcde4406-704c-4e33-bd9d-1e501d5eb5d2",
+    "feature_columns2_pTH3zi",
+    "e890c558-073b-43ae-8f62-ffbd9ffaf8e4",
+    "74e7a4ee-81f3-4187-b8c9-cf76d8ee559f",
+    "029e2732-939a-4c80-ae9a-ea98a03fca98",
+    "14929243-0537-41b7-9fdf-1f4ae432e870",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

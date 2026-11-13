@@ -1,0 +1,45 @@
+{{ 'section.css' | asset_url | stylesheet_tag }}
+
+{%-liquid
+  assign sid = section.id  
+-%}
+
+<div class="t4s-section-inner t4s_nt_se_{{ sid }}_images">
+  <div class="t4s-container">
+    <div id="product_description_{{ sid }}"  class="mibao_product_desc_big_image">
+    {%- for image in product.metafields.custom.desc_images_pc.value -%}
+      {%- assign image_index = forloop.index0 -%}
+      <div  id="product_description_{{ sid }}_item_{{ image_index }}" class="mibao_product_desc_big_image_item">
+        {%- liquid
+          for mb_image in product.metafields.custom.desc_images_mobile.value
+              if forloop.index0 == image_index
+                assign mb_image = mb_image
+                break
+              endif 
+          endfor
+
+          assign img_url_w  = image | image_url: width: 1904 | split:'1904'
+          assign img_url_w0 = img_url_w[0]
+          assign img_url_w1 = img_url_w[1]
+          assign img_url_w_mb  = mb_image | image_url: width: 1904 | split:'1904'
+          assign img_url_w_mb0 = img_url_w_mb[0]
+          assign img_url_w_mb1 = img_url_w_mb[1]
+          assign img_1 = img_url_w0 | append: 1 | append:img_url_w1
+          assign img_1_mb = img_url_w_mb0 | append: 1 | append:img_url_w_mb1
+          if cl_img != blank and cl_img != 'rgba(0,0,0,0)'
+            assign url_img = cl_img
+            assign url_img_mb = cl_img
+          else
+            assign url_img = 'url(' | append:img_1 | append:')'
+            assign url_img_mb = 'url(' | append:img_1_mb | append:')'
+          endif   
+        -%}
+        <img {% if mb_image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{mb_image.presentation.focal_point}}"{% endif %} class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-md-none" data-src="{{ img_1_mb }}" data-widths="[375, 575, 750]" data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ mb_image.width }}" height="{{ mb_image.height }}" alt="{{ mb_image.alt | escape }}">
+        <span class="lazyloadt4s-loader is-bg-img t4s-d-md-none" style="background: {{ url_img_mb }}"></span>
+        <img {% if image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{image.presentation.focal_point}}"{% endif %} class="lazyloadt4s t4s-lz--fadeIn t4s-img-as-bg t4s-d-none t4s-d-md-block" data-src="{{ img_1 }}" data-widths="[800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2500, 3000, 3400, 3800, 4100]" data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+        <span class="lazyloadt4s-loader is-bg-img t4s-d-none t4s-d-md-block" style="background: {{ url_img }}"></span>
+      </div>
+    {%- endfor -%}
+    </div>
+  </div>
+</div>

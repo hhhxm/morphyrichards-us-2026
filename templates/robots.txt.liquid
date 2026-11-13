@@ -1,0 +1,63 @@
+# we use Shopify as our ecommerce platform
+{%- comment -%}
+  # Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
+{%- endcomment -%}
+
+{%- comment -%}
+  Morphy Richards 定制版 robots.txt
+  核心逻辑：继承 Shopify 默认规则 -> 剔除需要重新抓取去索引的默认拦截 -> 增加业务定制拦截
+{%- endcomment -%}
+
+{%- for group in robots.default_groups -%}
+  {{- group.user_agent -}}
+
+  {%- for rule in group.rules -%}
+    {%- assign skip_default_rule = false -%}
+
+    {%- comment -%}
+      【索引清理策略】
+      临时放行 /search, /cart, /account 等默认屏蔽的路径。
+      目的：让 Googlebot 进来读取我们在 theme.liquid 中部署的 noindex 标签，从而消除 GSC 中的报错。
+      注意：当 GSC 中这几个 URL 被成功移除索引后，请将这段 IF 逻辑注释掉，恢复系统默认屏蔽。
+    {%- endcomment -%}
+    {%- if rule.directive == 'Disallow' -%}
+      {%- if rule.value == '/search'
+        or rule.value == '/cart'
+        or rule.value contains '/account'
+        or rule.value contains '/customer_authentication'
+      -%}
+        {%- assign skip_default_rule = true -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- unless skip_default_rule -%}
+      {{- rule -}}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- comment -%}
+    【业务定制屏蔽规则】
+    针对前一轮 SEO 审计及 CSV 404 日志分析，强制屏蔽无价值的 URL 模式，节约抓取预算
+  {%- endcomment -%}
+  {%- if group.user_agent.value == '*' -%}
+    {% comment %} # 1. 屏蔽历史冗余的独立页面 {% endcomment %}
+    {{ 'Disallow: /pages/select-country' }}
+    {% comment %} {{ 'Disallow: /pages/thank-you*' }} {% endcomment %}
+    {{ 'Disallow: /pages/*-old' }}
+
+    {% comment %} # 2. 屏蔽博客与产品的无限 Tag 组合页 (日志中存在大量此类 404) {% endcomment %}
+    {{ 'Disallow: /blogs/*/tagged/*' }}
+    {% comment %} {{ 'Disallow: /collections/*+*' }} {% endcomment %}
+    {% comment %} {{ 'Disallow: /collections/*%2B*' }} {% endcomment %}
+
+    {% comment %} # 3. 屏蔽搜索参数与排序参数产生的动态 URL (典型的爬虫陷阱) {% endcomment %}
+    {% comment %} {{ 'Disallow: /*?q=*' }} {% endcomment %}
+    {% comment %} {{ 'Disallow: /*&sort_by=*' }} {% endcomment %}
+    {% comment %} {{ 'Disallow: /*?c.*=*' }} {% endcomment %}
+  {%- endif -%}
+
+  {%- comment -%} 自动输出 Shopify 官方生成的 sitemap 路径 {%- endcomment -%}
+  {%- if group.sitemap != blank -%}
+    {{- group.sitemap -}}
+  {%- endif -%}
+{%- endfor -%}

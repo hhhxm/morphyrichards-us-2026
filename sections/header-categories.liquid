@@ -182,7 +182,7 @@
                             {%- assign show_cl_type = settings.show_color_type -%}
                             {%- assign show_size = settings.show_pr_size -%}
                              {%- assign use_cdt = bk_stts.use_cdt -%} 
-                             {%- assign txt_cd = 'products.grid_items.offer_end_in' | t -%}
+                             {%- assign txt_cd = 'products.product_card.offer_end_in' | t -%}
                              {%- paginate collection.products by limit -%}
                              <div id="item_{{ block.id }}" class="type_mn_pr t4s-menu-item t4s-sub-column-item t4s-col-{{ bk_stts.col }} t4s-col-item" {{ block.shopify_attributes }}>
                                {%- if layout_des == "1" -%} 

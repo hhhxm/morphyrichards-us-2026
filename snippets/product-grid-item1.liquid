@@ -98,11 +98,8 @@
         <div data-replace-atc data-has-qty></div>
       </div>
       <div class="t4s-product-btns2">
-        {%- if isGrowaveWishlist -%} 
-          {%- capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with pid %}{% endcapture -%}
-          {%- unless the_snippet_fave_icon contains 'Liquid error' -%}<div class="t4s-pr-item-btn t4s-pr-wishlist is--growave">{{ the_snippet_fave_icon }}</div>{%- endunless -%}
-        {%- else -%}<div data-replace-wishlist data-tooltip="right"></div>
-        {%- endif -%}
+        <div data-replace-wishlist data-tooltip="right"></div>
+        
         <div data-replace-compare data-tooltip="right"></div>
       </div>
       {%- if pr_size_pos == '1' and enable_pr_size %}{%- render 'product-size', product: product, get_size: get_size -%}{% endif -%}

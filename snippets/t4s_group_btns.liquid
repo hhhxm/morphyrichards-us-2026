@@ -280,9 +280,9 @@ t4s_group_btns_split
 		{%- endif -%}
 	</div>
 	{%- endif -%}
-	{%- if shop.customer_accounts_enabled and se_stts.show_acc -%}
+	{%- if false -%}
 		<div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
-			<a class="t4s-pr is--checked-link" href="{{ routes.account_url }}" data-no-instant{% unless customer or request.page_type contains 'customers' or settings.login_side == false %} data-drawer-delay- data-drawer-options='{ "id":"#t4s-login-sidebar" }' {% endunless %}>
+			<a class="t4s-pr is--checked-link" href="{{ routes.account_url }}" data-no-instant>
 				<svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-account"></use></svg>
 			</a>
 			{%- if customer -%}
@@ -336,21 +336,18 @@ t4s_group_btns_split
 			{%- endif -%}
 		</div>
 	{%- endif -%}
-	{%- if se_stts.show_wis -%}
+	{%- if false -%}
 		<div class="t4s-site-nav__icon t4s-site-nav__heart t4s-d-none t4s-d-md-inline-block">
 			{%- if settings.wishlist_mode != '3' -%}		
 				<a data-link-wishlist class="t4s-pr" href="{{ routes.search_url }}/?view=wishlist">
 				<svg class="t4s-icon t4s-icon--heart" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-heart"></use></svg>
 				<span data-count-wishlist class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
 				</a>
-			{%- else -%}
-				{%- capture the_snippet_fave_icon_menu %}{% render 'ssw-widget-faveicon-menu' with product.id %}{% endcapture -%}
-				{%- unless the_snippet_fave_icon_menu contains 'Liquid error' %}{{ the_snippet_fave_icon_menu }}{% endunless -%}
 			{%- endif -%}
 		</div>
    {%- endif -%}
 
-	{%- if se_stts.cart_des != '0' -%}
+	{%- if false -%}
 	<div class="t4s-site-nav__icon t4s-site-nav__cart">	
 		<a href="{{ routes.cart_url }}"{% if request.page_type != 'cart' and settings.cart_type != 'disable' %} data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'{% endif %}>
 			<span class="t4s-pr t4s-icon-cart__wrap">

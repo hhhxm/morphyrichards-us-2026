@@ -11,121 +11,42 @@
   "sections": {
     "heading": {
       "type": "heading-template",
-      "blocks": {
-        "d0d2c35c-3f4c-4081-91ad-0758affed801": {
-          "type": "1",
-          "settings": {
-            "heading": "",
-            "fontf": "inherit",
-            "text_cl": "#fff",
-            "text_fs": 20,
-            "text_lh": 0,
-            "text_fw": 500,
-            "text_ls": 0,
-            "font_italic": false,
-            "font_uppercase": true,
-            "text_shadow": false,
-            "text_mgb": 0,
-            "hidden_mobile": false,
-            "text_fs_mb": 20,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 0
-          }
-        }
-      },
-      "block_order": [
-        "d0d2c35c-3f4c-4081-91ad-0758affed801"
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/shop-category.jpg",
-        "use_specify_image": true,
+        "heading_fullwidth": false,
+        "use_specify_image": false,
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
         "padding": 50,
         "paddingmb": 50,
-        "mg_b": 0,
-        "mg_bmb": 0,
+        "mg_b": 30,
+        "mg_bmb": 30,
         "content_align": "t4s-text-center",
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
         "use_cus_css": false,
-        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+        "code_cus_css": ""
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
+    "contact": {
+      "type": "custom-liquid",
       "settings": {
+        "custom_liquid": "<style>\n  .mr-contact { max-width: 1080px; margin: 0 auto; padding: 0 15px 40px; }\n  .mr-contact__intro { max-width: 760px; margin: 0 auto 40px; text-align: center; color: #555; line-height: 1.7; }\n  .mr-contact__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }\n  .mr-contact__card { border: 1px solid #e6e6e6; border-radius: 10px; padding: 28px; scroll-margin-top: 110px; }\n  .mr-contact__card h3 { margin: 0 0 10px; font-size: 22px; }\n  .mr-contact__card p { margin: 0 0 18px; color: #555; line-height: 1.7; }\n  .mr-contact__card a { color: #ec0101; font-weight: 600; text-decoration: none; }\n  .mr-contact__card a:hover { text-decoration: underline; }\n  @media (max-width: 767px) { .mr-contact__grid { grid-template-columns: 1fr; } }\n</style>\n<div class=\"mr-contact\">\n  <p class=\"mr-contact__intro\">\n    Questions about Morphy Richards products, partnerships or distribution? Choose the section below and email the right team.\n  </p>\n  <div class=\"mr-contact__grid\">\n    <div class=\"mr-contact__card\" id=\"support\">\n      <h3>Customer Support</h3>\n      <p>Product setup, warranty and after-sales questions. For orders placed on Amazon, please use the Amazon customer service channel first.</p>\n      <!-- TODO: confirm support mailbox with client -->\n      <a href=\"mailto:support@morphyrichards.com\">support@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"media\">\n      <h3>Media Outlet</h3>\n      <p>Press enquiries, review samples and interview requests.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Media%20Enquiry\">marketing@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"influencer\">\n      <h3>Influencer / Creator</h3>\n      <p>Content collaboration and creator partnership proposals.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Creator%20Partnership\">marketing@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"distributor\">\n      <h3>Licensee / Distributor</h3>\n      <p>Distribution, retail partnership and licensee enquiries for the US market.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Distribution%20Enquiry\">marketing@morphyrichards.com</a>\n    </div>\n  </div>\n</div>",
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
-        "mg": "60px,,60px,",
+        "mg": "",
         "pd": "",
-        "mg_mb": ",,30px,",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
         "pd_mb": ""
-      }
-    },
-    "1648884254eae8e0bd": {
-      "type": "contact-form",
-      "blocks": {
-        "1648884254cd155bea-0": {
-          "type": "bl_form",
-          "settings": {
-            "heading": "DROP US A LINE",
-            "enable_phone": true,
-            "enable_full_btn": true,
-            "button_style": "outline",
-            "btn_size": "medium",
-            "btn_cl": "dark"
-          }
-        },
-        "1648884254cd155bea-1": {
-          "type": "bl_info",
-          "settings": {
-            "heading": "CONTACT INFORMATION",
-            "text": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.<\/p><p><i class=\"las la-home fs__16\"><\/i> 184 Main Rd E, St Albans Victoria 3021, Australia<\/p><p><i class=\"las la-phone fs__16\"><\/i> 1800-123-222 \/ 1900-1570-230<\/p><p><i class=\"las la-envelope fs__16\"><\/i> contact@company.com<\/p><i class=\"las la-clock fs__16\"><\/i> Everyday 9:00-17:00"
-          }
-        }
-      },
-      "block_order": [
-        "1648884254cd155bea-0",
-        "1648884254cd155bea-1"
-      ],
-      "settings": {
-        "enable_map": true,
-        "map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3154.8939060848147!2d144.81158271584684!3d-37.74563313792195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65fa6debeb781%3A0xe1d23f5d1759961e!2s184%20Main%20Rd%20E%2C%20St%20Albans%20VIC%203021%2C%20%C3%9Ac!5e0!3m2!1svi!2s!4v1618277125252!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>",
-        "layout": "t4s-container-wrap",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
-      }
-    },
-    "sidebar-page": {
-      "type": "sidebar-page",
-      "disabled": true,
-      "settings": {
-        "enable_drawer": true,
-        "space": 50,
-        "size": "medium",
-        "br_style": "none",
-        "brcolor": "#222222",
-        "sidebar_bdr": 5,
-        "sidebar_pd": 10
       }
     }
   },
   "order": [
     "heading",
-    "main",
-    "1648884254eae8e0bd",
-    "sidebar-page"
+    "contact"
   ]
 }

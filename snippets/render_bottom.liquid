@@ -193,11 +193,9 @@
     script10: '{{ 't4s-instant-page.min.js' | asset_url }}',
     script11: '{%- if settings.t4s_custom_js %}{{ 'custom.js' | asset_url }}{% else %}none{% endif %}',
     script12: '{{ 'reviewOther.js' | asset_url }}',
-    script12a: '{{ 't4s-currencies.min.js' | asset_url }}',
     script12b: '{{ 'threesixty.min.js' | asset_url }}',
     stylesheet1: '{{ 'mini-cart.css' | asset_url }}',
     stylesheet2: '{{ 'mobile_nav.css' | asset_url }}',
-    stylesheet3: '{{ 'login-sidebar.css' | asset_url }}',
     stylesheet4: '{{ 'search-hidden.css' | asset_url }}',
     timezone: {{ settings.timezone | json }},
     nowTimestamp: {{ 'now' | date: '%s' }},
@@ -413,31 +411,6 @@
 {%- endif -%}
 
 {%- liquid
-  assign locale_selector = false
-  assign currency_selector = false
-  if shop.enabled_currencies.size > 1
-    assign currency_selector = true
-  endif
-  if shop.published_locales.size > 1
-    assign locale_selector = true
-  endif
-  if settings.lang_pos != '0' and locale_selector
-    render 'languages', is_fixed: true
-  endif
-  if settings.currency_pos != '0' and currency_selector or settings.currency_type == '2'
-    render 'currencies', is_fixed: true
-  endif
--%}
-
-{%- if currency_selector or locale_selector -%}
-  {%- form 'localization', id: 'CurrencyLangSelector' %}
-    {%- if currency_selector %}<input type="hidden" name="country_code" id="countryMirror" value="{{ localization.country.iso_code }}">{% endif -%}
-    {%- if locale_selector %}<input type="hidden" name="language_code" id="LocaleSelector" value="{{ localization.language.iso_code }}" data-disclosure-input/>{% endif -%}
-    {%- if currency_selector %}<input type="hidden" name="currency_code" id="CurrencySelector" value="{{ form.current_currency.iso_code }}" data-disclosure-input/>{% endif -%}
-  {%- endform -%}
-{%- endif -%}
-
-{%- liquid
   if admin_sp
     render 'var_adm'
     #if enable_quickview
@@ -446,9 +419,6 @@
     #if enable_quickshop
       #section 'main-qs'
     #endif
-    unless customer or settings.login_side == false
-      section 'login-sidebar'
-    endunless
     if page_type == 'collection' or page_type == 'search'
       section 'facets'
     endif
@@ -475,15 +445,6 @@
   endif
   echo '<div id="t4s-snow_ef" class="t4s-dn"></div><div id="t4s-assets-pre" class="t4s-d-none"></div><div id="t4s-append-component" class="t4s-d-none"></div>'
 -%}
-
-{%- unless customer or settings.login_side == false or request.page_type contains 'customers' -%}
-  <link href="{{ 'login-sidebar.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
-  <div id="t4s-login-sidebar" class="t4s-drawer t4s-drawer__right" aria-hidden="true">
-    <div class="t4s-skeleton-element ske-h-50 ske-mt-20 ske-mrl-20 ske-shine"></div>
-    <div class="t4s-skeleton-element ske-h-50 ske-mrl-20"></div><div class="t4s-skeleton-element ske-h-50 ske-mrl-20"></div><div class="t4s-skeleton-element ske-h-20 ske-mrl-20"></div>
-    <div class="t4s-skeleton-element ske-h-50 ske-mrl-20 ske-shine"></div><div class="t4s-skeleton-element ske-h-50 ske-mrl-20 ske-shine"></div>
-  </div>
-{%- endunless -%}
 
 <link href="{{ 'search-hidden.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
 <div data-predictive-search data-sid="search-hidden" id="t4s-search-hidden" class="t4s-drawer t4s-drawer__right" aria-hidden="true">

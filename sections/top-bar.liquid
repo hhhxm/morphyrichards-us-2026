@@ -64,31 +64,6 @@
     .t4s-top-bar .ml__15 { margin-inline-start: 15px; }
     .t4s-top-bar__html i {font-size: 16px;vertical-align: middle;}
     .t4s-top-bar__html svg,.t4s-top-bar__location svg {width: 16px;height: 16px;vertical-align: middle;display: inline-block;}
-    .t4s-top-bar__currencies,.t4s-top-bar__languages{margin-inline-start: 15px;}
-    .t4s-top-bar__currencies button,.t4s-top-bar__languages button{background: transparent;color: var(--tb-color);display: flex;padding: 0;align-items: center;line-height: 20px;font-size: 100%;}
-    .t4s-top-bar__currencies .t4s-dropdown__wrapper  button,.t4s-top-bar__languages .t4s-dropdown__wrapper button{margin-bottom: 5px}
-    .t4s-top-bar__currencies button:hover,.t4s-top-bar__languages button:hover{background: transparent;color: var(--tb-color-a-hover);}
-    .t4s-top-bar__currencies button svg,.t4s-top-bar__languages button svg{width: 8px;margin-inline-start: 5px;}
-    .t4s-top-bar__currencies .t4s-dropdown__wrapper,.t4s-top-bar__languages .t4s-dropdown__wrapper {background: var(--t4s-body-background );padding: 15px;}
-  	.t4s-top-bar__currencies .t4s-drop-arrow, .t4s-top-bar__languages .t4s-drop-arrow {background-color:var(--t4s-body-background );}
-    .t4s-top-bar__currencies button[data-flagst4s="md"]:not(:last-child), .t4s-top-bar__languages button[data-flagst4s="md"]:not(:last-child){margin-bottom: 7px;}
-    .t4s-top-bar__currencies .t4s-dropdown__wrapper button,.t4s-top-bar__languages .t4s-dropdown__wrapper button {color: var(--text-color);}
-    .t4s-top-bar__currencies .t4s-dropdown__wrapper button.is--selected, .t4s-top-bar__languages .t4s-dropdown__wrapper button.is--selected{color: var(--tb-color-a-hover);}
-    @media (max-width: 767px) {  
-      .t4s-top-bar__currencies .t4s-dropdown__wrapper.is-style-mb--false,.t4s-top-bar__languages .t4s-dropdown__wrapper.is-style-mb--false {min-width: 100px;max-width:300px;width: auto;}
-      .t4s-top-bar__currencies .t4s-dropdown__wrapper button, .t4s-top-bar__languages .t4s-dropdown__wrapper button {
-          color: var(--text-color);
-          padding: 5px 0;
-      }
-    }
-    .t4s-top-bar__currencies .t4s-dropdown__wrapper button.is--selected, .t4s-top-bar__languages .t4s-dropdown__wrapper button.is--selected {
-      color: var(--link-color-hover);
-    }
-    @media(min-width:768px){
-    .t4sp-hover .t4s-top-bar__currencies .t4s-dropdown__wrapper button:hover, .t4sp-hover .t4s-top-bar__languages .t4s-dropdown__wrapper button:hover {color: var(--link-color-hover); }
-		.t4s-top-bar__languages .t4s-dropdown__wrapper, .t4s-top-bar__currencies .t4s-dropdown__wrapper {min-width: 100px;max-width: 300px;width: auto;}
-		.t4s-top-bar__currencies .t4s-dropdown__wrapper.t4s-currency_type_1 {min-width: 205px;}
-    }
     .t4s-top-bar .t4s-countdown-enabled {display: inline-block}
   {%- endstyle -%}
 
@@ -106,16 +81,6 @@
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ml__15" width="32" height="32" viewBox="0 0 32 32"><path d="M16.001 1.072c5.291 0 9.596 4.305 9.596 9.597 0 1.683-0.446 3.341-1.29 4.799l-8.307 14.394-8.308-14.395c-0.843-1.456-1.289-3.115-1.289-4.798 0-5.292 4.305-9.597 9.597-9.597zM16.001 14.4c2.058 0 3.731-1.674 3.731-3.731s-1.674-3.731-3.731-3.731c-2.058 0-3.732 1.674-3.732 3.731s1.674 3.731 3.732 3.731zM16.001 0.006c-5.889 0-10.663 4.775-10.663 10.663 0 1.945 0.523 3.762 1.432 5.332l9.23 15.994 9.23-15.994c0.909-1.57 1.432-3.387 1.432-5.332 0-5.888-4.774-10.663-10.662-10.663v0zM16.001 13.334c-1.472 0-2.666-1.193-2.666-2.665 0-1.471 1.194-2.665 2.666-2.665s2.665 1.194 2.665 2.665c0 1.472-1.193 2.665-2.665 2.665v0z" fill="currentColor"/></svg>
                           <a class="t4s-ct" href="{{ bk_stts.url_location }}" target="{{ bk_stts.open_link }}">{{ bk_stts.txt_location }}</a>
                         </div>
-                      {%- endif -%}
-
-                      {%- if bk_stts.show_language and shop.published_locales.size > 1 -%}
-                         <link rel="stylesheet" href="{{ 'base_drop.min.css' | asset_url }}" media="all">
-                        {%- render 'languages', sid: sid, class_mb: 'is-style-mb--false' -%}
-                      {%- endif -%}
-
-                      {%- if bk_stts.show_currency -%}
-                         <link rel="stylesheet" href="{{ 'base_drop.min.css' | asset_url }}" media="all">
-                        {%- render 'currencies', sid: sid, class_mb: 'is-style-mb--false' -%}
                       {%- endif -%}
 
                   {%- when 'text' -%}
@@ -591,21 +556,9 @@ setTimeout(function(){ document.documentElement.style.setProperty('--topbar-heig
       },
       {
         "type": "cur",
-        "name": "Currency, Language,...",
+        "name": "Location",
         "limit": 1,
         "settings": [
-          {
-            "type": "checkbox",
-            "id": "show_currency",
-            "label": "Show currency selector",
-            "default": true
-          },
-          {
-            "type": "checkbox",
-            "id": "show_language",
-            "label": "Show language selector",
-            "default": true
-          },
           {
             "type": "checkbox",
             "id": "use_location",

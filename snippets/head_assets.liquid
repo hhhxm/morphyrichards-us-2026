@@ -23,6 +23,22 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font_var }}&display=swap" media="print" onload="this.media='all'">
 
+  {%- elsif font_source == '3' -%}
+
+    {%- liquid
+      assign fm_cu1 = settings.fnt_fm_cu1
+      assign fm_cu2 = settings.fnt_fm_cu2 | default: fm_cu1
+      assign fm_cu3 = settings.fnt_fm_cu3 | default: fm_cu1
+
+      assign font1_url = fm_cu1 | append: '.woff2' | asset_url
+      assign font2_url = fm_cu2 | append: '.woff2' | asset_url
+      assign font3_url = fm_cu3 | append: '.woff2' | asset_url
+    -%}
+
+    {{ font1_url | preload_tag: as: 'font', crossorigin: true }}
+    {{ font2_url | preload_tag: as: 'font', crossorigin: true }}
+    {{ font3_url | preload_tag: as: 'font', crossorigin: true }}
+
   {%- else -%}
     
     {%- assign font_1 = settings.fnt_fm_sp1 -%}
@@ -32,10 +48,10 @@
       <link rel="preload" as="font" href="{{ font_1 | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
     {%- unless font_2.system? -%}
-      <link rel="preload" as="font" href="{{ font_1 | font_url }}" type="font/woff2" crossorigin>
+      <link rel="preload" as="font" href="{{ font_2 | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
     {%- unless font_3.system? -%}
-      <link rel="preload" as="font" href="{{ font_1 | font_url }}" type="font/woff2" crossorigin>
+      <link rel="preload" as="font" href="{{ font_3 | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
   {%- endif -%}
 
@@ -67,12 +83,40 @@
         {{- font_3 | font_face: font_display: 'swap' -}}
       {%- endif -%}
 
-    {%- else -%}
+    {%- elsif font_source == '2' -%}
     
       {%- assign cl_flz = '' -%}
       {%- assign t4s_font_fm1 = fm_gg1 -%}
       {%- assign t4s_font_fm2 = fm_gg2 -%}
       {%- assign t4s_font_fm3 = fm_gg3 -%}
+
+    {%- elsif font_source == '3' -%}
+
+      {%- assign cl_flz = '' -%}
+      {%- assign t4s_font_fm1 = fm_cu1 -%}
+      {%- assign t4s_font_fm2 = fm_cu2 -%}
+      {%- assign t4s_font_fm3 = fm_cu3 -%}
+      @font-face {
+        font-family: 'Jeko-Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: url("{{ font1_url }}") format('woff2');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Jeko-SemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: url("{{ font2_url }}") format('woff2');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Jeko-Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: url("{{ font3_url }}") format('woff2');
+        font-display: swap;
+      }
 
     {%- endif -%}
 

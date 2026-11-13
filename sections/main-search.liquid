@@ -59,7 +59,7 @@
   assign app_review = settings.app_review
   assign use_countdown = se_stts.use_cdt
   
-  assign txt_cd = 'products.grid_items.offer_end_in' | t
+  assign txt_cd = 'products.product_card.offer_end_in' | t
   assign show_list = se_stts.show_list
   assign show_list_btns = false
   unless request.page_type != 'collection' and se_stts.show_list

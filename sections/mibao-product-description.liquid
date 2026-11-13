@@ -1,0 +1,324 @@
+<!-- sections/image_text.liquid -->
+{{ 'section.css' | asset_url | stylesheet_tag }}
+{{ 'image-text.css' | asset_url | stylesheet_tag }}
+
+{{ 'custom-effect.css' | asset_url | stylesheet_tag }}
+{{ 'slider-settings.css' | asset_url | stylesheet_tag }}
+{{ 'pre_flickityt4s.min.css' | asset_url | stylesheet_tag }}
+{{ 'button-style.css' | asset_url | stylesheet_tag }}
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+    assign image_fix = image_nt | image_tag
+    assign pid = product.id
+    assign sid = section.id
+    assign se_stts = section.settings
+    assign stt_layout = se_stts.layout
+    if stt_layout == 't4s-se-container' 
+        assign html_layout = '<div class="t4s-container">__</div></div>' | split: '__'
+    elsif stt_layout == 't4s-container-wrap'
+        assign html_layout = '<div class="t4s-container">__</div>' | split: '__'
+    else
+        assign html_layout = '__' | split: '__'
+    endif
+    assign use_button = false 
+    assign use_carousel = false
+    assign t4s_se_class = 't4s_nt_se_' | append: sid
+
+    if se_stts.use_cus_css and se_stts.code_cus_css != blank
+        render 'se_cus_css', code_cus_css: se_stts.code_cus_css, t4s_se_class: t4s_se_class
+    endif 
+
+    assign ARRhtml1 = 'a,,' | split: ','
+    assign ARRhtml2 = 'div,data-,data-' | split: ','
+
+    assign image_with_text = product.metafields.custom.image_with_text | strip | newline_to_br | strip_newlines | split: '<br /><br />'
+    assign slide_show_image = product.metafields.custom.slide_show_image | strip | newline_to_br | strip_newlines | split: '<br /><br />'
+    assign three_image_with_text = product.metafields.custom.three_image_with_text | strip | newline_to_br | strip_newlines | split: '<br /><br />'
+    assign video_banner = product.metafields.custom.video_banner.value
+
+ -%}
+{% comment %} {%- for item in slide_show_image -%}
+    {{ item | json }}
+{%- endfor -%} {% endcomment %}
+
+  {% comment %} {{ three_image_with_text | json }} {% endcomment %}
+  {%- if three_image_with_text != blank -%}
+    {{ 'section.css' | asset_url | stylesheet_tag }}
+    {{ 'feature-columns.css' | asset_url | stylesheet_tag }}
+    <div class="t4s-section-inner t4s_nt_se_{{ sid }} t4s-container-wrap" style="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: 50px;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: 50px;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
+        <div class="t4s-container">
+            <div class="t4s_ratio16_9 t4s_position_8 t4s_cover t4s-row t4s-gx-md-30 t4s-gy-md-30 t4s-gx-10 t4s-gy-10">
+                {%- for item in image_with_text -%}
+                    {%- liquid
+                        assign data = item | split: '<br />'
+                        assign forloop_index =  forloop.index
+                        assign heading = data[0]
+                        assign text = data[1]
+                        if data[2] contains "?v"
+                            assign iwt_image_name = data[2] | split: "/" | last | split: "?v" | first
+                        else
+                            assign iwt_image_name = data[3] | split: "/" | last | split: "?v" | first
+                        endif
+                        assign image = images[iwt_image_name]
+                    -%}                    
+                    <div class="t4s-col-item t4s-col-lg-4 t4s-col-md-4 t4s-col-12 t4s-pos-text-default t4s-text-start">
+                        <div class="t4s-eff t4s-eff-none t4s-eff-img-none" timeline="" hdt-reveal="slide-in" observed="" animationend="" style="--animation-order: 0;">
+                        <div class="t4s_ratio t4s-bg-11" style="background: url({{ image | image_url: width: 1 }});--aspect-ratioapt: {{ image.aspect_ratio | default: 1.7777 }};--max-width:{{ image.width }}px" data-cacl-slide>
+                            <img {% if image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{ image.presentation.focal_point }}"{% endif %} class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg', w: image.width, h: image.height %}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+                        </div>
+                        </div>
+                        <div class="t4s-feature-columns__content" timeline="" hdt-reveal="slide-in" observed="" animationend=""
+                            style="--animation-order: 0;">
+                            <h3 class="t4s-feature-columns__title" style="--fs-title:22px;--fs-title-mb:22px;">{{heading}}</h3>
+                            <div class="t4s-feature-columns__text t4s-rte" style="--fs-text:14px;--fs-text-mb:12px;">
+                                <p>{{ text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+  
+    <div class="t4s-section-inner  t4s_nt_se_{{ sid }} {{ stt_layout }}" {% render 'section_style', se_stts: se_stts -%} >
+      <div class="t4s-container">
+  
+      </div>
+    </div>
+  {%- endif -%}
+
+{%- for item in image_with_text -%}
+  {%- liquid
+    assign data = item | split: '<br />'
+    assign text_size = "30,15" | split: "," 
+    assign forloop_index =  forloop.index
+    assign heading = data[0]
+    assign text = data[1]
+    assign index_modulo = forloop_index | modulo: 2
+    assign iwt_button_link = blank
+    assign iwt_button_label = blank
+    assign iwt_image_name = blank
+
+    if data[2] contains "?v"
+      assign iwt_image_name = data[2] | split: "/" | last | split: "?v" | first
+    else
+      assign iwt_button_link = data[2]
+      assign iwt_button_label = "LEARN MORE"
+      assign iwt_image_name = data[3] | split: "/" | last | split: "?v" | first
+    endif
+    if index_modulo == 1
+        assign image_pos = 'image_right'
+    else
+        assign image_pos = 'image_left'
+    endif
+  -%}
+
+
+
+{% comment %} {%- if video_banner != blank and forloop_index == 1 -%}
+  <div class="t4s-section-inner mibao_{{ pid }} t4s_nt_se_{{ sid }}_video" class="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: 50px;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: 50px;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;--aspect-ratio-cusdt : 600px;--aspect-ratio-custb : 400px;--aspect-ratio-cusmb :250px;">
+    {{- html_layout[0] -}}
+        <div data-t4s-animate class="t4s-bg-video t4s-video t4s-row-cols-1 t4s-gx-0 t4s_ratio16_9 t4scuspx1_true t4scuspx2_true t4scuspx3_true" style="--bg-overlay:rgba(0, 0, 0, 0.0);">
+            <div class="t4s-hero-inner t4s-col-item t4s-pr t4s-oh" timeline hdt-reveal="slide-in">
+                <div class="t4s_ratio">
+                    <video controls playsinline="playsinline" preload="metadata" aria-label="{{ video_banner.alt }}" 
+                        poster="{{ image | default: video_banner.preview_image.src | image_url: width: video_banner.preview_image.width }}" muted>
+                        {%- for media in video_banner.sources -%}
+                            <source src="{{ media.url }}" type="{{ media.mime_type }}">
+                        {%- endfor -%}
+                        <img src="{{ mb_image | default: video_banner.preview_image.src | image_url: width: 100 }}">
+                    </video>
+                </div>
+            </div>
+        </div>
+    {{- html_layout[1] -}}
+  </div>
+{%- endif -%}  {% endcomment %}
+
+
+  {%- if slide_show_image.size > 0 and forloop_index == 2 -%}
+    <div class="t4s-section-inner mibao_{{ pid }} t4s_nt_se_{{ sid }}_slider t4s_se_{{ sid }}_slider {{ stt_layout }} image_zoom_banner slider_show_half" style="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: 50px;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: 50px;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
+        {{- html_layout[0] -}}
+        <div data-goto data-t4s-thumb-true class="t4s-flicky-slider t4s_ratio1_1 t4s_position_8 t4s_cover t4s-row t4s-row-cols-lg-3 t4s-row-cols-md-3 t4s-row-cols-1 t4s-gx-md-0 t4s-gy-md-0 t4s-gx-10 t4s-gy-10 flickityt4s" data-flickityt4s-js='{&quot;setPrevNextButtons&quot;: false, &quot;draggable&quot;: &quot;smart&quot;,&quot;checkVisibility&quot;:true,&quot;arrowIcon&quot;:&quot;2&quot;,&quot;imagesLoaded&quot;: 0,&quot;adaptiveHeight&quot;: 1, &quot;contain&quot;: 1, &quot;groupCells&quot;: &quot;100%&quot;, &quot;dragThreshold&quot; : 5, &quot;cellAlign&quot;: &quot;left&quot;,&quot;wrapAround&quot;: false,&quot;prevNextButtons&quot;: false,&quot;percentPosition&quot;: 1,&quot;pageDots&quot;: false, &quot;autoPlay&quot; : 0, &quot;pauseAutoPlayOnHover&quot; : false }' style="--space-dots: 10px;--flickity-btn-pos: 0px;--flickity-btn-pos-mb: 0px;--item-rd:0%;">
+            {%- for slider_item in slide_show_image -%}
+                {%- liquid
+                assign slider_data = slider_item | split: '<br />'
+                assign image_name = slider_data[0] | split: "/" | last | split: "?v" | first
+                assign image = images[image_name]
+                assign link = slider_data[1]
+                if link == blank
+                    assign ARRhtml = ARRhtml2
+                else
+                    assign ARRhtml = ARRhtml1
+                endif
+                -%}
+                <div data-goto--item class="t4s-col-item t4s-gallery-item is-selected" id="b_{{ image_name }}" data-select-flickity {{ block.shopify_attributes }}>
+                <{{ ARRhtml[0] }} {{ ARRhtml[1] }}href="{{ link }}" {{ ARRhtml[2] }} class="t4s-eff t4s-eff-none t4s-eff-img-none" data-goto--open timeline hdt-reveal="slide-in">
+                    <div data-cacl-slide class="t4s_ratio t4s-img-wrap" style="--aspect-ratioapt: {{ image.aspect_ratio | default: 2 }}">
+                    {%- if image != blank -%}
+                        <img {% if image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{ image.presentation.focal_point }}"{% endif %} class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff" data-pswp-src="{{ image | image_url }}" data-pswp-w="{{ image.width }}" data-pswp-h="{{ image.height }}" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
+                        <span class="lazyloadt4s-loader is-bg-img" style="background: url({{ image | image_url: width: 1 }});"></span>
+                    {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 't4s-placeholder-svg t4s-obj-eff' }} 
+                    {%- endif -%} 
+                    </div>
+                </{{ ARRhtml[0] }}>
+                </div>
+            {%- endfor -%}
+        </div>
+        {{- html_layout[1] -}} 
+    </div>
+  {%- endif -%} 
+
+
+  <div class="t4s-section-inner mibao_{{ pid }} t4s_nt_se_{{ sid }}_image_with_text {{ stt_layout }} {%if iwt_button_link != blank and iwt_button_label != blank %}have_button{% endif %} {{ image_pos }} image_with_text" {% render 'section_style', se_stts: se_stts -%} >
+      {{- html_layout[0] -}}
+      {%- render 'section_tophead', se_stts: se_stts -%}
+      <div class="t4s-image-text t4s-row t4s-align-items-center t4s-gx-md-0 t4s-gy-md-0 t4s-gx-0 t4s-gy-0">
+          {%- capture html_img_text -%}
+            {%- assign image = images[iwt_image_name]-%}
+            {%- if image == blank -%}
+                {{ 'image' | placeholder_svg_tag: 't4s-placeholder-svg' }}
+            {%- endif -%} 
+            {%- if image != blank -%}
+                <div class="t4s-col-item" timeline hdt-reveal="slide-in">
+                  <div class="t4s_ratio" style="--aspect-ratioapt:{{ image.aspect_ratio }}">
+                    <img {% if image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{ image.presentation.focal_point }}"{% endif %} class="lazyloadt4s" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg', w: image.width, h: image.height %}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">    
+                    <span class="lazyloadt4s-loader is-bg-img" style="background: url({{ image | image_url: width: 1 }});"></span>
+                  </div>
+                </div>
+            {%- endif -%} 
+          {%- endcapture -%}
+          <div class="t4s-col-img t4s-col-item t4s-col-lg-6 t4s-col-md-6 t4s-col-12 t4s-image-text-layout-carousel"> 
+              {%- assign use_carousel = true -%}
+              <div class="t4s-image-text-carousel t4s-flicky-slider t4s-row t4s-gx-0 t4s-gy-0 t4s-row-cols-1 t4s_ratioadapt t4s_position_8 t4s_cover flickityt4s" data-flickityt4s-js='{ "arrowIcon":"2","imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": false,"percentPosition": 1,"pageDots": false, "autoPlay" : 0, "pauseAutoPlayOnHover" : true }' style="--space-dots: 10px;--flickity-btn-pos: 0px;--flickity-btn-pos-mb: 0px;">
+                  {{ html_img_text }}
+              </div>  
+          </div>
+          <div class="t4s-col-text t4s-col-item t4s-col-lg-6 t4s-col-md-6 t4s-col-12 t4s-txt-shadow-false">
+              <div class="t4s-image-text-content t4s-text-start t4s-shadow-wrap" style="--imtxt-subhd-color: #000000; --imtxt-hd-color: #000000; --imtxt-des-color: #000000; --animation-order: 0;" timeline hdt-reveal="slide-in">
+                  {% comment %} {%- if bk_stts.sub_heading != blank -%}<p class="t4s-image-text-subheading t4s-fs-md-{{ text_size[1] }} t4s-fs-15">{{ bk_stts.sub_heading }}</p>{%- endif -%} {% endcomment %}
+                  {%- if heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{ text_size[0] }} t4-fs-30" >{{ data[0] }}</h3>{%- endif -%}
+                  {%- if text -%}<div class="t4s-image-text-des t4-fs-md-{{ text_size[1] }} t4s-fs-15 t4s-rte">{{ data[1] }}</div>{%- endif -%}
+                  {%- if iwt_button_link != blank and iwt_button_label != blank -%}
+                    {%- assign use_button = true -%}
+                      <a class="t4s-btn t4s-btn-base t4s-btn-style-left_arrow_link t4s-btn-size-medium t4s-btn-color-primary " href="{{ iwt_button_link }}">{{ iwt_button_label }}</a>
+                  {%- endif -%}
+              </div>
+          </div>
+      </div>
+      {{- html_layout[1] -}}
+  </div>
+{%- endfor -%}
+
+<style type="text/css">
+    .gallery_popup_thumbnail .gallery-item {
+      cursor: pointer;
+    }
+    .t4s-gallery-item .t4s-img-wrap {
+      border-radius: var(--item-rd);
+      overflow: hidden;
+    }
+    .t4s-gallery-item .t4s-eff-border-run::before,
+    .t4s-gallery-item .t4s-eff-border-run::after {
+      border-radius: var(--item-rd);
+    }
+</style>
+
+
+{%- schema -%}
+    {
+      "name": "Mibao Product Description",
+      "tag": "section",
+      "class": "t4s-section t4s-section-all t4s_tp_flickity t4s-gallery mibao_product_description",
+      "settings": [
+    {
+      "type": "header",
+      "content": "3. Design options"
+    },
+    {
+        "type": "select","id": "layout","default": "t4s-container-wrap","label": "Layout",
+        "options": [
+          { "value": "t4s-se-container", "label": "Container"},
+          { "value": "t4s-container-wrap", "label": "Wrapped container"},
+          { "value": "t4s-container-fluid", "label": "Full width"}
+        ]
+    },
+    {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": ",,50px,",
+        "placeholder": ",,50px,"
+    },
+    {
+        "type": "text",
+        "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "placeholder": "50px,,50px,"
+    },
+    {
+        "type": "header",
+        "content": "+ Design Tablet Options"
+    },
+    {
+        "type": "text",
+        "id": "mg_tb",
+        "label": "Margin",
+        "placeholder": ",,50px,"
+    },
+    {
+        "type": "text",
+        "id": "pd_tb",
+        "label": "Padding",
+        "placeholder": ",,50px,"
+    }, 
+    {
+        "type": "header",
+        "content": "+ Design mobile options"
+    },
+    {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin",
+        "default": ",,30px,",
+        "placeholder": ",,50px,"
+    },
+    {
+        "type": "text",
+        "id": "pd_mb",
+        "label": "Padding",
+        "placeholder": ",,50px,"
+    },
+    {
+        "type": "header",
+        "content": "4. Custom css"
+    },
+    {
+        "id": "use_cus_css",
+        "type": "checkbox",
+        "label": "Use custom css",
+        "default":false,
+        "info": "If you want custom style for this section."
+    },
+    { 
+        "id": "code_cus_css",
+        "type": "textarea",
+        "label": "Code custom css",
+        "info": "Use selector .SectionID to style css"
+    }
+    ],
+    "blocks":[
+    ],
+    "presets": [
+        {
+          "name": "Mibao Product Description",
+          "category": "homepage",
+          "blocks":[]
+        }
+      ]
+    }
+  {%- endschema -%}

@@ -1,0 +1,258 @@
+:root{
+  --btn-radius: 0;
+}
+.t4s-article-tags{
+  border: none !important;
+  margin: 0 !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  /* border: 1px solid #F65052; */
+}
+.t4s-article-tags .t4s-row{
+  display: block;
+}
+
+.t4s-article-tags .t4s-col-item{
+  display: inline-block;
+  width: auto !important;
+  padding: 0;
+}
+.t4s-article-tags .t4s-col-item svg{
+  display:none;
+}
+.t4s-article-tags .t4s-col-item a{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 5px 3px 0;
+  padding: 2px 15px 1px;
+}
+.t4s-socials.t4s-socials-style-1{
+  justify-content: start !important;
+  padding-left:15px;
+
+}
+.t4s-socials.t4s-socials-style-1:before{
+  content: 'share';
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.t4s-section-main .t4s-article-title{
+  margin-bottom:0px !important;
+}
+.t4s-section-main .t4s-article-title h2{
+  margin-top: 30px;
+  line-height: 150%;
+  margin-bottom:30px;
+}
+
+.t4s-sidebar {
+  border-left: 1px solid #E5E5E5;
+}
+.t4s-sidebar .t4s-sidebar-inner>.t4s-row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.t4s-sidebar .t4s-sidebar-inner .t4s-col-item{
+  /* border-radius: 0; */
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner{
+  display: block !important;
+  border: 1px solid #E5E5E5;
+  /* padding: 0 !important; */
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner .t4s-col-item{
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
+  /* flex: 0 0 auto; */
+  max-width: 100%;
+}
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner .t4s-col-item.t4s-widget_if_ar{
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner .t4s-col-item.t4s-widget_if_ar .t4s-article-title{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+  --show-lines:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:var(--show-lines);
+}
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner .t4s-col-item.widget_if_ar .t4s-article-excerpt{
+  --show-lines:3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:var(--show-lines);
+  margin-bottom: 20px !important;
+}
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner .t4s-col-item.t4s-widget_btn_ar{
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  width: calc(100% - 40px);
+  /* border: 1px solid red; */
+}
+.t4s-sidebar-post-list .t4s-row.t4s-space-item-inner .t4s-col-item.t4s-widget_btn_ar a{
+  width: 100%;
+}
+
+.t4s-main-article p,
+.t4s-main-article span,
+.t4s-main-article ul,
+.t4s-main-article li,
+.t4s-main-article b,
+.t4s-main-article h1,
+.t4s-main-article h2,
+.t4s-main-article h3,
+.t4s-main-article h4,
+.t4s-main-article h5,
+.t4s-main-article h5{
+  font-family: unset !important;
+}
+
+.pagetion_links_article{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.pagetion_links_article::before{
+  content: '';
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  background-color: #aaa;
+}
+.pagetion_links_article .button_wrapper{
+  width: 45%;
+  max-width: 300px;
+}
+.pagetion_links_article .t4s-btn{
+  flex-direction: column;
+  align-items: start;
+  line-height: 130%;
+  font-weight: 300;
+  width: 100%;
+}
+.pagetion_links_article .t4s-btn svg.t4s-btn-icon{
+  width: 13px;
+  height: 13px;
+}
+.pagetion_links_article .t4s-btn b{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.pagetion_links_article a.t4s-btn:hover{
+  color: var(--link-color-hover) !important;
+}
+.pagetion_links_article .t4s-btn span{
+  font-size: 16px;
+  line-height: 24px;
+  --show-lines:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:var(--show-lines);
+}
+.pagetion_links_article .last_button .t4s-btn svg.t4s-btn-icon{
+  transform: rotate(180deg);
+  margin: 0 !important;
+  margin-right: 4px !important;
+}
+.pagetion_links_article .next_button .t4s-btn{
+  align-items: end;
+}
+.pagetion_links_article .next_button .t4s-btn span{
+  text-align: right;
+}
+
+.related_articles .t4s-flicky-slider .flickityt4s-button{
+    color: var(--slider-btn-background-hover);
+}
+
+/*---------------- Custom CSS for tablet, mobile -------------------*/
+@media (min-width: 768px) {
+  .image_with_text .t4s-container {
+    --ts-gutter-x: 30px !important;
+  }
+  
+  .image_with_text.image_left .t4s-col-img{
+    order:0;
+  }
+  .image_with_text.image_right .t4s-col-img{
+    order:12;
+  }
+  .top_banner .post_at{
+    margin: 20px auto 50px;
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #fff;
+  }
+  .related_articles .t4s-post-title,
+  .related_articles .t4s-post-content{
+    --show-lines:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:var(--show-lines);
+  }
+  .related_articles .t4s-container{
+  }
+  .related_articles .t4s-post-title{
+    height: 47px;;
+  }
+  .related_articles .t4s-post-content{
+    --show-lines:3;
+  }
+}
+@media (min-width: 1024px) {
+  .related_articles .t4s-container{
+    padding-right: calc(25% + 15px) !important;
+  }
+}
+@media (min-width: 1450px) {
+  .related_articles .t4s-container{
+    padding-right: calc(25% - 15px) !important;
+  }
+}
+
+/*---------------- Custom CSS for only mobile -------------------*/
+@media (max-width: 767px){
+
+  .top_banner .t4s-content-position{
+    width: 90% !important;
+    /* border:1px solid red; */
+  }
+  .top_banner .post_at{
+    margin: 10px auto 10px;
+    font-size: 12px !important;
+    /* font-weight: 400; */
+    color: #fff;
+  }
+  .pagetion_links_article .t4s-btn span{
+    display: none;
+  }
+
+}
