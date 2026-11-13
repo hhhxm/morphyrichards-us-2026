@@ -42,6 +42,24 @@
             {%- for block in section.blocks -%}
                 {%- assign bk_stts = block.settings -%}
                 {%- case block.type -%}
+                    {%- when 'breadcrumbs' -%}
+                        {{ 'heading-template.css' | asset_url | stylesheet_tag }}
+                        <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs" style="--brc-cl:{{ bk_stts.breadcrumb_color }};--brc_mgb:{{ bk_stts.brc_mgb }}px;">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="{{ routes.root_url }}" class="t4s-dib">{{ 'general.breadcrumb.home' | t }}</a> <svg class="t4s-icon-arrow" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <a href="{{ blog.url }}" class="t4s-dib">{{ blog.title }}</a>
+                                    <svg class="t4s-icon-arrow" viewBox="0 0 100 100">
+                                        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path>
+                                    </svg>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    {{ article.title }}
+                                </li>
+                            </ul>
+                        </nav>
                     {%- when 'image' -%}
                         {% if image == blank %}{% continue %}{% endif -%}
                         <div class="t4s-article-image t4s-pr" style="max-width:{{ image.width }}px;margin-left:auto;margin-right:auto;">                 
@@ -497,6 +515,25 @@
     ],
     "blocks": [
         {
+            "type": "breadcrumbs",
+            "name": "Breadcrumb",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "breadcrumb_color",
+                    "label": "Breadcrumb color",
+                    "default": "#f2f2f2"
+                },
+                {
+                    "type": "number",
+                    "id": "brc_mgb",
+                    "label": "Margin bottom",
+                    "default": 5
+                }
+            ]
+        },
+        {
             "type": "image",
             "name": "Featured image",
             "limit": 1,
@@ -550,8 +587,7 @@
                     "type": "checkbox",
                     "id": "show_cm",
                     "label": "Show comment",
-                    "default": false,
-                    "default": true
+                    "default": false
                 }
             ]
         },

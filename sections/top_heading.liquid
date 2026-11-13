@@ -69,24 +69,25 @@
                                 <div timeline hdt-reveal="slide-in" class="t4s-top-heading-icon__awesome t4s_des_title_6" style="--font-size:{{ bk_stts.icon_awesome_fs }}px;"><span class="t4s-cbl"><span></span></span></div>
                             {%- endif -%}
                         </div>                      
+                    {%- when 'custom_button' -%}
+                        {%- if bk_stts.button_link != blank and bk_stts.button_label != blank -%}
+                            {%- assign use_button = true -%}
+                            <a class="t4s-btn t4s-btn-base t4s-btn-style-{{ bk_stts.button_style }} t4s-btn-size-{{ bk_stts.btn_size }} t4s-btn-color-{{ bk_stts.btn_cl }} {% if bk_stts.button_style == 'default' or bk_stts.button_style == 'outline' %}t4s-btn-effect-{{ bk_stts.button_effect }}{% endif %}" href="{{ bk_stts.button_link }}" target="{{ bk_stts.open_link }}">{{ bk_stts.button_label }}{%- if bk_stts.btn_icon -%}<svg class="t4s-btn-icon"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
+                        {%- endif -%}
                 {%- endcase -%}
             {%- endfor -%}
         </div>
     {{- html_layout[1] -}}
 </div>
+{%- if use_button -%}
+    {{ 'button-style.css' | asset_url | stylesheet_tag }}
+    <link href="{{ 'custom-effect.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+{%- endif -%}
 {%- schema -%}
 {
     "name": "Top heading",
     "tag": "section",
     "class": "t4s-section t4s-section-all",
-    "disabled_on": {
-      "groups":[
-        "*"
-      ],
-      "templates": [
-        "index"
-      ]
-    },
     "settings":[
         {
             "type": "header",
@@ -541,6 +542,100 @@
                     "id": "top_subheading",
                     "label": "Subheading",
                     "default":"Best theme shopify"
+                }
+            ]
+        },
+        {
+            "type": "custom_button",
+            "name": "Button",
+            "settings":[
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "Button label",
+                    "info": "If set blank will not show",
+                    "default": "Button label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "Button link",
+                    "info": "If set blank will not show"
+                },
+                {
+                    "type": "select",
+                    "id": "open_link",
+                    "label": "Open link in",
+                    "default": "_blank",
+                    "info": "Only working when has a link",
+                    "options":[
+                        {"value": "_self","label": "Current window"},
+                        {"value": "_blank","label": "New window"}
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "id": "btn_icon",
+                    "label": "Enable button icon",
+                    "default": false
+                },
+                {
+                    "type": "select",
+                    "id": "button_style",
+                    "label": "Button style",
+                    "options":[
+                        {"label": "Default","value": "default"},
+                        {"label": "Outline","value": "outline"},
+                        {"label": "Bordered bottom","value": "bordered"},
+                        {"label": "Link","value": "link"},
+                        {"label": "Left Arrow Link mibao","value": "left_arrow_link"}
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "btn_size",
+                    "label": "Button size",
+                    "default": "large",
+                    "options":[
+                        {"label": "Extra small","value": "small"},
+                        {"label": "Small","value": "extra-small"},
+                        {"label": "Medium","value": "medium"},
+                        {"label": "Large","value": "extra-medium"},
+                        {"label": "Extra large","value": "large"},
+                        {"label": "Extra extra large","value": "extra-large"}
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "btn_cl",
+                    "label": "Button color",
+                    "default": "dark",
+                    "options":[
+                        {"value": "light","label": "Light"},
+                        {"value": "dark","label": "Dark"},
+                        {"value": "primary","label": "Primary"},
+                        {"value": "custom1","label": "Custom color 1"},
+                        {"value": "custom2","label": "Custom color 2"}
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "button_effect",
+                    "label": "Button hover effect",
+                    "default": "default",
+                    "info": "Only working button style default, outline",
+                    "options":[
+                        {"label": "Default","value": "default"},
+                        {"label": "Fade","value": "fade"},
+                        {"label": "Rectangle out","value": "rectangle-out"},
+                        {"label": "Sweep to right","value": "sweep-to-right"},
+                        {"label": "Sweep to left","value": "sweep-to-left"},
+                        {"label": "Sweep to bottom","value": "sweep-to-bottom"},
+                        {"label": "Sweep to top","value": "sweep-to-top"},
+                        {"label": "Shutter out horizontal","value": "shutter-out-horizontal"},
+                        {"label": "Outline","value": "outline"},
+                        {"label": "Shadow","value": "shadow"}
+                    ]
                 }
             ]
         }

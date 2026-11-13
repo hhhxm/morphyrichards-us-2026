@@ -168,7 +168,7 @@
         "6c3e461d-5fb3-4bed-b08e-3a358ba95710": {
           "type": "custom_text",
           "settings": {
-            "text": "{{ product.metafields.custom.top_banner_title.value }}",
+            "text": "",
             "remove_br_tag": false,
             "tag": "h3",
             "fontf": "inherit",
@@ -191,7 +191,7 @@
         "16a4e04d-62c7-4752-9090-cc223515e938": {
           "type": "custom_text",
           "settings": {
-            "text": "{{ product.metafields.custom.top_banner_desc.value }}",
+            "text": "",
             "remove_br_tag": true,
             "tag": "p",
             "fontf": "inherit",
@@ -214,7 +214,7 @@
         "a1e64c5f-7b37-45d6-9d48-4a09c88bd26f": {
           "type": "custom_button",
           "settings": {
-            "button_text": "{{ product.metafields.custom.top_banner_button_label.value }}",
+            "button_text": "",
             "button_link": "/",
             "target_link": "_self",
             "fontf": "inherit",
@@ -303,9 +303,9 @@
           }
         },
         "2fed2bfc-ba96-49ad-9593-cfdd58b97174": {
-          "type": "text",
+          "type": "custom_liquid",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.model.value }}</p>"
+            "custom_liquid": "<p>{{ product.metafields.custom.model.value }}</p>"
           }
         },
         "title": {
@@ -321,9 +321,9 @@
           }
         },
         "147f5c9d-87cb-47b5-b772-9905de5e6865": {
-          "type": "text",
+          "type": "custom_liquid",
           "settings": {
-            "text": "{{ product.metafields.custom.info_selling_point | metafield_tag }}"
+            "custom_liquid": "<p>{{ product.metafields.custom.info_selling_point.value | newline_to_br }}</p>"
           }
         },
         "price_review": {
@@ -400,13 +400,6 @@
             "show_available": false,
             "show_category": false,
             "show_tags": true
-          }
-        },
-        "video_popup_button_twyyx7": {
-          "type": "video_popup_button",
-          "settings": {
-            "button_image": "{{ product.metafields.custom.top_banner_image_pc.value }}",
-            "video": "{{ product.metafields.custom.video_banner.value }}"
           }
         },
         "94011ade-ec25-4d68-b37a-70660ede49dd": {
@@ -531,7 +524,6 @@
         "description",
         "form",
         "meta",
-        "video_popup_button_twyyx7",
         "94011ade-ec25-4d68-b37a-70660ede49dd",
         "size_delivery_ask",
         "23551ebc-3be1-40d6-81b2-30f03478cccb",

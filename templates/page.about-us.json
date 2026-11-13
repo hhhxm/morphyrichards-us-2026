@@ -639,7 +639,7 @@
         "height_mb": 250,
         "source": "2",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video": "shopify://files/videos/10月18日(3).mov",
+        "video": "",
         "au_video": false,
         "loop_video": true,
         "bg_overlay": "#000000",

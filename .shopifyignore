@@ -1,0 +1,3 @@
+# 本地构建/部署排除项（不推送到 Shopify，也不进主题包）
+# t4s_loader.svg 由 assets/t4s_loader.svg.liquid 动态生成，静态文件与之同名冲突
+assets/t4s_loader.svg

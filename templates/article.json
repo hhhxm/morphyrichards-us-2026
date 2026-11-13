@@ -53,10 +53,6 @@
           "type": "content",
           "settings": {}
         },
-        "image_with_text": {
-          "type": "image_with_text",
-          "settings": {}
-        },
         "socials": {
           "type": "socials",
           "settings": {
@@ -83,7 +79,6 @@
         "title",
         "image",
         "content",
-        "image_with_text",
         "socials",
         "navigation"
       ],
