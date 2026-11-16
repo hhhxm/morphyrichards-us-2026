@@ -544,29 +544,7 @@ footer #shopify-section-footer .t4s-footer-wrap h3::after {
 #shopify-section-header-bottom_mibao #t4s-nav-ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-}
-
-#shopify-section-header-bottom_mibao #t4s-nav-ul>li:nth-child(1)>a {
-  /* border: 1px solid red; */
-  padding-left: 0;
-}
-
-#shopify-section-header-bottom_mibao #t4s-nav-ul>li:nth-child(1)>a::after,
-#shopify-section-header-bottom_mibao #t4s-nav-ul>li:nth-child(2)>a::after {
-  font-family: 'Line Awesome Free';
-  font-weight: 900;
-  content: "\f107";
-  margin-left: 5px;
-  color: #e9303a;
-}
-
-#shopify-section-header-bottom_mibao #t4s-nav-ul>li:nth-child(2)>a {
-  --h-text-color: #ec0101;
-}
-
-#shopify-section-header-bottom_mibao #t4s-nav-ul>li:nth-child(4) {
-  margin-left: calc(100% - 950px);
+  justify-content: flex-end;
 }
 
 #shopify-section-header-bottom_mibao #t4s-nav-ul>li:last-of-type {

@@ -1324,31 +1324,11 @@
               "r_s_v_item": "30"
             }
           },
-          "3944a4f5-3618-4f4b-9d13-238ddb1b72f3": {
-            "type": "base",
-            "settings": {
-              "title": "Products",
-              "url": "/collections/portable-air-conditioners",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#00badb",
-              "pos_sub": "bottom",
-              "wid": "full",
-              "cus_wid": 1100,
-              "id": 3,
-              "enable_packery": true,
-              "r_s_h_item": "0",
-              "r_s_v_item": "0"
-            }
-          },
           "base_krAdYi": {
             "type": "base",
             "settings": {
-              "title": "Home",
-              "url": "/",
+              "title": "S1 Pro",
+              "url": "/products/ductless-portable-air-conditioner-s1-pro",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -1483,7 +1463,6 @@
         },
         "block_order": [
           "base_krAdYi",
-          "3944a4f5-3618-4f4b-9d13-238ddb1b72f3",
           "base_kkrhTV",
           "base_cyCVxN",
           "fbeebf8b-67fe-46d5-87c4-ae1ddb8af202"
@@ -1494,7 +1473,7 @@
           "height2": 50,
           "arrow": false,
           "border": false,
-          "align": "start",
+          "align": "end",
           "hover": "hover_sideup",
           "enable_active": false,
           "h_navmb": 62,

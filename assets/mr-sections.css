@@ -3,16 +3,24 @@
 /* Home: advantages icon row (black bar per 2026 content architecture) */
 .mr-adv{background:#000;padding:38px 0}
 .mr-adv__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
-.mr-adv__item{text-align:left;color:#fff}
-.mr-adv__icon{width:44px;height:44px;margin:0 0 18px;display:flex;align-items:center;justify-content:center}
+.mr-adv__item{text-align:center;color:#fff}
+.mr-adv__icon{width:44px;height:44px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center}
 .mr-adv__icon svg{width:100%;height:100%;stroke:#fff;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 .mr-adv__item h3{font-size:22px;line-height:1.3;font-weight:500;color:#fff;margin:0 0 10px}
-.mr-adv__item p{font-size:14px;line-height:1.55;color:#fff;opacity:.82;margin:0;max-width:320px}
+.mr-adv__item p{font-size:14px;line-height:1.55;color:#fff;opacity:.82;margin:0 auto;max-width:320px}
 @media(max-width:989px){.mr-adv{padding:30px 0}.mr-adv__grid{gap:28px}.mr-adv__item h3{font-size:19px}}
 @media(max-width:767px){.mr-adv__grid{grid-template-columns:1fr;gap:26px}.mr-adv__icon{width:36px;height:36px;margin-bottom:12px}.mr-adv__item h3{font-size:18px;margin-bottom:6px}}
 
 /* Home: keep "Innovation" in brand red (reference screenshot) */
-[id$="top_heading_kgxGWH"] .t4s-heading b{color:#ec0101;font-weight:600}
+[id$="top_heading_kgxGWH"] .t4s-heading b,
+[id$="top_heading_kgxGWH"] .t4s-section-title b,
+[id$="top_heading_kgxGWH"] .t4s-title b{color:#ec0101;font-weight:600}
+
+/* Home: slideshow overlay (Smart Ideas / The Origin) needs usable width on mobile (intl 85%) */
+@media(max-width:767px){
+  [id$="slideshow_V9U9hL"] .t4s-content-position,
+  [id$="slideshow_9YFgNC"] .t4s-content-position{width:85%!important;max-width:calc(100% - 30px)!important}
+}
 
 /* About: bottom CTA */
 .mr-about-cta{background:#f7f5f2;text-align:center;padding:64px 20px;margin-top:10px}
@@ -193,3 +201,13 @@
   [id$="logo_list_WgBNfh"] .t4s-col-item .t4s_ratio{height:60px}
   [id$="logo_list_WgBNfh"] .t4s-col-item img{height:60px!important}
 }
+
+/* Home: Latest Updates (image_text) content spacing, match intl 40px / 20px */
+[id$="image_text_EEEJae"] .t4s-image-text .t4s-image-text-content{padding:40px}
+@media(max-width:767px){
+  [id$="image_text_EEEJae"] .t4s-image-text .t4s-image-text-content{padding:20px}
+}
+
+/* Header: main nav clustered to the right with tight gaps (match intl) */
+.t4s-navigation .t4s-nav__ul{justify-content:flex-end!important}
+.t4s-navigation .t4s-nav__ul > .t4s-menu-item{margin-left:0!important;margin-right:0!important}

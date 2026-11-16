@@ -321,11 +321,11 @@
         "layout": "t4s-container-fluid",
         "cl_bg": "",
         "cl_bg_gradient": "",
-        "mg": ",,50px,",
+        "mg": ",,0,",
         "pd": "",
         "mg_tb": "",
         "pd_tb": "",
-        "mg_mb": ",,50px,",
+        "mg_mb": ",,0,",
         "pd_mb": "",
         "use_cus_css": true,
         "code_cus_css": "index_top_banner1{}"
@@ -793,7 +793,7 @@
         "custom_text_PhXnbh": {
           "type": "custom_text",
           "settings": {
-            "text": "This unique formula shapes our ingenious ethos, mirrored in our signature designs, pioneering concepts, meticulous attention to detail,commitment to British craftsmanship, and infusion of delight moments into every household.",
+            "text": "This unique formula shapes our ingenious ethos, mirrored in our signature designs, pioneering concepts, meticulous attention to detail, commitment to British craftsmanship, and infusion of delight moments into every household.",
             "remove_br_tag": false,
             "tag": "p",
             "fontf": "inherit",
