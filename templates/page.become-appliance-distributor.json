@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "distributor": {
+      "type": "page-distributor",
+      "settings": {}
+    }
+  },
+  "order": ["distributor"]
+}
