@@ -15,10 +15,10 @@
         "3fcc5c0e-3b55-4490-bb0f-778533d18142": {
           "type": "1",
           "settings": {
-            "heading": "Page Heading",
+            "heading": "News & Insights",
             "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 20,
+            "text_cl": "#222222",
+            "text_fs": 40,
             "text_lh": 0,
             "text_fw": 400,
             "text_ls": 0,
@@ -27,7 +27,7 @@
             "text_shadow": false,
             "text_mgb": 15,
             "hidden_mobile": false,
-            "text_fs_mb": 20,
+            "text_fs_mb": 30,
             "text_lh_mb": 0,
             "text_ls_mb": 0,
             "text_mgb_mobile": 10
@@ -35,11 +35,10 @@
         },
         "190dccc0-921d-4bc6-8dbb-51e27461095d": {
           "type": "2",
-          "disabled": true,
           "settings": {
-            "content": "<p>Sub title page content</p>",
+            "content": "<p>Product guides, brand news and smart ideas for better home comfort.</p>",
             "fontf": "inherit",
-            "text_cl": "#ffffff",
+            "text_cl": "#666666",
             "text_fs": 16,
             "text_lh": 0,
             "text_fw": 400,
@@ -49,7 +48,7 @@
             "text_shadow": false,
             "text_mgb": 0,
             "hidden_mobile": false,
-            "text_fs_mb": 16,
+            "text_fs_mb": 14,
             "text_lh_mb": 0,
             "text_ls_mb": 0,
             "text_mgb_mobile": 0
@@ -58,7 +57,7 @@
         "9c516f81-c531-4ce6-903a-a0493715b39a": {
           "type": "3",
           "settings": {
-            "breadcrumb_color": "#f2f2f2",
+            "breadcrumb_color": "#888888",
             "brc_mgb": 5
           }
         }
@@ -70,9 +69,9 @@
       ],
       "settings": {
         "heading_fullwidth": false,
-        "use_specify_image": true,
+        "use_specify_image": false,
         "parallax": false,
-        "color": "#000000",
+        "color": "#ffffff",
         "overlay": 54,
         "padding": 50,
         "paddingmb": 50,
@@ -134,7 +133,8 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
-      }
+      },
+      "disabled": true
     },
     "main": {
       "type": "main-blog",
@@ -152,7 +152,7 @@
       "settings": {
         "layout_des": "1",
         "art_des": "1",
-        "limit": 6,
+        "limit": 9,
         "date": "abbreviated_date",
         "show_cate": true,
         "show_tags": true,
@@ -163,7 +163,7 @@
         "show_rm": true,
         "show_irm": true,
         "text_align": "start",
-        "col_dk": "2",
+        "col_dk": "3",
         "col_tb": "2",
         "col_mb": "1",
         "space_h_item": "30",

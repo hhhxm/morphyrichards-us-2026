@@ -1,0 +1,64 @@
+/* Custom display-only sections for us.morphyrichards.com */
+
+/* Home: advantages icon row */
+.mr-adv{background:#fff;padding:10px 0 0}
+.mr-adv__head{text-align:center;margin:0 0 38px}
+.mr-adv__eyebrow{color:#ec0101;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:0 0 10px}
+.mr-adv__title{font-size:34px;line-height:1.2;font-weight:500;color:#222;margin:0}
+.mr-adv__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.mr-adv__item{text-align:center;padding:0 8px}
+.mr-adv__icon{width:58px;height:58px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;border:1px solid #ececec;border-radius:50%}
+.mr-adv__icon svg{width:26px;height:26px;stroke:#ec0101;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.mr-adv__item h3{font-size:17px;font-weight:600;color:#222;margin:0 0 8px}
+.mr-adv__item p{font-size:14px;line-height:1.6;color:#666;margin:0}
+@media(max-width:989px){.mr-adv__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
+@media(max-width:600px){.mr-adv__title{font-size:26px}.mr-adv__grid{grid-template-columns:1fr;gap:24px}}
+
+/* About: bottom CTA */
+.mr-about-cta{background:#f7f5f2;text-align:center;padding:64px 20px;margin-top:10px}
+.mr-about-cta h2{font-size:34px;line-height:1.2;font-weight:500;color:#222;margin:0 0 14px}
+.mr-about-cta p{font-size:15px;line-height:1.7;color:#666;max-width:620px;margin:0 auto 26px}
+.mr-about-cta a{display:inline-block;background:#ec0101;color:#fff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.04em;padding:14px 34px;border-radius:0;transition:background .2s}
+.mr-about-cta a:hover{background:#222}
+@media(max-width:600px){.mr-about-cta h2{font-size:26px}}
+
+/* Display-only: hide commerce price */
+.t4s-product-price,.t4s-pr-price,.t4s-product .price{display:none!important}
+
+/* Collection page heading */
+.mr-collection-head{padding:28px 0 8px;border-bottom:1px solid #ececec;margin-bottom:28px}
+.mr-collection-head h1{font-size:36px;line-height:1.2;font-weight:500;color:#222;margin:0 0 10px}
+.mr-collection-head p{font-size:15px;line-height:1.7;color:#666;margin:0;max-width:680px}
+@media(max-width:600px){.mr-collection-head h1{font-size:26px}}
+
+/* Cookie consent: brand styling */
+.t4s-pp_cookies__accept-btn,.t4s-pp_cookies__decline-btn{border-radius:0!important;font-size:12px!important;letter-spacing:.08em!important;text-transform:uppercase!important;font-weight:600!important;padding:12px 22px!important;line-height:1!important;box-shadow:none!important}
+.t4s-pp_cookies__accept-btn{background:#EC0101!important;border:1px solid #EC0101!important;color:#fff!important}
+.t4s-pp_cookies__accept-btn:hover{background:#c00101!important;border-color:#c00101!important}
+.t4s-pp_cookies__decline-btn{background:#fff!important;border:1px solid #222!important;color:#222!important}
+.t4s-pp_cookies__decline-btn:hover{background:#222!important;color:#fff!important}
+
+/* As Featured In: normalize media logos */
+[id$="logo_list_WgBNfh"] .t4s_ratio{--aspect-ratioapt:4.2!important;--max-width:190px!important;margin:0 auto}
+[id$="logo_list_WgBNfh"] .t4s-obj-eff{object-fit:contain!important;object-position:center!important;filter:grayscale(1);opacity:.9}
+
+/* Home hero: improve mobile legibility */
+@media(max-width:767px){
+  [id$="__1646028739ae283905"] .t4s-text-bl{text-shadow:0 1px 14px rgba(0,0,0,.45)}
+  [id$="__1646028739ae283905"] img.t4s-d-md-none{filter:brightness(.9)}
+}
+
+/* Page headers without a background image */
+.page-head.page_bg_img{background-color:#fff}
+
+/* Blog category badges: brand red */
+.t4s-categories a.t4s-post-text-color{background:#EC0101!important;color:#fff!important;border-radius:0!important;font-size:11px!important;letter-spacing:.06em!important;text-transform:uppercase!important}
+
+/* Display-only: hide colour swatches on cards */
+.t4s-pr-color,.t4s-pr-color__item,.t4s-pr-color__value{display:none!important}
+
+/* Hide grid/list layout switch */
+.t4s-layout__switch{display:none!important}
+
+/* Display-only: hide variant swatch selector */
+.t4s-swatch__item{display:none!important}

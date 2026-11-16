@@ -148,7 +148,7 @@
           "61b6e070-01ea-40d1-bd8c-043764d725c8": {
             "type": "html",
             "settings": {
-              "html_content": "<a href=\"/policies/privacy-policy\">Privacy Policy</a> | \n<a href=\"/policies/terms-of-service\">Terms of Service</a>",
+              "html_content": "<a href=\"/policies/privacy-policy\">Privacy Policy</a> | \n<a href=\"/policies/terms-of-service\">Terms of Service</a> | \n<a href=\"/pages/cookie-policy\">Cookie Policy</a>",
               "hidden_mobile": false
             }
           }
@@ -983,12 +983,26 @@
               "title": "Need help?",
               "text": "<a href=\"mailto:support@morphyrichards.com\">support@morphyrichards.com</a>"
             }
+          },
+          "menu_news": {
+            "type": "menu",
+            "settings": {
+              "title": "News",
+              "url": "/blogs/news",
+              "open_link": "_self",
+              "menu": "",
+              "lb": "",
+              "lb_cl": "",
+              "icons_op": "2",
+              "icon": ""
+            }
           }
         },
         "block_order": [
           "mb_nav-1",
           "mb_nav-2",
           "menu_JzfQfY",
+          "menu_news",
           "menu_yhRMCY",
           "mb_nav-5"
         ],
@@ -1225,10 +1239,24 @@
               "time_delay": 2,
               "scroll_delay": 800
             }
+          },
+          "mibao_cookie": {
+            "type": "cookie",
+            "settings": {
+              "show": "1",
+              "text": "We use cookies to improve your experience on this website, analyse traffic and support our marketing. You can accept or decline non-essential cookies. Read our <a href=\"/pages/cookie-policy\">Cookie Policy</a>.",
+              "accept": "Accept",
+              "decline": "Decline",
+              "more": "Cookie Policy",
+              "links": "/pages/cookie-policy",
+              "pp_version": 20261116,
+              "day_next": 180
+            }
           }
         },
         "block_order": [
-          "9ee29a5e-66f9-415e-a2eb-3c6141c37466"
+          "9ee29a5e-66f9-415e-a2eb-3c6141c37466",
+          "mibao_cookie"
         ],
         "settings": {}
       },

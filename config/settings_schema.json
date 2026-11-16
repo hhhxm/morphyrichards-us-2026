@@ -535,6 +535,10 @@
             "label": "t:settings_schema.header.settings.header_design.options.bottom"
           },
           {
+            "value": "bottom_mibao",
+            "label": "Header bottom (MiBao)"
+          },
+          {
             "value": "vertical",
             "label": "t:settings_schema.header.settings.header_design.options.vertical"
           }

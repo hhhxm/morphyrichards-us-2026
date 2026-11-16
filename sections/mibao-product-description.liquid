@@ -57,16 +57,24 @@
                         assign text = data[1]
                         if data[2] contains "?v"
                             assign iwt_image_name = data[2] | split: "/" | last | split: "?v" | first
+                            assign iwt_image_url = data[2]
                         else
                             assign iwt_image_name = data[3] | split: "/" | last | split: "?v" | first
+                            assign iwt_image_url = data[3]
                         endif
                         assign image = images[iwt_image_name]
                     -%}                    
                     <div class="t4s-col-item t4s-col-lg-4 t4s-col-md-4 t4s-col-12 t4s-pos-text-default t4s-text-start">
                         <div class="t4s-eff t4s-eff-none t4s-eff-img-none" timeline="" hdt-reveal="slide-in" observed="" animationend="" style="--animation-order: 0;">
+                        {%- if image != blank -%}
                         <div class="t4s_ratio t4s-bg-11" style="background: url({{ image | image_url: width: 1 }});--aspect-ratioapt: {{ image.aspect_ratio | default: 1.7777 }};--max-width:{{ image.width }}px" data-cacl-slide>
                             <img {% if image.presentation.focal_point != '50.0% 50.0%' %} style="object-position: {{ image.presentation.focal_point }}"{% endif %} class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg', w: image.width, h: image.height %}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}">
                         </div>
+                        {%- elsif iwt_image_url != blank -%}
+                        <div class="t4s_ratio t4s-bg-11" style="--aspect-ratioapt: 1;" data-cacl-slide>
+                            <img src="{{ iwt_image_url }}" loading="lazy" class="t4s-obj-eff" style="width:100%;height:100%;object-fit:cover;" alt="{{ heading | escape }}">
+                        </div>
+                        {%- endif -%}
                         </div>
                         <div class="t4s-feature-columns__content" timeline="" hdt-reveal="slide-in" observed="" animationend=""
                             style="--animation-order: 0;">

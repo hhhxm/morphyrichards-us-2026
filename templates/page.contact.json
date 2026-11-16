@@ -15,24 +15,58 @@
         "heading_fullwidth": false,
         "use_specify_image": false,
         "parallax": false,
-        "color": "#000000",
+        "color": "#ffffff",
         "overlay": 54,
-        "padding": 50,
-        "paddingmb": 50,
-        "mg_b": 30,
-        "mg_bmb": 30,
+        "padding": 20,
+        "paddingmb": 10,
+        "mg_b": 0,
+        "mg_bmb": 0,
         "content_align": "t4s-text-center",
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
         "use_cus_css": false,
         "code_cus_css": ""
-      }
+      },
+      "blocks": {
+        "mr-contact-title": {
+          "type": "1",
+          "settings": {
+            "heading": "Contact",
+            "fontf": "inherit",
+            "text_cl": "#222222",
+            "text_fs": 40,
+            "text_lh": 0,
+            "text_fw": 400,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 10,
+            "hidden_mobile": false,
+            "text_fs_mb": 30,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 8
+          }
+        },
+        "mr-contact-breadcrumb": {
+          "type": "3",
+          "settings": {
+            "breadcrumb_color": "#888888",
+            "brc_mgb": 0
+          }
+        }
+      },
+      "block_order": [
+        "mr-contact-title",
+        "mr-contact-breadcrumb"
+      ]
     },
     "contact": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n  .mr-contact { max-width: 1080px; margin: 0 auto; padding: 0 15px 40px; }\n  .mr-contact__intro { max-width: 760px; margin: 0 auto 40px; text-align: center; color: #555; line-height: 1.7; }\n  .mr-contact__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }\n  .mr-contact__card { border: 1px solid #e6e6e6; border-radius: 10px; padding: 28px; scroll-margin-top: 110px; }\n  .mr-contact__card h3 { margin: 0 0 10px; font-size: 22px; }\n  .mr-contact__card p { margin: 0 0 18px; color: #555; line-height: 1.7; }\n  .mr-contact__card a { color: #ec0101; font-weight: 600; text-decoration: none; }\n  .mr-contact__card a:hover { text-decoration: underline; }\n  @media (max-width: 767px) { .mr-contact__grid { grid-template-columns: 1fr; } }\n</style>\n<div class=\"mr-contact\">\n  <p class=\"mr-contact__intro\">\n    Questions about Morphy Richards products, partnerships or distribution? Choose the section below and email the right team.\n  </p>\n  <div class=\"mr-contact__grid\">\n    <div class=\"mr-contact__card\" id=\"support\">\n      <h3>Customer Support</h3>\n      <p>Product setup, warranty and after-sales questions. For orders placed on Amazon, please use the Amazon customer service channel first.</p>\n      <!-- TODO: confirm support mailbox with client -->\n      <a href=\"mailto:support@morphyrichards.com\">support@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"media\">\n      <h3>Media Outlet</h3>\n      <p>Press enquiries, review samples and interview requests.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Media%20Enquiry\">marketing@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"influencer\">\n      <h3>Influencer / Creator</h3>\n      <p>Content collaboration and creator partnership proposals.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Creator%20Partnership\">marketing@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"distributor\">\n      <h3>Licensee / Distributor</h3>\n      <p>Distribution, retail partnership and licensee enquiries for the US market.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Distribution%20Enquiry\">marketing@morphyrichards.com</a>\n    </div>\n  </div>\n</div>",
+        "custom_liquid": "<style>\n  .mr-contact { max-width: 1080px; margin: 0 auto; padding: 0 15px 40px; }\n  .mr-contact__intro { max-width: 760px; margin: 0 auto 40px; text-align: center; color: #555; line-height: 1.7; }\n  .mr-contact__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }\n  .mr-contact__card { border: 1px solid #e6e6e6; border-radius: 0; padding: 28px; scroll-margin-top: 110px; }\n  .mr-contact__card h3 { margin: 0 0 10px; font-size: 22px; }\n  .mr-contact__card p { margin: 0 0 18px; color: #555; line-height: 1.7; }\n  .mr-contact__card a { color: #ec0101; font-weight: 600; text-decoration: none; }\n  .mr-contact__card a:hover { text-decoration: underline; }\n  @media (max-width: 767px) { .mr-contact__grid { grid-template-columns: 1fr; } }\n</style>\n<div class=\"mr-contact\">\n  <p class=\"mr-contact__intro\">\n    Questions about Morphy Richards products, partnerships or distribution? Choose the section below and email the right team.\n  </p>\n  <div class=\"mr-contact__grid\">\n    <div class=\"mr-contact__card\" id=\"support\">\n      <h3>Customer Support</h3>\n      <p>Product setup, warranty and after-sales questions. For orders placed on Amazon, please use the Amazon customer service channel first.</p>\n      <!-- TODO: confirm support mailbox with client -->\n      <a href=\"mailto:support@morphyrichards.com\">support@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"media\">\n      <h3>Media Outlet</h3>\n      <p>Press enquiries, review samples and interview requests.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Media%20Enquiry\">marketing@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"influencer\">\n      <h3>Influencer / Creator</h3>\n      <p>Content collaboration and creator partnership proposals.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Creator%20Partnership\">marketing@morphyrichards.com</a>\n    </div>\n    <div class=\"mr-contact__card\" id=\"distributor\">\n      <h3>Licensee / Distributor</h3>\n      <p>Distribution, retail partnership and licensee enquiries for the US market.</p>\n      <a href=\"mailto:marketing@morphyrichards.com?subject=Distribution%20Enquiry\">marketing@morphyrichards.com</a>\n    </div>\n  </div>\n</div>",
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",

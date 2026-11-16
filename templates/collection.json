@@ -52,10 +52,10 @@
       "settings": {
         "show_desc": false,
         "position_desc": "1",
-        "product_des": "12",
+        "product_des": "1",
         "show_vendor": false,
         "use_cdt": false,
-        "image_ratio": "ratiocus1",
+        "image_ratio": "ratio1_1",
         "image_size": "contain",
         "image_position": "8",
         "content_align": "default",
@@ -89,10 +89,22 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "collection_heading": {
+      "type": "custom-html",
+      "settings": {
+        "code": "<div class=\"mr-collection-head\"><div class=\"t4s-container\"><h1>Portable Air Conditioners</h1><p>Ductless, hose-free cooling designed to move with you. Explore the Morphy Richards S1 series.</p></div></div>",
+        "layout": "t4s-container-fluid",
+        "mg": "",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "11440601-e17e-4c53-b27f-d2b2d9fabb1a",
+    "collection_heading",
     "main"
   ]
 }

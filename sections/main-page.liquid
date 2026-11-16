@@ -3,7 +3,7 @@
 {%- liquid
     assign sid = section.id
     assign se_stts = section.settings  
-    assign stt_image_bg = section.settings
+    assign stt_image_bg = se_stts.image_bg
     assign stt_layout = se_stts.layout
     assign blog_sidebar = se_stts.blog_sidebar
     if blog_sidebar == 'none'

@@ -46,7 +46,7 @@
             "cv_pos_mb": 28,
             "ch_pos_mb": 50,
             "bg_overlay": "#000000",
-            "bg_opacity": 0,
+            "bg_opacity": 35,
             "bg_content_cl": "#ffffff",
             "bg_content_op": 0,
             "content_radius": 0,
@@ -1639,33 +1639,11 @@
             "btn_cl": "custom1",
             "button_effect": "fade"
           }
-        },
-        "94502683-ed83-47b1-be53-ccb3a991f3d9": {
-          "type": "text_block",
-          "disabled": true,
-          "settings": {
-            "article": "",
-            "enable_image": true,
-            "image": "shopify://shop_images/Morphy_Richards_x_the_British_Museum2_2x_0c281a19-3a64-4082-b7dd-f5f3a3e84dfb.png",
-            "sub_title": "",
-            "title": "Bastet on the go",
-            "text": "",
-            "button_label": "LEARN MORE",
-            "button_link": "/",
-            "is_video_link": false,
-            "open_link": "_self",
-            "btn_icon": false,
-            "button_style": "left_arrow_link",
-            "btn_size": "medium",
-            "btn_cl": "primary",
-            "button_effect": "fade"
-          }
         }
       },
       "block_order": [
         "2da4ea01-f09e-4b6c-86c5-9b7472d214e3",
-        "b08ad1a3-219a-4d92-aeaf-74bff3b91202",
-        "94502683-ed83-47b1-be53-ccb3a991f3d9"
+        "b08ad1a3-219a-4d92-aeaf-74bff3b91202"
       ],
       "settings": {
         "design_heading": "1",
@@ -1751,7 +1729,8 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ""
-      }
+      },
+      "disabled": true
     },
     "banner_iAF38y": {
       "type": "banner",
@@ -2030,7 +2009,8 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": "award_winning_Innovation{}"
-      }
+      },
+      "disabled": true
     },
     "feature_columns_VnJYeC": {
       "type": "feature_columns",
@@ -2367,6 +2347,16 @@
         "pd_mb": "15px,,15px,",
         "use_cus_css": false,
         "code_cus_css": "customer_form{}"
+      },
+      "disabled": true
+    },
+    "about_cta": {
+      "type": "custom-html",
+      "settings": {
+        "code": "<section class=\"mr-about-cta\">\n  <h2>Experience the S1 Series</h2>\n  <p>Ductless portable cooling designed for the way you live today. Discover the S1 Pro and see how smart ideas can keep every room comfortable.</p>\n  <a href=\"/collections/portable-air-conditioners\">EXPLORE PORTABLE AIR CONDITIONERS</a>\n</section>",
+        "layout": "t4s-container-fluid",
+        "mg": "10px,,0,",
+        "mg_mb": "0,,0,"
       }
     }
   },
@@ -2386,6 +2376,7 @@
     "banner_iAF38y",
     "feature_columns_VnJYeC",
     "image_text_nrUzJf",
-    "custom_section_6FnNcm"
+    "custom_section_6FnNcm",
+    "about_cta"
   ]
 }
