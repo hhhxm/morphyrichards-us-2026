@@ -48,6 +48,10 @@
   [id$="__1646028739ae283905"] img.t4s-d-md-none{filter:brightness(.9)}
 }
 
+/* Home: keep photo-overlay copy legible */
+[id$="__slideshow_V9U9hL"] .t4s-text-bl,
+[id$="__slideshow_9YFgNC"] .t4s-text-bl{text-shadow:0 1px 10px rgba(0,0,0,.4)}
+
 /* Page headers without a background image */
 .page-head.page_bg_img{background-color:#fff}
 

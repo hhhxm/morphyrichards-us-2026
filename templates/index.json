@@ -1953,8 +1953,8 @@
         "image_size": "cover",
         "img_effect": "zoom",
         "layout": "t4s-container-wrap",
-        "mg": ",,-30px,",
-        "mg_mb": ",,-10px,",
+        "mg": ",,50px,",
+        "mg_mb": ",,30px,",
         "use_pagination": "none"
       }
     },
@@ -2012,8 +2012,8 @@
       "settings": {
         "top_heading": "Frequently Asked Questions",
         "layout": "t4s-container-wrap",
-        "mg": ",,-30px,",
-        "mg_mb": ",,-10px,"
+        "mg": ",,50px,",
+        "mg_mb": ",,30px,"
       }
     },
     "home_products": {
