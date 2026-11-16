@@ -38,8 +38,7 @@
 .t4s-pp_cookies__decline-btn{background:#fff!important;border:1px solid #222!important;color:#222!important}
 .t4s-pp_cookies__decline-btn:hover{background:#222!important;color:#fff!important}
 
-/* As Featured In: normalize media logos */
-[id$="logo_list_WgBNfh"] .t4s_ratio{--max-width:190px!important;margin:0 auto}
+/* As Featured In: normalize media logos (max-width follows each image's natural width, like intl) */
 [id$="logo_list_WgBNfh"] .t4s-obj-eff{object-fit:contain!important;object-position:center!important}
 
 /* Home hero: improve mobile legibility */
@@ -164,7 +163,7 @@
 [id$="pac_press"] .t4s_ratio img{height:100%!important;width:auto!important;max-height:38px;object-fit:contain!important;object-position:center!important}
 [id$="pac_press"] .flickityt4s-page-dots{display:none!important}
 
-/* Home: media logo strip (match intl: uniform 100px height, 3 per view, autoplay) */
+/* Home: media logo strip (match intl: 13 logos, 7 per view desktop / 3 mobile, uniform 100px height, autoplay) */
 [id$="logo_list_WgBNfh"] .t4s-col-item .t4s_ratio::before{display:none!important;padding-top:0!important}
 [id$="logo_list_WgBNfh"] .t4s-col-item .t4s_ratio{height:100px}
 [id$="logo_list_WgBNfh"] .t4s-col-item img{position:unset!important;transform:unset!important;height:100px!important;width:auto!important;max-width:100%;object-fit:contain!important;object-position:center center!important}

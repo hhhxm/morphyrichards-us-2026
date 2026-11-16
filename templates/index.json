@@ -1749,6 +1749,62 @@
     "logo_list_WgBNfh": {
       "type": "logo_list",
       "blocks": {
+        "logo_item_bbc": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/ln1_3x_a3582c21-585f-4d90-a8a6-6236a959b270.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_times": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/ln2_3x_3d5477ee-46d0-48a8-88d4-0029041f6a92.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_yahoo": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/In3_3x_b216ec6f-8631-4153-8627-8d6eecf40d53.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_nyt": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/In4_3x_fa6fda66-1f02-4e04-bda6-4154b04397dc.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_wsj": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/In5_3x_967d122b-6339-4ee0-ad4c-ab9344d1b9b7.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_bloomberg": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/In6_3x_286cb841-1dc4-44dc-b33e-4135bb76ca14.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_cbs": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/In7_3x_8f2c59b6-d5a7-480b-b623-330adccb2da5.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
         "logo_item_J9VYWg": {
           "type": "logo_item",
           "settings": {
@@ -1799,6 +1855,13 @@
         }
       },
       "block_order": [
+        "logo_item_bbc",
+        "logo_item_times",
+        "logo_item_yahoo",
+        "logo_item_nyt",
+        "logo_item_wsj",
+        "logo_item_bloomberg",
+        "logo_item_cbs",
         "logo_item_J9VYWg",
         "logo_item_nzqrUn",
         "logo_item_dTfLDD",
@@ -1820,9 +1883,9 @@
         "layout_des": "2",
         "click_image": "data-goto",
         "nav_thumbs": false,
-        "col_dk": "3",
-        "col_tb": "3",
-        "col_mb": "2",
+        "col_dk": "7",
+        "col_tb": "7",
+        "col_mb": "3",
         "space_item": "30",
         "space_item_mb": "30",
         "loop": true,
@@ -1859,8 +1922,8 @@
       "settings": {
         "code": "<section class=\"mr-adv\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-adv__grid\">\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M13 34c-4-2-6-6-6-10 0-7 6-12 13-12 3 0 6 1 8 3\"/><path d=\"M35 14c4 2 6 6 6 10 0 7-6 12-13 12-3 0-6-1-8-3\"/><path d=\"M8 8l32 32\"/></svg></div>\n        <h3>Hose-Free Design</h3>\n        <p>Designed to operate without a conventional exhaust hose.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6v36M8 15l32 18M40 15 8 33\"/><path d=\"M24 6l-4 5M24 6l4 5M24 42l-4-5M24 42l4-5\"/></svg></div>\n        <h3>3-in-1 Functionality</h3>\n        <p>Cooling, fan and dehumidifier modes in one unit.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"12\" y=\"8\" width=\"24\" height=\"26\" rx=\"3\"/><circle cx=\"18\" cy=\"40\" r=\"3\"/><circle cx=\"30\" cy=\"40\" r=\"3\"/><path d=\"M18 18h12M18 24h8\"/></svg></div>\n        <h3>Portable Design</h3>\n        <p>Built-in wheels make repositioning easier.</p>\n      </div>\n    </div>\n  </div>\n</section>",
         "layout": "t4s-container-fluid",
-        "mg": ",,-20px,",
-        "mg_mb": ",,-10px,"
+        "mg": ",,50px,",
+        "mg_mb": ",,40px,"
       }
     },
     "home_blog": {
