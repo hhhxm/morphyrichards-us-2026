@@ -1142,6 +1142,242 @@
         "mg_mb": ",,30px,",
         "pd_mb": ""
       }
+    },
+    "pac_highlights": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"mr-pac mr-pac-hl\">\n  <div class=\"t4s-container\">\n    <p class=\"mr-pac__eyebrow\">Performance at a glance</p>\n    <h2 class=\"mr-pac__title\">Cooling built around real rooms</h2>\n    <div class=\"mr-pac-hl__grid\">\n      <div class=\"mr-pac-hl__item\"><span class=\"mr-pac-hl__num\">1,200 W</span><h3>Rated cooling capacity</h3><p>UL configuration; 875 W for CE/CB.</p></div>\n      <div class=\"mr-pac-hl__item\"><span class=\"mr-pac-hl__num\">3-in-1</span><h3>Cool · Fan · Dehumidify</h3><p>One unit for summer cooling and damp days.</p></div>\n      <div class=\"mr-pac-hl__item\"><span class=\"mr-pac-hl__num\">2 L</span><h3>Water tank</h3><p>Up to 1.5 L of condensate collected.</p></div>\n      <div class=\"mr-pac-hl__item\"><span class=\"mr-pac-hl__num\">15.5 kg</span><h3>Smooth-roll casters</h3><p>Move it from room to room, no lifting.</p></div>\n    </div>\n  </div>\n</section>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "pac_scenarios": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"mr-pac mr-pac-sc\">\n  <div class=\"t4s-container\">\n    <p class=\"mr-pac__eyebrow\">Use scenarios</p>\n    <h2 class=\"mr-pac__title\">Wherever you need cool air</h2>\n    <div class=\"mr-pac-sc__grid\">\n      <div class=\"mr-pac-sc__item\">\n        <div class=\"mr-pac-sc__icon\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><path d=\"M3 22V11h18v11M3 22h26M21 17h5a2 2 0 0 1 2 2v3M7 11V7h10v4\"/></svg></div>\n        <h3>Bedroom</h3><p>Quiet overnight airflow with no window kit to fit.</p>\n      </div>\n      <div class=\"mr-pac-sc__item\">\n        <div class=\"mr-pac-sc__icon\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect x=\"4\" y=\"10\" width=\"24\" height=\"12\" rx=\"2\"/><path d=\"M8 22v5M24 22v5M8 14h8\"/></svg></div>\n        <h3>Living room</h3><p>Direct spot cooling for the sofa, not the whole house.</p>\n      </div>\n      <div class=\"mr-pac-sc__item\">\n        <div class=\"mr-pac-sc__icon\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect x=\"6\" y=\"5\" width=\"20\" height=\"13\" rx=\"2\"/><path d=\"M16 18v6M10 27h12\"/></svg></div>\n        <h3>Home office</h3><p>Keeps your desk area comfortable through the workday.</p>\n      </div>\n      <div class=\"mr-pac-sc__item\">\n        <div class=\"mr-pac-sc__icon\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><path d=\"M4 15 16 6l12 9v11H4z\"/><path d=\"M13 26v-7h6v7\"/></svg></div>\n        <h3>Rentals</h3><p>No permanent installation — unbox, roll in, plug in.</p>\n      </div>\n    </div>\n  </div>\n</section>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "pac_faq": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"mr-pac mr-pac-faq\">\n  <div class=\"t4s-container\">\n    <p class=\"mr-pac__eyebrow\">FAQ</p>\n    <h2 class=\"mr-pac__title\">Questions, answered</h2>\n    <div class=\"mr-pac-faq__list\">\n      <details open><summary>Do I need a hose or window kit?</summary><p>No. The S1 Pro is ductless — there is no exhaust hose to route and no window kit to install. Place it near where you need cooling and plug it in.</p></details>\n      <details><summary>How do I empty the water tank?</summary><p>The unit collects condensate in a 2 L tank (up to 1.5 L usable). Slide the tank out and empty it when the full indicator appears, then slide it back in until it clicks.</p></details>\n      <details><summary>What are the dimensions and weight?</summary><p>340 × 285 × 800 mm and 15.5 kg net. Built-in casters let you roll it between rooms without lifting.</p></details>\n      <details><summary>Which refrigerant does it use?</summary><p>R32 in the UL configuration and R290 in the CE/CB configuration. Both are handled by a sealed system — no user servicing is required.</p></details>\n      <details><summary>What does the warranty cover?</summary><p>The S1 Pro carries a 2-year warranty against manufacturing defects. Purchases made on Amazon are also covered by Amazon's 30-day return policy.</p></details>\n      <details><summary>How do I reach support?</summary><p>Email <a href=\"mailto:support@morphyrichards.com\">support@morphyrichards.com</a> with your order details and a short description of the issue. We reply within two business days.</p></details>\n    </div>\n  </div>\n</section>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "pac_support": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"mr-pac mr-pac-sup\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-pac-sup__grid\">\n      <div class=\"mr-pac-sup__item\"><h3>2-Year Warranty</h3><p>Covered against manufacturing defects from the date of purchase.</p></div>\n      <div class=\"mr-pac-sup__item\"><h3>30-Day Returns</h3><p>Amazon orders follow Amazon's 30-day return policy.</p></div>\n      <div class=\"mr-pac-sup__item\"><h3>Product Support</h3><p>Setup, drainage and service questions: <a href=\"mailto:support@morphyrichards.com?subject=S1%20Pro%20enquiry\">support@morphyrichards.com</a></p></div>\n    </div>\n  </div>\n</section>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "pac_cta": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"mr-pac mr-pac-cta\">\n  <div class=\"t4s-container\">\n    <h2>Ready for cooler days?</h2>\n    <p>Ductless, portable and ready to roll into any room.</p>\n    <div class=\"mr-pac-cta__actions\">\n      <a class=\"mr-pac-btn mr-pac-btn--red\" href=\"https://www.amazon.com/s?k=Morphy+Richards+Ductless+Portable+Air+Conditioner\" target=\"_blank\" rel=\"noopener\">BUY ON AMAZON</a>\n      <a class=\"mr-pac-btn mr-pac-btn--ghost\" href=\"mailto:support@morphyrichards.com?subject=Notify%20me%20when%20S1%20Pro%20is%20available\">NOTIFY ME</a>\n    </div>\n  </div>\n</section>",
+        "layout": "t4s-container-fluid",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "pac_press": {
+      "type": "logo_list",
+      "settings": {
+        "design_heading": "1",
+        "top_heading": "As featured in",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "img_effect": "none",
+        "b_effect": "none",
+        "open_link": "_blank",
+        "layout_des": "2",
+        "click_image": "data-goto",
+        "nav_thumbs": false,
+        "col_dk": "6",
+        "col_tb": "3",
+        "col_mb": "2",
+        "space_item": "30",
+        "space_item_mb": "30",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "always",
+        "btn_owl": "outline",
+        "btn_shape": "none",
+        "btn_cl": "primary",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": true,
+        "dot_owl": "default",
+        "dots_cl": "primary",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "use_cus_css": false,
+        "code_cus_css": "latest_news_and_insights{}\nslider_show_half{}",
+        "blocks": {
+          "logo_item_J9VYWg": {
+            "type": "logo_item",
+            "settings": {
+              "image": "shopify://shop_images/apnews.png",
+              "title": "",
+              "url": ""
+            }
+          },
+          "logo_item_nzqrUn": {
+            "type": "logo_item",
+            "settings": {
+              "image": "shopify://shop_images/wallstreet_Online.png",
+              "title": "",
+              "url": ""
+            }
+          },
+          "logo_item_dTfLDD": {
+            "type": "logo_item",
+            "settings": {
+              "image": "shopify://shop_images/Lavanguardia.png",
+              "title": "",
+              "url": ""
+            }
+          },
+          "logo_item_bFG9Qa": {
+            "type": "logo_item",
+            "settings": {
+              "image": "shopify://shop_images/Vietnam.png",
+              "title": "",
+              "url": ""
+            }
+          },
+          "logo_item_4GHfwr": {
+            "type": "logo_item",
+            "settings": {
+              "image": "shopify://shop_images/1_6834ffe4-3d68-4a39-91b0-08eda656aa6a.png",
+              "title": "",
+              "url": ""
+            }
+          },
+          "logo_item_zMKNf7": {
+            "type": "logo_item",
+            "settings": {
+              "image": "shopify://shop_images/The_Strait_Times.png",
+              "title": "",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "logo_item_J9VYWg",
+          "logo_item_nzqrUn",
+          "logo_item_dTfLDD",
+          "logo_item_bFG9Qa",
+          "logo_item_4GHfwr",
+          "logo_item_zMKNf7"
+        ],
+        "heading_align": "t4s-text-center"
+      },
+      "blocks": {
+        "logo_item_J9VYWg": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/apnews.png",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_nzqrUn": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/wallstreet_Online.png",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_dTfLDD": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/Lavanguardia.png",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_bFG9Qa": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/Vietnam.png",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_4GHfwr": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/1_6834ffe4-3d68-4a39-91b0-08eda656aa6a.png",
+            "title": "",
+            "url": ""
+          }
+        },
+        "logo_item_zMKNf7": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/The_Strait_Times.png",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_item_J9VYWg",
+        "logo_item_nzqrUn",
+        "logo_item_dTfLDD",
+        "logo_item_bFG9Qa",
+        "logo_item_4GHfwr",
+        "logo_item_zMKNf7"
+      ]
     }
   },
   "order": [
@@ -1154,9 +1390,15 @@
     "dcde4406-704c-4e33-bd9d-1e501d5eb5d2",
     "feature_columns2_pTH3zi",
     "e890c558-073b-43ae-8f62-ffbd9ffaf8e4",
-    "74e7a4ee-81f3-4187-b8c9-cf76d8ee559f",
     "029e2732-939a-4c80-ae9a-ea98a03fca98",
     "14929243-0537-41b7-9fdf-1f4ae432e870",
+    "pac_highlights",
+    "pac_scenarios",
+    "pac_faq",
+    "pac_support",
+    "pac_press",
+    "pac_cta",
+    "74e7a4ee-81f3-4187-b8c9-cf76d8ee559f",
     "product-recommendations",
     "recently-viewed-products"
   ]

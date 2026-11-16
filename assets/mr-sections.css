@@ -88,3 +88,78 @@
   [id$="__image_text_EEEJae"] .t4s-image-text-heading{font-size:25px!important;line-height:35px!important;margin-bottom:10px!important}
   [id$="__image_text_EEEJae"] .t4s-image-text-des{font-size:14px!important;line-height:21px!important}
 }
+
+/* ============ S1 Pro theme page (xlsx: 移动空调主题页) ============ */
+.mr-pac{padding:0}
+.mr-pac__eyebrow{color:#ec0101;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:0 0 10px;text-align:center}
+.mr-pac__title{font-size:32px;line-height:1.25;font-weight:500;color:#222;margin:0 0 40px;text-align:center}
+
+/* highlights */
+.mr-pac-hl{background:#f7f7f7;padding:64px 0 58px;margin:0 0 64px}
+.mr-pac-hl__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.mr-pac-hl__item{border-top:2px solid #ec0101;padding-top:18px}
+.mr-pac-hl__num{display:block;font-size:30px;line-height:1.1;font-weight:600;color:#222;margin-bottom:6px}
+.mr-pac-hl__item h3{font-size:15px;font-weight:600;color:#222;margin:0 0 6px}
+.mr-pac-hl__item p{font-size:13px;line-height:1.6;color:#666;margin:0}
+
+/* scenarios */
+.mr-pac-sc{padding:0 0 64px}
+.mr-pac-sc__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.mr-pac-sc__item{background:#fff;border:1px solid #ececec;padding:28px 22px;text-align:left}
+.mr-pac-sc__icon{width:46px;height:46px;border-radius:50%;background:#fafafa;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.mr-pac-sc__icon svg{width:24px;height:24px;stroke:#ec0101;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.mr-pac-sc__item h3{font-size:17px;font-weight:600;color:#222;margin:0 0 8px}
+.mr-pac-sc__item p{font-size:14px;line-height:1.6;color:#666;margin:0}
+
+/* faq */
+.mr-pac-faq{padding:0 0 64px}
+.mr-pac-faq__list{max-width:880px;margin:0 auto;border-top:1px solid #ececec}
+.mr-pac-faq__list details{border-bottom:1px solid #ececec}
+.mr-pac-faq__list summary{list-style:none;cursor:pointer;padding:20px 34px 20px 0;position:relative;font-size:16px;font-weight:500;color:#222}
+.mr-pac-faq__list summary::-webkit-details-marker{display:none}
+.mr-pac-faq__list summary:after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:22px;line-height:1;color:#ec0101;font-weight:400}
+.mr-pac-faq__list details[open] summary:after{content:"\2013"}
+.mr-pac-faq__list details p{margin:0 0 20px;font-size:14px;line-height:1.7;color:#666;max-width:760px}
+.mr-pac-faq__list details p a{color:#ec0101;text-decoration:underline}
+
+/* support */
+.mr-pac-sup{background:#f7f7f7;padding:46px 0;margin:0 0 64px}
+.mr-pac-sup__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.mr-pac-sup__item h3{font-size:16px;font-weight:600;color:#222;margin:0 0 8px}
+.mr-pac-sup__item p{font-size:14px;line-height:1.6;color:#666;margin:0}
+.mr-pac-sup__item a{color:#ec0101;text-decoration:underline}
+
+/* cta */
+.mr-pac-cta{background:#000;padding:64px 0;text-align:center;margin:0 0 64px}
+.mr-pac-cta h2{font-size:32px;line-height:1.25;font-weight:500;color:#fff;margin:0 0 12px}
+.mr-pac-cta p{font-size:15px;color:rgba(255,255,255,.75);margin:0 0 28px}
+.mr-pac-cta__actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.mr-pac-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 34px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;transition:all .25s}
+.mr-pac-btn--red{background:#ec0101;color:#fff}
+.mr-pac-btn--red:hover{background:#fff;color:#222}
+.mr-pac-btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.mr-pac-btn--ghost:hover{background:#fff;color:#222;border-color:#fff}
+
+@media(max-width:989px){
+  .mr-pac-hl{padding:48px 0 42px}
+  .mr-pac-hl__grid,.mr-pac-sc__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .mr-pac__title{font-size:27px;margin-bottom:30px}
+  .mr-pac-cta h2{font-size:27px}
+}
+@media(max-width:767px){
+  .mr-pac{--m:0}
+  .mr-pac-hl,.mr-pac-sup{padding:36px 0;margin-bottom:44px}
+  .mr-pac-sc,.mr-pac-faq,.mr-pac-cta{padding-bottom:44px;margin-bottom:0}
+  .mr-pac-cta{margin-bottom:44px;padding:44px 0}
+  .mr-pac-hl__grid,.mr-pac-sc__grid,.mr-pac-sup__grid{grid-template-columns:1fr;gap:20px}
+  .mr-pac__title{font-size:23px;margin-bottom:24px}
+  .mr-pac-hl__num{font-size:26px}
+  .mr-pac-faq__list summary{font-size:15px;padding:16px 30px 16px 0}
+  .mr-pac-cta h2{font-size:23px}
+  .mr-pac-btn{width:100%;max-width:320px}
+}
+
+/* S1 Pro page: press logos row */
+[id$="pac_press"] .t4s_ratio{--max-width:170px!important;margin:0 auto;height:38px}
+[id$="pac_press"] .t4s_ratio img{height:100%!important;width:auto!important;max-height:38px;object-fit:contain!important;object-position:center!important}
+[id$="pac_press"] .flickityt4s-page-dots{display:none!important}
