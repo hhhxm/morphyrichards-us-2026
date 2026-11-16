@@ -257,7 +257,7 @@
           "type": "custom_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_link": "/products/ductless-portable-air-conditioner-s1-pro",
+            "button_link": "/pages/become-appliance-distributor",
             "target_link": "_self",
             "fontf": "1",
             "button_icon_w": 12,
@@ -1456,8 +1456,7 @@
         "pd_mb": "",
         "use_cus_css": true,
         "code_cus_css": "latest_updates{}\nimage_with_text{}"
-      },
-      "disabled": true
+      }
     },
     "image_text_pDriCb": {
       "type": "image_text",
@@ -1821,13 +1820,13 @@
         "layout_des": "2",
         "click_image": "data-goto",
         "nav_thumbs": false,
-        "col_dk": "6",
-        "col_tb": "6",
-        "col_mb": "3",
+        "col_dk": "3",
+        "col_tb": "3",
+        "col_mb": "2",
         "space_item": "30",
         "space_item_mb": "30",
         "loop": true,
-        "au_time": 0,
+        "au_time": 3,
         "au_hover": true,
         "nav_btn": false,
         "btn_vi": "always",
@@ -1892,7 +1891,8 @@
         "mg": ",,50px,",
         "mg_mb": ",,30px,",
         "use_pagination": "none"
-      }
+      },
+      "disabled": true
     },
     "home_faq": {
       "type": "accordion",
@@ -2000,6 +2000,139 @@
         "mg": ",,-20px,",
         "mg_mb": ",,-10px,"
       }
+    },
+    "home_hot_reads": {
+      "type": "feature_columns",
+      "blocks": {
+        "bl_hot_1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/4_13_2025_16_6eec17c2-28d7-41bc-8e08-1d5789a1f75b.jpg",
+            "title": "How to Set Up Your Ductless Portable AC Before First Use",
+            "text": "<p>To ensure you unlock its full potential and enjoy a seamless experience from the very start, please take a few moments to familiarize yourself with the following setup and safety guidelines. Your journey to perfect home climate control begins with proper installation.</p>",
+            "button_label": "LEARN MORE",
+            "button_link": "/blogs/news/before-first-use",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": null,
+            "btn_size": "medium",
+            "btn_cl": "primary",
+            "button_effect": "fade"
+          }
+        },
+        "bl_hot_2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/20251127174059_319_245_5d6ac311-1095-4600-a6bd-cc2a9a1489f0.png",
+            "title": "Warm Thanksgiving Recipes for Cozy Gathering",
+            "text": "<p>Gather your loved ones around a heartfelt Thanksgiving table. Simple steps let everyone share in the joy of cooking, turning your dinner into a warm celebration of gratitude and homemade comfort.</p>",
+            "button_label": "LEARN MORE",
+            "button_link": "/blogs/news/warm-thanksgiving-recipes-for-cozy-gathering",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": null,
+            "btn_size": "medium",
+            "btn_cl": "primary",
+            "button_effect": "fade"
+          }
+        },
+        "bl_hot_3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/1_95c5b097-dc2b-4a72-8ae0-dfc02b81e76e.jpg",
+            "title": "How to Use a Steam Iron for Everyday Garment Care",
+            "text": "<p>Learn how to use a steam iron step by step, from fabric care labels to steam settings, and keep everyday garments looking smooth and fresh.</p>",
+            "button_label": "LEARN MORE",
+            "button_link": "/blogs/news/how-to-use-a-steam-iron-for-everyday-garment-care",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": null,
+            "btn_size": "medium",
+            "btn_cl": "primary",
+            "button_effect": "fade"
+          }
+        },
+        "bl_hot_4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/20251103175917_51517_111_f5ddb064-19bb-4846-a8a3-1658e61c3343.jpg",
+            "title": "A Compact Powerhouse",
+            "text": "<p>Unlock the truth behind your food with Morphy Richards’ compact kitchen helper. Whether preparing family feasts or baby food, every step remains visible and trustworthy.</p>",
+            "button_label": "LEARN MORE",
+            "button_link": "/blogs/news/a-compact-powerhouse",
+            "open_link": "_blank",
+            "btn_icon": false,
+            "button_style": null,
+            "btn_size": "medium",
+            "btn_cl": "primary",
+            "button_effect": "fade"
+          }
+        }
+      },
+      "block_order": [
+        "bl_hot_1",
+        "bl_hot_2",
+        "bl_hot_3",
+        "bl_hot_4"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-start",
+        "top_heading": "This Week's Hot Reads",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "text_align": "start",
+        "pos_text": "default",
+        "fs_title": 22,
+        "fs_text": 14,
+        "fs_title_mb": 22,
+        "fs_text_mb": 12,
+        "image_ratio": "rationt",
+        "image_size": "cover",
+        "image_position": "8",
+        "img_effect": "none",
+        "b_effect": "none",
+        "layout_des": "1",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "1",
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_vi": "always",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "primary",
+        "btn_size": "medium",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "primary",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,70px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,50px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -2011,9 +2144,10 @@
     "video_popup_inline_FmaV9L",
     "slideshow_V9U9hL",
     "slideshow_9YFgNC",
-    "custom_section_6FnNcm",
     "image_text_EEEJae",
+    "custom_section_6FnNcm",
     "logo_list_WgBNfh",
+    "home_hot_reads",
     "home_blog",
     "home_faq",
     "home_products",
