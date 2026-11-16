@@ -256,8 +256,8 @@
         "custom_button_6BL9fB": {
           "type": "custom_button",
           "settings": {
-            "button_text": "KNOW MORE",
-            "button_link": "/pages/contact#distributor",
+            "button_text": "LEARN MORE",
+            "button_link": "/products/ductless-portable-air-conditioner-s1-pro",
             "target_link": "_self",
             "fontf": "1",
             "button_icon_w": 12,
@@ -1361,7 +1361,8 @@
         "pd_mb": "15px,,15px,",
         "use_cus_css": false,
         "code_cus_css": "customer_form{}"
-      }
+      },
+      "disabled": true
     },
     "image_text_EEEJae": {
       "type": "image_text",
@@ -1455,7 +1456,8 @@
         "pd_mb": "",
         "use_cus_css": true,
         "code_cus_css": "latest_updates{}\nimage_with_text{}"
-      }
+      },
+      "disabled": true
     },
     "image_text_pDriCb": {
       "type": "image_text",
@@ -1748,62 +1750,6 @@
     "logo_list_WgBNfh": {
       "type": "logo_list",
       "blocks": {
-        "logo_item_wCWfqa": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/ln1_3x_a3582c21-585f-4d90-a8a6-6236a959b270.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_jn6my8": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/ln2_3x_3d5477ee-46d0-48a8-88d4-0029041f6a92.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_ULPJj7": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/In3_3x_b216ec6f-8631-4153-8627-8d6eecf40d53.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_Q7tnb7": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/In4_3x_fa6fda66-1f02-4e04-bda6-4154b04397dc.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_QBKMkc": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/In5_3x_967d122b-6339-4ee0-ad4c-ab9344d1b9b7.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_tfLEJi": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/In6_3x_286cb841-1dc4-44dc-b33e-4135bb76ca14.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_ktdttx": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/In7_3x_8f2c59b6-d5a7-480b-b623-330adccb2da5.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
         "logo_item_J9VYWg": {
           "type": "logo_item",
           "settings": {
@@ -1854,13 +1800,6 @@
         }
       },
       "block_order": [
-        "logo_item_wCWfqa",
-        "logo_item_jn6my8",
-        "logo_item_ULPJj7",
-        "logo_item_Q7tnb7",
-        "logo_item_QBKMkc",
-        "logo_item_tfLEJi",
-        "logo_item_ktdttx",
         "logo_item_J9VYWg",
         "logo_item_nzqrUn",
         "logo_item_dTfLDD",
@@ -1882,8 +1821,8 @@
         "layout_des": "2",
         "click_image": "data-goto",
         "nav_thumbs": false,
-        "col_dk": "7",
-        "col_tb": "7",
+        "col_dk": "6",
+        "col_tb": "6",
         "col_mb": "3",
         "space_item": "30",
         "space_item_mb": "30",
@@ -1918,9 +1857,8 @@
     },
     "home_advantages": {
       "type": "custom-html",
-      "disabled": true,
       "settings": {
-        "code": "<section class=\"mr-adv\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-adv__head\">\n      <p class=\"mr-adv__eyebrow\">Smart Ideas with Style</p>\n      <h2 class=\"mr-adv__title\">Cooling that goes where you go</h2>\n    </div>\n    <div class=\"mr-adv__grid\">\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"14\" rx=\"1\"/><path d=\"M3 9h18M9 4v14\"/><path d=\"M4 21 20 3\"/></svg></div>\n        <h3>No hose, no window</h3>\n        <p>Ductless design cools your space without window kits or permanent installation.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2v20M4.2 6.5l15.6 11M19.8 6.5L4.2 17.5\"/><path d=\"M12 5.5 9.8 3.3M12 5.5l2.2-2.2M12 18.5l-2.2 2.2M12 18.5l2.2 2.2\"/></svg></div>\n        <h3>3-in-1 comfort</h3>\n        <p>Cool, circulate and dehumidify with one compact unit built for everyday rooms.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"6\" y=\"3.5\" width=\"12\" height=\"13.5\" rx=\"1.5\"/><circle cx=\"9\" cy=\"20\" r=\"1.6\"/><circle cx=\"15\" cy=\"20\" r=\"1.6\"/><path d=\"M9 8h6\"/></svg></div>\n        <h3>Move it anywhere</h3>\n        <p>Lightweight and easy to roll between bedrooms, living rooms and home offices.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"5\" y=\"2.5\" width=\"14\" height=\"19\" rx=\"2\"/><path d=\"M9 11h6M9 15h4\"/></svg></div>\n        <h3>Smart touch control</h3>\n        <p>Clear touchscreen controls make setup, modes and scheduling simple.</p>\n      </div>\n    </div>\n  </div>\n</section>",
+        "code": "<section class=\"mr-adv\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-adv__grid\">\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M13 34c-4-2-6-6-6-10 0-7 6-12 13-12 3 0 6 1 8 3\"/><path d=\"M35 14c4 2 6 6 6 10 0 7-6 12-13 12-3 0-6-1-8-3\"/><path d=\"M8 8l32 32\"/></svg></div>\n        <h3>Hose-Free Design</h3>\n        <p>Designed to operate without a conventional exhaust hose.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6v36M8 15l32 18M40 15 8 33\"/><path d=\"M24 6l-4 5M24 6l4 5M24 42l-4-5M24 42l4-5\"/></svg></div>\n        <h3>3-in-1 Functionality</h3>\n        <p>Cooling, fan and dehumidifier modes in one unit.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"12\" y=\"8\" width=\"24\" height=\"26\" rx=\"3\"/><circle cx=\"18\" cy=\"40\" r=\"3\"/><circle cx=\"30\" cy=\"40\" r=\"3\"/><path d=\"M18 18h12M18 24h8\"/></svg></div>\n        <h3>Portable Design</h3>\n        <p>Built-in wheels make repositioning easier.</p>\n      </div>\n    </div>\n  </div>\n</section>",
         "layout": "t4s-container-fluid",
         "mg": ",,-20px,",
         "mg_mb": ",,-10px,"
@@ -2012,7 +1950,8 @@
         "layout": "t4s-container-wrap",
         "mg": ",,50px,",
         "mg_mb": ",,30px,"
-      }
+      },
+      "disabled": true
     },
     "home_s1_spotlight": {
       "type": "custom-html",
@@ -2021,7 +1960,8 @@
         "layout": "t4s-container-fluid",
         "mg": ",,0px,",
         "mg_mb": ",,0px,"
-      }
+      },
+      "disabled": true
     },
     "home_products": {
       "type": "featured-collection",
@@ -2065,6 +2005,7 @@
   "order": [
     "11440601-e17e-4c53-b27f-d2b2d9fabb1a",
     "1646028739ae283905",
+    "home_advantages",
     "home_s1_spotlight",
     "top_heading_kgxGWH",
     "video_popup_inline_FmaV9L",
@@ -2077,7 +2018,6 @@
     "home_faq",
     "home_products",
     "background_video_9zpn3X",
-    "home_advantages",
     "tabs_collections_products_w7ag7t",
     "tabs_collection_9NjXLd",
     "video_featured_37rtG7",
