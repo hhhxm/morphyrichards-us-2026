@@ -87,7 +87,7 @@
         "a0013fd9-28c1-4d81-889c-f91fdd2e4ab7"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/shop-banner.jpg",
+        "image": "",
         "parallax": false,
         "color": "#000000",
         "overlay": 20,

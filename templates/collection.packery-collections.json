@@ -175,7 +175,7 @@
         "68582c09-d394-43f0-b988-c2b38412941b"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/shop-banner.jpg",
+        "image": "",
         "use_specify_image": false,
         "parallax": true,
         "color": "#000000",
