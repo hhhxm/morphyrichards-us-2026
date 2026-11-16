@@ -242,12 +242,16 @@
   height: 60px;
 }
 
-.middle_video button{
+.middle_video button,
+.t4s-video-popup-inline .t4s-content-position button[data-open-mfp-video]{
   /* border: 1px solid green !important; */
   width: 100px !important;
   height: 100px !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  border: 0 !important;
   color: rgba(255,255,255,0) !important;
-  background: url('https://cdn.shopify.com/s/files/1/0815/7344/5952/files/20241022112144.png?v=1729567321') no-repeat center center / contain
+  background: url('https://cdn.shopify.com/s/files/1/1041/9005/0669/files/play-button.png?v=1794814395') no-repeat center center / contain
 }
 
 /*---------------- Custom CSS for only desktop -------------------*/

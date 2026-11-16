@@ -169,8 +169,8 @@
         "image_parent_dTDUdc": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify://shop_images/MR2_banner01_035e3257-23b3-40dc-9134-d155188a8fdc.jpg",
-            "image_mb": "shopify://shop_images/2_c9008991-0bc9-4e68-baa3-f78a278a6d6d.png",
+            "image": "shopify://shop_images/mr-home-hero-pc.jpg",
+            "image_mb": "shopify://shop_images/mr-home-hero-mb.jpg",
             "use_lazy_image": false,
             "image_position": "8",
             "cl_img": "",
@@ -181,11 +181,11 @@
             "text_align_mb": "start",
             "content_width": "container",
             "cv_pos": 50,
-            "ch_pos": 8,
-            "cv_pos_mb": 50,
-            "ch_pos_mb": 8,
+            "ch_pos": 10,
+            "cv_pos_mb": 10,
+            "ch_pos_mb": 50,
             "bg_overlay": "#000000",
-            "bg_opacity": 25,
+            "bg_opacity": 0,
             "bg_content_cl": "rgba(0,0,0,0)",
             "bg_content_op": 0,
             "content_radius": 0,
@@ -210,54 +210,54 @@
         "custom_text_WymhqM": {
           "type": "custom_text",
           "settings": {
-            "text": "Ductless Portable Air Conditioner",
+            "text": "Partner with Morphy Richards",
             "remove_br_tag": false,
             "tag": "h1",
-            "fontf": "inherit",
-            "text_cl": "#ffffff",
-            "text_fs": 46,
-            "text_lh": 54,
+            "fontf": "3",
+            "text_cl": "#000000",
+            "text_fs": 40,
+            "text_lh": 50,
             "text_fw": 500,
             "text_ls": 0,
-            "text_mgb": 18,
+            "text_mgb": 40,
             "font_italic": false,
             "text_shadow": false,
             "hidden_mobile": false,
-            "text_fs_mb": 28,
-            "text_lh_mb": 34,
+            "text_fs_mb": 26,
+            "text_lh_mb": 32,
             "text_ls_mb": 0,
-            "text_mgb_mobile": 10,
+            "text_mgb_mobile": 20,
             "animation": "fadeInUp"
           }
         },
         "custom_text_9CXmqA": {
           "type": "custom_text",
           "settings": {
-            "text": "Hose-free, portable cooling with 3-in-1 performance and smart touchscreen control.",
+            "text": "Start Premium Small Appliance Business",
             "remove_br_tag": true,
             "tag": "p",
             "fontf": "inherit",
-            "text_cl": "#f2f2f2",
-            "text_fs": 18,
-            "text_lh": 28,
-            "text_fw": 400,
+            "text_cl": "#222222",
+            "text_fs": 24,
+            "text_lh": 34,
+            "text_fw": 200,
             "text_ls": 0,
-            "text_mgb": 32,
+            "text_mgb": 50,
             "font_italic": false,
             "text_shadow": false,
             "hidden_mobile": false,
-            "text_fs_mb": 14,
+            "text_fs_mb": 16,
             "text_lh_mb": 22,
             "text_ls_mb": 0,
-            "text_mgb_mobile": 18,
+            "text_mgb_mobile": 30,
             "animation": "fadeInUp"
           }
         },
         "custom_button_6BL9fB": {
           "type": "custom_button",
           "settings": {
-            "button_text": "EXPLORE S1 PRO",
-            "button_link": "/products/ductless-portable-air-conditioner-s1-pro",
+            "button_text": "KNOW MORE",
+            "button_link": "/pages/contact#distributor",
             "target_link": "_self",
             "fontf": "1",
             "button_icon_w": 12,
@@ -595,8 +595,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": "top_video_title{}"
-      },
-      "disabled": true
+      }
     },
     "video_popup_inline_FmaV9L": {
       "type": "video_popup_inline",
@@ -604,9 +603,9 @@
         "custom_button_TARBmA": {
           "type": "custom_button",
           "settings": {
-            "source": "3",
+            "source": "2",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "file_link": "https://cdn.shopify.com/s/files/1/0610/5209/2628/files/Share_your_brand_story_by_adding_a_video_to_your_store.mp4?v=1641630446",
+            "file_link": "https://cdn.shopify.com/videos/c/vp/72fab5cc5da34b668772c86113bff198/72fab5cc5da34b668772c86113bff198.HD-720p-3.0Mbps-101518333.mp4",
             "video": "",
             "au_video": true,
             "loop_video": true,
@@ -691,8 +690,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": "middle_video{}"
-      },
-      "disabled": true
+      }
     },
     "video_featured_37rtG7": {
       "type": "video_featured",
@@ -1363,8 +1361,7 @@
         "pd_mb": "15px,,15px,",
         "use_cus_css": false,
         "code_cus_css": "customer_form{}"
-      },
-      "disabled": true
+      }
     },
     "image_text_EEEJae": {
       "type": "image_text",
@@ -1875,14 +1872,14 @@
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-start",
-        "top_heading": "As Featured In",
+        "top_heading": "Latest News and Insights",
         "icon_heading": "las la-gem",
         "top_subheading": "",
         "tophead_mb": 30,
         "img_effect": "none",
         "b_effect": "none",
         "open_link": "_blank",
-        "layout_des": "1",
+        "layout_des": "2",
         "click_image": "data-goto",
         "nav_thumbs": false,
         "col_dk": "7",
@@ -1900,7 +1897,7 @@
         "btn_cl": "primary",
         "btn_size": "small",
         "btn_hidden_mobile": false,
-        "nav_dot": false,
+        "nav_dot": true,
         "dot_owl": "default",
         "dots_cl": "primary",
         "dots_round": true,
@@ -1921,6 +1918,7 @@
     },
     "home_advantages": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "code": "<section class=\"mr-adv\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-adv__head\">\n      <p class=\"mr-adv__eyebrow\">Smart Ideas with Style</p>\n      <h2 class=\"mr-adv__title\">Cooling that goes where you go</h2>\n    </div>\n    <div class=\"mr-adv__grid\">\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"14\" rx=\"1\"/><path d=\"M3 9h18M9 4v14\"/><path d=\"M4 21 20 3\"/></svg></div>\n        <h3>No hose, no window</h3>\n        <p>Ductless design cools your space without window kits or permanent installation.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2v20M4.2 6.5l15.6 11M19.8 6.5L4.2 17.5\"/><path d=\"M12 5.5 9.8 3.3M12 5.5l2.2-2.2M12 18.5l-2.2 2.2M12 18.5l2.2 2.2\"/></svg></div>\n        <h3>3-in-1 comfort</h3>\n        <p>Cool, circulate and dehumidify with one compact unit built for everyday rooms.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"6\" y=\"3.5\" width=\"12\" height=\"13.5\" rx=\"1.5\"/><circle cx=\"9\" cy=\"20\" r=\"1.6\"/><circle cx=\"15\" cy=\"20\" r=\"1.6\"/><path d=\"M9 8h6\"/></svg></div>\n        <h3>Move it anywhere</h3>\n        <p>Lightweight and easy to roll between bedrooms, living rooms and home offices.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"5\" y=\"2.5\" width=\"14\" height=\"19\" rx=\"2\"/><path d=\"M9 11h6M9 15h4\"/></svg></div>\n        <h3>Smart touch control</h3>\n        <p>Clear touchscreen controls make setup, modes and scheduling simple.</p>\n      </div>\n    </div>\n  </div>\n</section>",
         "layout": "t4s-container-fluid",
@@ -1933,11 +1931,11 @@
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-start",
-        "top_heading": "Latest from the Blog",
+        "top_heading": "This Week's Hot Reads",
         "tophead_mb": 30,
         "blog": "news",
         "limit": 4,
-        "col_dk": "3",
+        "col_dk": "4",
         "col_tb": "2",
         "col_mb": "1",
         "show_cate": false,
@@ -2016,8 +2014,18 @@
         "mg_mb": ",,30px,"
       }
     },
+    "home_s1_spotlight": {
+      "type": "custom-html",
+      "settings": {
+        "code": "<section class=\"mr-s1\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-s1__grid\">\n      <div class=\"mr-s1__copy\">\n        <p class=\"mr-s1__eyebrow\">S1 Series</p>\n        <h2 class=\"mr-s1__title\">Shop the S1 Series</h2>\n        <p class=\"mr-s1__desc\">Ductless, portable comfort with 3-in-1 cooling, dehumidifying and air circulation. No window kit, no permanent installation &mdash; just roll it in and press start.</p>\n        <ul class=\"mr-s1__list\">\n          <li>No hose or window required</li>\n          <li>3-in-1 cool, dehumidify and circulate</li>\n          <li>Smart touchscreen control</li>\n        </ul>\n        <a class=\"mr-s1__btn\" href=\"/collections/portable-air-conditioners\">Explore the collection</a>\n      </div>\n      <a class=\"mr-s1__media\" href=\"/collections/portable-air-conditioners\" aria-label=\"Shop the S1 Series\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1041/9005/0669/files/1_53dd85ce-c9a9-4f5c-be44-8db183b15b9b.png?v=1794800751\" alt=\"Morphy Richards S1 Pro ductless portable air conditioner\" width=\"853\" height=\"1280\" loading=\"lazy\">\n      </a>\n    </div>\n  </div>\n</section>",
+        "layout": "t4s-container-fluid",
+        "mg": ",,0px,",
+        "mg_mb": ",,0px,"
+      }
+    },
     "home_products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-start",
@@ -2056,25 +2064,26 @@
   },
   "order": [
     "11440601-e17e-4c53-b27f-d2b2d9fabb1a",
-    "background_video_9zpn3X",
     "1646028739ae283905",
-    "home_advantages",
-    "home_products",
-    "tabs_collections_products_w7ag7t",
-    "tabs_collection_9NjXLd",
+    "home_s1_spotlight",
     "top_heading_kgxGWH",
     "video_popup_inline_FmaV9L",
-    "video_featured_37rtG7",
     "slideshow_V9U9hL",
-    "top_heading_mDBqdn",
     "slideshow_9YFgNC",
-    "video_featured_MBahgy",
     "custom_section_6FnNcm",
     "image_text_EEEJae",
-    "image_text_pDriCb",
-    "8bf634f6-0e8f-4536-ac06-a276e31bcaab",
     "logo_list_WgBNfh",
     "home_blog",
-    "home_faq"
+    "home_faq",
+    "home_products",
+    "background_video_9zpn3X",
+    "home_advantages",
+    "tabs_collections_products_w7ag7t",
+    "tabs_collection_9NjXLd",
+    "video_featured_37rtG7",
+    "top_heading_mDBqdn",
+    "video_featured_MBahgy",
+    "image_text_pDriCb",
+    "8bf634f6-0e8f-4536-ac06-a276e31bcaab"
   ]
 }

@@ -202,8 +202,8 @@
               "menu": "",
               "menu_style": "1",
               "col_border": "none",
-              "col_dk": "3",
-              "col_tb": "3",
+              "col_dk": "4",
+              "col_tb": "4",
               "col_mb": "12",
               "content_align": "t4s-text-lg-start",
               "padding_inner": ",20%,,",
@@ -290,8 +290,8 @@
               "menu": "company-details",
               "menu_style": "1",
               "col_border": "none",
-              "col_dk": "15",
-              "col_tb": "15",
+              "col_dk": "2",
+              "col_tb": "2",
               "col_mb": "12",
               "content_align": "t4s-text-md-start",
               "padding_inner": "5px,0,0,0",
@@ -329,8 +329,8 @@
               "menu": "join-us",
               "menu_style": "1",
               "col_border": "none",
-              "col_dk": "15",
-              "col_tb": "15",
+              "col_dk": "2",
+              "col_tb": "2",
               "col_mb": "12",
               "content_align": "t4s-text-md-start",
               "padding_inner": "5px,0,0,0",
@@ -358,8 +358,7 @@
               "col_heading_mobile": "",
               "content_align_mb": "t4s-text-start",
               "padding_inner_mb": ""
-            },
-            "disabled": true
+            }
           },
           "9a33cf12-0547-40b4-81b8-7e78101bafe3": {
             "type": "bl_col",
