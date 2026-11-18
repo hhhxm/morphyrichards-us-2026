@@ -1,0 +1,187 @@
+/* Influencer page: "Real Life, Real Inspiration" video wall
+   Mirrors morphyrichards.com/pages/influencer */
+
+.mr-influencer {
+  margin-top: 0;
+  margin-bottom: 70px;
+  padding-top: 30px
+}
+
+.mr-influencer__head {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center
+}
+
+.mr-influencer__head:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent 0%, #001e67 20%, #001e67 50%, #001e67 80%, transparent 100%)
+}
+
+.mr-influencer__title {
+  position: relative;
+  z-index: 9;
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
+  background: #fff;
+  color: #001e67;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700
+}
+
+.mr-influencer__sub {
+  margin: 30px 0 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400
+}
+
+.mr-influencer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px
+}
+
+.mr-influencer__card {
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent
+}
+
+.mr-influencer__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden
+}
+
+.mr-influencer__media img,
+.mr-influencer__media video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.mr-influencer__media img {
+  z-index: 0
+}
+
+.mr-influencer__media video {
+  z-index: 1;
+  background: transparent
+}
+
+.mr-influencer__ctrl {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity .3s
+}
+
+.mr-influencer__card:hover .mr-influencer__ctrl,
+.mr-influencer__card:focus-within .mr-influencer__ctrl,
+.mr-influencer__card.is-over .mr-influencer__ctrl {
+  opacity: 1
+}
+
+.mr-influencer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color .2s ease
+}
+
+.mr-influencer__btn:hover {
+  background: #f2f2f2
+}
+
+.mr-influencer__btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  pointer-events: none
+}
+
+.mr-influencer__btn .mr-influencer__icon--pause {
+  display: none
+}
+
+.mr-influencer__card.is-playing .mr-influencer__btn .mr-influencer__icon--play {
+  display: none
+}
+
+.mr-influencer__card.is-playing .mr-influencer__btn .mr-influencer__icon--pause {
+  display: block
+}
+
+@media (hover: none) {
+  .mr-influencer__ctrl {
+    opacity: 1;
+    padding: 10px
+  }
+
+  .mr-influencer__btn {
+    width: 32px;
+    height: 32px
+  }
+
+  .mr-influencer__btn svg {
+    width: 18px;
+    height: 18px
+  }
+}
+
+@media (max-width: 767px) {
+  .mr-influencer {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 20px
+  }
+
+  .mr-influencer__title {
+    font-size: 28px;
+    line-height: 38px
+  }
+
+  .mr-influencer__sub {
+    margin-top: 30px;
+    line-height: 32px
+  }
+
+  .mr-influencer__grid {
+    grid-template-columns: 1fr;
+    gap: 20px 10px
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mr-influencer__ctrl,
+  .mr-influencer__btn {
+    transition: none
+  }
+}

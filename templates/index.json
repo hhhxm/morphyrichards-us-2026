@@ -1863,7 +1863,7 @@
     "home_advantages": {
       "type": "custom-html",
       "settings": {
-        "code": "<section class=\"mr-adv\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-adv__grid\">\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M13 34c-4-2-6-6-6-10 0-7 6-12 13-12 3 0 6 1 8 3\"/><path d=\"M35 14c4 2 6 6 6 10 0 7-6 12-13 12-3 0-6-1-8-3\"/><path d=\"M8 8l32 32\"/></svg></div>\n        <h3>Hose-Free Design</h3>\n        <p>Designed to operate without a conventional exhaust hose.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6v36M8 15l32 18M40 15 8 33\"/><path d=\"M24 6l-4 5M24 6l4 5M24 42l-4-5M24 42l4-5\"/></svg></div>\n        <h3>3-in-1 Functionality</h3>\n        <p>Cooling, fan and dehumidifier modes in one unit.</p>\n      </div>\n      <div class=\"mr-adv__item\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"12\" y=\"8\" width=\"24\" height=\"26\" rx=\"3\"/><circle cx=\"18\" cy=\"40\" r=\"3\"/><circle cx=\"30\" cy=\"40\" r=\"3\"/><path d=\"M18 18h12M18 24h8\"/></svg></div>\n        <h3>Portable Design</h3>\n        <p>Built-in wheels make repositioning easier.</p>\n      </div>\n    </div>\n  </div>\n</section>",
+        "code": "<section class=\"mr-adv\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-adv__grid\">\n      <a class=\"mr-adv__item\" href=\"/products/ductless-portable-air-conditioner-s1-pro\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M13 34c-4-2-6-6-6-10 0-7 6-12 13-12 3 0 6 1 8 3\"/><path d=\"M35 14c4 2 6 6 6 10 0 7-6 12-13 12-3 0-6-1-8-3\"/><path d=\"M8 8l32 32\"/></svg></div>\n        <h3>Hose-Free Design</h3>\n        <p>Designed to operate without a conventional exhaust hose.</p>\n      </a>\n      <a class=\"mr-adv__item\" href=\"/products/ductless-portable-air-conditioner-s1-pro\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M24 6v36M8 15l32 18M40 15 8 33\"/><path d=\"M24 6l-4 5M24 6l4 5M24 42l-4-5M24 42l4-5\"/></svg></div>\n        <h3>3-in-1 Functionality</h3>\n        <p>Cooling, fan and dehumidifier modes in one unit.</p>\n      </a>\n      <a class=\"mr-adv__item\" href=\"/products/ductless-portable-air-conditioner-s1-pro\">\n        <div class=\"mr-adv__icon\"><svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"12\" y=\"8\" width=\"24\" height=\"26\" rx=\"3\"/><circle cx=\"18\" cy=\"40\" r=\"3\"/><circle cx=\"30\" cy=\"40\" r=\"3\"/><path d=\"M18 18h12M18 24h8\"/></svg></div>\n        <h3>Portable Design</h3>\n        <p>Built-in wheels make repositioning easier.</p>\n      </a>\n    </div>\n  </div>\n</section>",
         "layout": "t4s-container-fluid",
         "mg": ",,50px,",
         "mg_mb": ",,40px,"
@@ -2135,6 +2135,81 @@
         "use_cus_css": false,
         "code_cus_css": ""
       }
+    },
+    "influencer_videos": {
+      "type": "mr-influencer-videos",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/548e85ce30644f8e8857b469f3ff1029/548e85ce30644f8e8857b469f3ff1029.HD-720p-3.0Mbps-101841305.mp4"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/8ec9fc00c22a4e47a76b307d6e0d194a/8ec9fc00c22a4e47a76b307d6e0d194a.HD-720p-1.6Mbps-101841312.mp4"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/c7e6547395e84dd0af49e8be0a4615b3/c7e6547395e84dd0af49e8be0a4615b3.HD-720p-3.0Mbps-101841332.mp4"
+          }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/16d931143cae4c03b8745b5736094303/16d931143cae4c03b8745b5736094303.HD-720p-3.0Mbps-101841337.mp4"
+          }
+        },
+        "video_5": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/7f320f6348284069ba2fa97d8345dcbc/7f320f6348284069ba2fa97d8345dcbc.HD-720p-1.6Mbps-101841352.mp4"
+          }
+        },
+        "video_6": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/d2ef758ac58f437b94d580c0962364a5/d2ef758ac58f437b94d580c0962364a5.HD-720p-1.6Mbps-101841366.mp4"
+          }
+        },
+        "video_7": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/67df9d7653e54d4b9402f0d4d7928fa5/67df9d7653e54d4b9402f0d4d7928fa5.HD-720p-1.6Mbps-101841370.mp4"
+          }
+        },
+        "video_8": {
+          "type": "video",
+          "settings": {
+            "poster_url": "",
+            "video_url": "https://cdn.shopify.com/videos/c/vp/160d43483e7f4c069931d56de39855f3/160d43483e7f4c069931d56de39855f3.HD-720p-3.0Mbps-101841376.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4",
+        "video_5",
+        "video_6",
+        "video_7",
+        "video_8"
+      ],
+      "settings": {
+        "heading": "Real Life, Real Inspiration",
+        "subheading": "See how creators bring Morphy Richards into their everyday homes"
+      }
     }
   },
   "order": [
@@ -2150,6 +2225,7 @@
     "custom_section_6FnNcm",
     "logo_list_WgBNfh",
     "home_hot_reads",
+    "influencer_videos",
     "home_blog",
     "home_faq",
     "home_products",

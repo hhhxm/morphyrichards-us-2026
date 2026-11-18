@@ -1,0 +1,123 @@
+{%- comment -%}
+  Influencer page: "Real Life, Real Inspiration" video wall.
+  Content mirrors https://morphyrichards.com/pages/influencer
+{%- endcomment -%}
+{{ 'mr-influencer.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mr-influencer.js' | asset_url }}" defer="defer"></script>
+
+<section
+  class="mr-influencer"
+  data-mr-influencer
+  id="mr-influencer-{{ section.id }}"
+>
+  <div class="t4s-container">
+    {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+      <div class="mr-influencer__head">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="mr-influencer__title">{{ section.settings.heading | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="mr-influencer__sub">{{ section.settings.subheading | escape }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="mr-influencer__grid">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.video_url != blank -%}
+            {%- assign poster = block.settings.poster_url -%}
+            {%- if poster == blank -%}
+              {%- assign poster = 'mr-influencer-' | append: forloop.index | append: '.jpg' | asset_url -%}
+            {%- endif -%}
+            <div
+              class="mr-influencer__card"
+              data-mr-card
+              {{ block.shopify_attributes }}
+            >
+              <div class="mr-influencer__media">
+                {%- if poster != blank -%}
+                  <img
+                    src="{{ poster }}"
+                    width="700"
+                    height="1245"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  >
+                {%- endif -%}
+                <video
+                  preload="metadata"
+                  muted
+                  loop
+                  playsinline
+                  disablepictureinpicture
+                >
+                  <source src="{{ block.settings.video_url | escape }}" type="video/mp4">
+                </video>
+              </div>
+              <div class="mr-influencer__ctrl">
+                <button class="mr-influencer__btn" type="button" data-mr-toggle aria-label="Play or pause video">
+                  <svg class="mr-influencer__icon--play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4.623V19.38a1.5 1.5 0 0 0 2.26 1.29L22 12 7.26 3.33A1.5 1.5 0 0 0 5 4.623Z"/></svg>
+                  <svg class="mr-influencer__icon--pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h2a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 8.5 3h-2Zm9 0A1.5 1.5 0 0 0 14 4.5v15a1.5 1.5 0 0 0 1.5 1.5h2a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 17.5 3h-2Z"/></svg>
+                </button>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{%- schema -%}
+{
+  "name": "Influencer videos",
+  "tag": "section",
+  "class": "t4s-section t4s-section-all mr-influencer-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Real Life, Real Inspiration"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "See how creators bring Morphy Richards into their everyday homes"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "poster_url",
+          "label": "Poster image URL"
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "MP4 video URL"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 16,
+  "presets": [
+    {
+      "name": "Influencer videos",
+      "blocks": [
+        { "type": "video" },
+        { "type": "video" },
+        { "type": "video" },
+        { "type": "video" }
+      ]
+    }
+  ]
+}
+{%- endschema -%}
