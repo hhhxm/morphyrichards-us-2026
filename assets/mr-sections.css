@@ -1530,3 +1530,7 @@
   .template-page .t4s-main-page th,
   .template-page .t4s-main-page td{padding:8px 10px}
 }
+
+/* 底部栏官方 Footer 菜单：仿手写 HTML 横排 Privacy Policy | Terms | Cookie | Your Privacy Choices */
+.t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-menu-style2 ul li{margin:0}
+.t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-linklist li:not(:last-child)::after{content:"|";display:inline-block;margin:0 6px;color:#878787}

@@ -53,6 +53,7 @@
                             <div class="t4s-footer-menu t4s-footer-menu-style2" style="--menu-mgb:{{ bk_stts.mgb }}px;--menu-mgb-mb:{{ bk_stts.mgb_mb }}px;">
                             <ul class="t4s-footer-linklist">
                                 {%- for link in bk_stts.menu.links -%}
+                                {%- if link.url contains '/search' or link.title == 'Search' -%}{%- continue -%}{%- endif -%}
                                 <li>
                                     <a href="{{ link.url }}" class="t4s-footer-link {% if link.current %}t4s-footer-link-active{% endif %}" {% if link.current%}  aria-current="page" {% endif %}>
                                     {{ link.title | escape }}

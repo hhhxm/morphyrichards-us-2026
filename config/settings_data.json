@@ -147,6 +147,7 @@
           },
           "61b6e070-01ea-40d1-bd8c-043764d725c8": {
             "type": "html",
+            "disabled": true,
             "settings": {
               "html_content": "<a href=\"/policies/privacy-policy\">Privacy Policy</a> | \n<a href=\"/policies/terms-of-service\">Terms of Service</a> | \n<a href=\"/pages/cookie-policy\">Cookie Policy</a>",
               "hidden_mobile": false
