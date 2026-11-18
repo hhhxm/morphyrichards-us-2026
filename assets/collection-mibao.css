@@ -202,3 +202,7 @@
   }
 
 }
+/* Colour dot for the S1 "Elegant Grey" swatch (US store has no swatch metafield colour) */
+.t4s-pr-style12-mibao .t4s-pr-color__value.bg_color_elegant-grey {
+  background-color: #808080;
+}

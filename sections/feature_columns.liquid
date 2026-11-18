@@ -58,6 +58,9 @@
                -%}
                 {%- if button_link != blank -%}
                     <div class="t4s-col-item t4s-pos-text-{{ se_stts.pos_text }} t4s-text-{{ se_stts.text_align }}" id="b_{{ block.id }}" data-select-flickity {{ block.shopify_attributes }}>
+                        {%- if bk_stts.sub_title != blank -%}
+                            <div class="t4s-feature-columns__sub__title" style="--fs-text:{{ se_stts.fs_text }}px;--fs-text-mb:{{ se_stts.fs_text_mb }}px;">{{ bk_stts.sub_title | escape }}</div>
+                        {%- endif -%}
                         {%- if bk_stts.enable_image -%}
                             <a href="{{ button_link }}" class="t4s-d-block t4s-eff t4s-eff-{{ b_effect }} t4s-eff-img-{{ img_effect }}" target="{{ open_link }}" timeline hdt-reveal="slide-in">
                                 {%- if image != blank -%}
@@ -86,6 +89,9 @@
                     </div>
                 {%- else -%}
                     <div class="t4s-col-item t4s-pos-text-{{ se_stts.pos_text }} t4s-text-{{ se_stts.text_align }}"  id="b_{{ block.id }}" data-select-flickity {{ block.shopify_attributes }}>
+                        {%- if bk_stts.sub_title != blank -%}
+                            <div class="t4s-feature-columns__sub__title" style="--fs-text:{{ se_stts.fs_text }}px;--fs-text-mb:{{ se_stts.fs_text_mb }}px;">{{ bk_stts.sub_title | escape }}</div>
+                        {%- endif -%}
                         {%- if bk_stts.enable_image -%}
                             <div class="t4s-eff t4s-eff-{{ b_effect }} t4s-eff-img-{{ img_effect }}" timeline hdt-reveal="slide-in">
                                 {%- if image != blank -%}
@@ -1150,6 +1156,12 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_title",
+                    "label": "Sub title",
+                    "info": "Shown above the image (e.g. a year in the timeline)"
                 },
                 {
                     "type": "text",

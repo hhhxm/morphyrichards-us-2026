@@ -50,7 +50,7 @@
 		    </div>
 			<h3 class="t4s-post-title"><a href="{{ post.url }}" class="t4s-post-text-color">{{ post.title }}</a></h3>
 			{% if show_cnt %}
-				<div class="t4s-post-content t4s-rte">{%- if post.excerpt.size > 0 -%}{{ post.excerpt }}{%- else -%}{{ post.content | strip_html | truncate: 118 }}{%- endif -%}</div>
+				<div class="t4s-post-content t4s-rte">{%- if post.excerpt.size > 0 -%}{{ post.excerpt | strip_html | strip }}{%- else -%}{{ post.content | strip_html | strip | truncate: 118 }}{%- endif -%}</div>
 			{% endif %}
 			{% if show_rm %}
 				<a href="{{ post.url }}" class="t4s-post-readmore">{{ readmore_txt }} {% if show_irm %}

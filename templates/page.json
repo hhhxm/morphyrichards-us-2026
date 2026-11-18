@@ -9,24 +9,10 @@
  */
 {
   "sections": {
-    "heading": {
-      "type": "heading-template",
+    "title": {
+      "type": "mr-page-title",
       "settings": {
-        "heading_fullwidth": false,
-        "use_specify_image": true,
-        "parallax": false,
-        "color": "#000000",
-        "overlay": 54,
-        "padding": 50,
-        "paddingmb": 50,
-        "mg_b": 50,
-        "mg_bmb": 50,
-        "content_align": "t4s-text-center",
-        "bg_pos": "center center",
-        "bg_repeat": "no-repeat",
-        "bg_size": "cover",
-        "use_cus_css": false,
-        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+        "fallback_title": "Page"
       }
     },
     "main": {
@@ -71,7 +57,7 @@
     }
   },
   "order": [
-    "heading",
+    "title",
     "main",
     "sidebar-page"
   ]

@@ -9,8 +9,13 @@
     assign sidebar_position = se_stts.position
     assign sidebar_size     = se_stts.size
     assign isSidebarDrawer  = se_stts.enable_drawer 
+    assign has_art_tags     = false
+    if article != blank and article.tags.size > 0
+        assign has_art_tags = true
+    endif
  -%}
     
+{%- if has_art_tags or design_mode -%}
 {%- if loadContent or design_mode -%}
     <template class="t4s-d-none">
     [t4splitlz]
@@ -36,6 +41,18 @@
                                     </ul>
                                 </div>
                             {%- when 'tags' -%}
+                            {%- if article != blank -%}
+                                {%- if article.tags.size < 1 %}{% continue %}{% endif -%}
+                                <div class="t4s-col-item t4s-widget">
+                                    <div class="t4s-article-tags">
+                                        <div class="t4s-row t4s-align-items-center">
+                                            <div class="t4s-col-item t4s-col-md t4s-col-12 t4s-text-md-start t4s-text-center t4s-article-tags-list">
+                                                {%- for tag in article.tags -%}<a href="{{ blog.url }}/tagged/{{ tag | handle }}" rel="tag">{{ tag | remove : 'category_' | strip }}</a>{%- endfor -%}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {%- else -%}
                                 {%- if blog.all_tags.size < 1 %}{% continue %}{% endif -%}
                                 <div class="t4s-col-item t4s-widget t4s-widget-blog-tags t4s-tags-count-{{ bk_stts.count }}">
                                     {%- if bk_stts.title != blank -%}
@@ -53,6 +70,7 @@
                                         </ul>
                                     </div>
                                 </div>
+                            {%- endif -%}
                         {%- when 'gallery' -%}
                             {%- liquid
                                 assign open_link = bk_stts.open_link
@@ -338,7 +356,8 @@
         .t4s-section-sidebar {position: fixed;top: 100px;z-index: 20;}
     {%- endif -%}
 </style>
-  {%- schema -%}
+  {%- endif -%}
+{%- schema -%}
   {
     "name": "Sidebar article",
     "class": "t4s-section t4s-section-sidebar t4s_tp_ins t4s_tp_cd",
@@ -465,7 +484,7 @@
     },
     {
         "type": "tags",
-        "name": "Blog tags",
+        "name": "Tags",
         "limit": 1,
         "settings": [
             {

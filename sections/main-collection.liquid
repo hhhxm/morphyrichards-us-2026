@@ -279,6 +279,8 @@
               render 'product-grid-item8' for collection.products as product,prefix_url:prefix_url,isGrowaveWishlist:isGrowaveWishlist,show_img: show_img,show_vendor:show_vendor,use_link_vendor:use_link_vendor,enable_pr_color:enable_pr_color,show_cl_type:show_cl_type,get_color:get_color,enable_pr_size:enable_pr_size,pr_size_pos:pr_size_pos,get_size:get_size,show_size_type:show_size_type,price_varies_style:price_varies_style,app_review:app_review,enable_rating:enable_rating,use_countdown:use_countdown,imgatt:imgatt,show_list_btns:show_list_btns, placeholder_img:placeholder_img
             when '9'
               render 'product-grid-item9' for collection.products as product,prefix_url:prefix_url,isGrowaveWishlist:isGrowaveWishlist,show_img: show_img,show_vendor:show_vendor,use_link_vendor:use_link_vendor,enable_pr_color:enable_pr_color,show_cl_type:show_cl_type,get_color:get_color,enable_pr_size:enable_pr_size,pr_size_pos:pr_size_pos,get_size:get_size,show_size_type:show_size_type,price_varies_style:price_varies_style,app_review:app_review,enable_rating:enable_rating,use_countdown:use_countdown,imgatt:imgatt,show_list_btns:show_list_btns, placeholder_img:placeholder_img
+            when '12'
+              render 'product-grid-item12-mibao' for collection.products as product,prefix_url:prefix_url,isGrowaveWishlist:isGrowaveWishlist,show_img: show_img,show_vendor:show_vendor,use_link_vendor:use_link_vendor,enable_pr_color:enable_pr_color,show_cl_type:show_cl_type,get_color:get_color,enable_pr_size:enable_pr_size,pr_size_pos:pr_size_pos,get_size:get_size,show_size_type:show_size_type,price_varies_style:price_varies_style,app_review:app_review,enable_rating:enable_rating,use_countdown:use_countdown,imgatt:imgatt,show_list_btns:show_list_btns, placeholder_img:placeholder_img
           endcase
         -%}
       </div>
@@ -418,6 +420,10 @@
           {
             "value": "9",
             "label": "Design 9"
+          },
+          {
+            "value": "12",
+            "label": "Design 12 (Mibao)"
           }
         ],
         "label": "Product item design",

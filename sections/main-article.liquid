@@ -83,7 +83,7 @@
                             {% if bk_stts.show_au or bk_stts.show_dt or bk_stts.show_cm %}
                                 <ul>
                                     {%- if bk_stts.show_au -%}<li><span>{{ 'blogs.article.by' | t }} {{ article.author | replace_first: 'ad clnt', 'admin' }}</span></li>{%- endif -%}
-                                    {%- if bk_stts.show_dt -%}<li><span>{{ article.created_at | date: "%b %d" }}</span></li>{%- endif -%}
+                                    {%- if bk_stts.show_dt -%}<li><span>{{ article.published_at | date: "%b %d, %Y" }}</span></li>{%- endif -%}
                                     {%- if bk_stts.show_cm -%}
                                         {%- if number_of_comments > 0 -%}{%- assign cm_link = '#comments' -%}{%- else -%}{%- assign cm_link = '#comment_form' -%}{%- endif -%}
                                         <li><a href="{{ article.url }}{{ cm_link }}">{{ 'blogs.comments.with_count_2.other' | t: count: number_of_comments }}</a></li>

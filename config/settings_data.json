@@ -134,7 +134,7 @@
             "type": "bl_col",
             "settings": {
               "col_heading": "",
-              "menu": "",
+              "menu": "footer",
               "col_dk": "6",
               "col_tb": "6",
               "col_mb": "12",
@@ -841,13 +841,14 @@
               "lb_cl": "",
               "icons_op": "2",
               "icon": ""
-            }
+            },
+            "disabled": true
           },
           "mb_nav-2": {
             "type": "menu",
             "settings": {
-              "title": "Products",
-              "url": "/collections/portable-air-conditioners",
+              "title": "S1 Pro",
+              "url": "/products/ductless-portable-air-conditioner-s1-pro",
               "open_link": "_self",
               "menu": "",
               "lb": "",
@@ -914,15 +915,14 @@
             "type": "menu",
             "settings": {
               "title": "Support",
-              "url": "/",
+              "url": "/pages/contact#support",
               "open_link": "_self",
               "menu": "",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
               "icon": ""
-            },
-            "disabled": true
+            }
           },
           "mb_nav-0": {
             "type": "menu",
@@ -998,12 +998,11 @@
           }
         },
         "block_order": [
-          "mb_nav-1",
           "mb_nav-2",
           "menu_JzfQfY",
           "menu_news",
           "menu_yhRMCY",
-          "mb_nav-5"
+          "menu_eMiQjG"
         ],
         "settings": {}
       },
@@ -1241,6 +1240,7 @@
           },
           "mibao_cookie": {
             "type": "cookie",
+            "disabled": true,
             "settings": {
               "show": "1",
               "text": "We use cookies to improve your experience on this website, analyse traffic and support our marketing. You can accept or decline non-essential cookies. Read our <a href=\"/pages/cookie-policy\">Cookie Policy</a>.",
@@ -1450,22 +1450,22 @@
             "type": "base",
             "settings": {
               "title": "Support",
-              "url": "/",
+              "url": "/pages/contact#support",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
               "cl": "#ec0101",
               "lb": "",
               "lb_cl": ""
-            },
-            "disabled": true
+            }
           }
         },
         "block_order": [
           "base_krAdYi",
           "base_kkrhTV",
           "base_cyCVxN",
-          "fbeebf8b-67fe-46d5-87c4-ae1ddb8af202"
+          "fbeebf8b-67fe-46d5-87c4-ae1ddb8af202",
+          "base_fkKk4r"
         ],
         "settings": {
           "full_header": false,

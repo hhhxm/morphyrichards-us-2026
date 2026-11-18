@@ -24,6 +24,80 @@
         "pd_mb": ""
       }
     },
+    "collection_categories": {
+      "type": "feature_columns",
+      "disabled": true,
+      "blocks": {
+        "text_block_1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/4_13_2025_16_b1f06b21-811c-4940-847f-549fbf7a3cbf.jpg",
+            "sub_title": "",
+            "title": "",
+            "text": "",
+            "button_label": "Portable Air Conditioners",
+            "button_link": "/collections/portable-air-conditioners",
+            "open_link": "_self",
+            "btn_icon": false,
+            "button_style": "default",
+            "btn_size": "small",
+            "btn_cl": "light",
+            "button_effect": "fade"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_1"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "text_align": "start",
+        "pos_text": "default",
+        "fs_title": 22,
+        "fs_text": 14,
+        "fs_title_mb": 22,
+        "fs_text_mb": 12,
+        "image_ratio": "ratio8_5",
+        "image_size": "cover",
+        "image_position": "8",
+        "img_effect": "none",
+        "b_effect": "none",
+        "layout_des": "2",
+        "space_h_item": "20",
+        "space_v_item": "0",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "0",
+        "col_dk": "6",
+        "col_tb": "4",
+        "col_mb": "2",
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": true,
+        "btn_vi": "always",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "primary",
+        "btn_size": "small",
+        "btn_hidden_mobile": true,
+        "nav_dot": false,
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#f5f5f7",
+        "mg": "30px,,50px,",
+        "pd": "30px,,30px,",
+        "use_cus_css": true,
+        "code_cus_css": ".SectionID .t4s-flicky-slider{margin-left:-10px;margin-right:-10px}\n.SectionID .t4s-flicky-slider .t4s-col-item{padding-left:10px;padding-right:10px}\n@media(max-width:767px){\n.SectionID .t4s-flicky-slider{margin-left:-5px;margin-right:-5px}\n.SectionID .t4s-flicky-slider .t4s-col-item{padding-left:5px;padding-right:5px;width:46% }\n}"
+      }
+    },
     "main": {
       "type": "main-collection",
       "blocks": {
@@ -52,10 +126,10 @@
       "settings": {
         "show_desc": false,
         "position_desc": "1",
-        "product_des": "1",
+        "product_des": "12",
         "show_vendor": false,
         "use_cdt": false,
-        "image_ratio": "ratio1_1",
+        "image_ratio": "ratiocus1",
         "image_size": "contain",
         "image_position": "8",
         "content_align": "default",
@@ -82,21 +156,10 @@
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
-        "mg": ",,100px,",
+        "mg": "40px,,100px,",
         "pd": "",
         "mg_tb": "",
         "pd_tb": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "collection_heading": {
-      "type": "custom-html",
-      "settings": {
-        "code": "<div class=\"mr-collection-head\"><div class=\"t4s-container\"><h1>Portable Air Conditioners</h1><p>Ductless, hose-free cooling designed to move with you. Explore the Morphy Richards S1 series.</p></div></div>",
-        "layout": "t4s-container-fluid",
-        "mg": "",
-        "pd": "",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -104,7 +167,7 @@
   },
   "order": [
     "11440601-e17e-4c53-b27f-d2b2d9fabb1a",
-    "collection_heading",
+    "collection_categories",
     "main"
   ]
 }

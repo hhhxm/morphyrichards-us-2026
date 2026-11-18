@@ -1,0 +1,30 @@
+{%- comment -%}
+  Page title for the default page template (templates/page.json).
+  Used by legal/content pages that live as Shopify pages (Cookie Policy,
+  Your Privacy Choices) so their H1 matches the rest of the site instead of
+  the empty heading banner the global page template used to render.
+{%- endcomment -%}
+{%- liquid
+  assign title = page.title | default: section.settings.fallback_title
+-%}
+<div class="mr-ptitle">
+  <div class="t4s-container">
+    <h1 class="mr-ptitle__h">{{ title | escape }}</h1>
+  </div>
+</div>
+
+{%- schema -%}
+{
+  "name": "Page title",
+  "tag": "section",
+  "class": "t4s-section t4s-section-all mr-ptitle-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fallback_title",
+      "label": "Fallback title",
+      "default": "Page"
+    }
+  ]
+}
+{% endschema %}

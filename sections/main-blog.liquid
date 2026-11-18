@@ -18,7 +18,10 @@
     assign art_des = section.settings.art_des
     assign by_txt = 'blogs.article.by' | t
     assign on_txt = 'blogs.article.on' | t
-    assign readmore_txt = 'blogs.article.read_more' | t
+    assign readmore_txt = section.settings.read_more_label
+    if readmore_txt == blank
+        assign readmore_txt = 'blogs.article.read_more' | t
+    endif
     assign all_tags = blog.all_tags
     assign date = section.settings.date
     assign b_effect = section.settings.b_effect
@@ -112,21 +115,27 @@
                     {%- else -%}
                         <div data-contentlm-replace class="isotopet4s t4s_blog_masonry t4s_{{ section.settings.image_ratio }} t4s_position_{{ section.settings.image_position }} t4s-gx-md-{{ section.settings.space_h_item }} t4s-gy-md-{{ section.settings.space_v_item }} t4s-gx-{{ section.settings.space_h_item_mb }} t4s-gy-{{ section.settings.space_v_item_mb }} t4s-row t4s-row-cols-lg-{{ col_dk }} t4s-row-cols-md-{{ col_tb }} t4s-row-cols-{{ col_mb }} t4s-text-{{ section.settings.text_align }} t4s_{{ section.settings.image_size }}" data-isotopet4s-js='{ "itemSelector": ".t4s-post-item", "layoutMode": "masonry" }'>
                     {%- endif -%}
+                    {%- liquid
+                        assign articles_loop = blog.articles
+                        if section.settings.skip_first and paginate.current_page == 1
+                            assign articles_loop = blog.articles | slice: 1, 100
+                        endif
+                    -%}
                     {%- case art_des -%}
                         {%-  when '1' -%}
-                        {%- render 'post_loop_1' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
+                        {%- render 'post_loop_1' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
                     {%-  when '2' -%}
-                        {%- render 'post_loop_2' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
+                        {%- render 'post_loop_2' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
                     {%-  when '3' -%}
-                        {%- render 'post_loop_3' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
+                        {%- render 'post_loop_3' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
                     {%-  when '4' -%}
-                        {%- render 'post_loop_4' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
+                        {%- render 'post_loop_4' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
                     {%-  when '5' -%}
-                        {%- render 'post_loop_5' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
+                        {%- render 'post_loop_5' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}
                     {%-  when '6' -%}
-                        {%- render 'post_loop_6' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}  
+                        {%- render 'post_loop_6' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}  
                     {%-  when '7' -%}
-                        {%- render 'post_loop_7' for blog.articles as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}    
+                        {%- render 'post_loop_7' for articles_loop as post, blog_url: blog_url, by_txt: by_txt, on_txt: on_txt, b_effect: b_effect, img_effect: img_effect, show_dt: show_dt, show_au: show_au, show_cm: show_cm, show_cate: show_cate, show_tags: show_tags, show_cnt: show_cnt, show_rm: show_rm, show_irm: show_irm, date: date, readmore_txt: readmore_txt -%}    
                     {%- endcase -%}
                     </div>
                     {%- if paginate.pages > 1 -%}
@@ -255,6 +264,19 @@
             "id": "limit",
             "label": "Number of articles to show",
             "default": 6
+        },
+        {
+            "type": "checkbox",
+            "id": "skip_first",
+            "label": "Skip the first article",
+            "info": "Enable when the newest article is already shown by a featured banner above the grid. Only applies to the first page.",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "read_more_label",
+            "label": "Read more label",
+            "info": "Leave empty to use the theme translation."
         },
         {
             "type": "select",

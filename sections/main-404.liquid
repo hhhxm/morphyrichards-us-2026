@@ -1,29 +1,61 @@
-{%- assign link = section.settings.link | default: routes.root_url -%}
-
-<div class="error-404-wrap t4s-text-center t4s-empty__page">
-	<div class="t4s-container">
-     <h1 class="error-404-title">{{ 'templates.404.title' | t }}</h1>
-     <h3 class="error-404-subtext">{{ 'templates.404.subtext' | t }}</h3>
-     <p class="error-404-link">{{ 'templates.404.link_html' | t: link:link }}</p>
-	</div>
+{%- comment -%}
+  404 — rebuilt 1:1 from the international site's 404 template.
+  Source (morphyrichards.com): custom-section with a 150px 404 illustration
+  (Files/404_2x_*.png) followed by "OOPS! PAGE NOT FOUND"
+  (24px/700, margin-bottom 5px, mobile 16px/700, margin-bottom 10px).
+  The illustration ships with the theme (assets/mr-404.png) so no Files upload is required.
+{%- endcomment -%}
+{{ 'section.css' | asset_url | stylesheet_tag }}
+{{ 'general-block.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign se_stts = section.settings
+  assign img = se_stts.image
+  assign txt = se_stts.text | default: 'OOPS! PAGE NOT FOUND'
+-%}
+<div class="t4s-section-inner t4s_nt_se_{{ section.id }} t4s-container-wrap" style="--mg-top: 0;--mg-right: auto;--mg-bottom: 50px;--mg-left:auto;--mgtb-top: 0;--mgtb-right: auto;--mgtb-bottom: 50px;--mgtb-left: auto;--mgmb-top: 0;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;">
+  <div class="t4s-container">
+    <div class="t4s-row t4s-gx-md-30 t4s-gy-md-30 t4s-gx-10 t4s-gy-10">
+      <div class="t4s-custom-col t4s-col-item t4s-col-lg-12 t4s-col-md-12 t4s-col-12">
+        <div class="t4s-col-inner t4s-ver-center-false t4s-text-lg-center t4s-text-md-center t4s-text-center" style="--bg-cl:#fff;--pd: 30px 0 30px 0;--pd-tb: 0 0 0 0;--pd-mb: 0 0 0 0;">
+          <div class="t4s-w-100">
+            <div class="t4s-img-child t4s-eff-none t4s-pr t4s-oh t4s-text-md-center t4s-text-lg-center t4s-text-center" style="--max-width: 400px;--width:150px;--width-mb:150px;--mgb: 50px;--mgb-mb: 50px;">
+              <div>
+                <img src="{% if img != blank %}{{ img | image_url: width: 400 }}{% else %}{{ 'mr-404.png' | asset_url }}{% endif %}" width="400" height="400" alt="404 — page not found">
+              </div>
+            </div>
+            <p class="t4s-text-bl" style="--text-cl:#000000;--text-fs:24px;--text-fw:700;--text-lh:24px;--text-ls:0px;--text-mgb:5px;--text-fs-mb:16px;--text-lh-mb:16px;--text-ls-mb:0px;--text-mgb-mb:10px;">{{ txt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<style>
-.error-404.not-found{letter-spacing:2px}.error-404.not-found h1{font-size:80px;letter-spacing:8px;font-weight:700;margin:0 0 5px}.error-404.not-found h3{text-transform:uppercase;font-size:18px;margin:0 0 15px}
-.error-404.not-found a{font-weight:700;border-bottom:1px solid #222;padding:2px 5px}
-.error-404.not-found a:hover{background:#222;color:#fff}
+<style type="text/css">
+  #shopify-section-{{ section.id }} .t4s-col-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 </style>
 
 {%- schema -%}
 {
   "name": "404",
   "tag": "section",
-  "class": "t4s-section t4s-section-main error-404 not-found t4s-pr t4s-oh",
+  "class": "t4s-section t4s-section-all t4s-custom-section",
   "settings": [
-      {
-        "type": "url",
-        "id": "link",
-        "label": "Link Button"
-      }
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "404 illustration",
+      "info": "Leave empty to use the illustration bundled with the theme (assets/mr-404.png)"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Message",
+      "default": "OOPS! PAGE NOT FOUND"
+    }
   ]
 }
 {% endschema %}

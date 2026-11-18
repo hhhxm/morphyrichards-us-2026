@@ -1,0 +1,158 @@
+<!-- sections/mr-blog-featured.liquid -->
+{%- comment -%}
+  Featured article banner for the News blog, mirrors the intl site's
+  `image_text` hero (text left / image right, full-bleed section).
+  It always renders the newest article of the current blog, so the editor
+  does not have to update it by hand.
+{%- endcomment -%}
+{%- liquid
+  assign feat = blog.articles.first
+  assign btn_label = section.settings.btn_label | default: 'LEARN MORE'
+-%}
+{%- if feat != blank -%}
+{%- style -%}
+  #shopify-section-{{ section.id }} .mr-blog-feat{padding:{{ section.settings.pd_top }}px 0 {{ section.settings.pd_bottom }}px;margin:{{ section.settings.mg_top }}px auto {{ section.settings.mg_bottom }}px}
+  @media(max-width:767px){#shopify-section-{{ section.id }} .mr-blog-feat{padding:{{ section.settings.pd_top_mb }}px 0 {{ section.settings.pd_bottom_mb }}px;margin:{{ section.settings.mg_top_mb }}px auto {{ section.settings.mg_bottom_mb }}px}}
+{%- endstyle -%}
+<div class="mr-blog-feat">
+  <div class="t4s-container">
+    <div class="mr-blog-feat__row">
+      <div class="mr-blog-feat__text">
+        <p class="mr-blog-feat__date">{{ feat.published_at | time_tag: format: 'date' }}</p>
+        <h1 class="mr-blog-feat__title"><a href="{{ feat.url }}">{{ feat.title }}</a></h1>
+        <div class="mr-blog-feat__des t4s-rte">
+          {%- if feat.excerpt != blank -%}
+            {{ feat.excerpt }}
+          {%- else -%}
+            {{ feat.content | strip_html | truncate: 240 }}
+          {%- endif -%}
+        </div>
+        <a href="{{ feat.url }}" class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-custom1 t4s-btn-effect-sweep-to-top t4s-btn-radius-0">{{ btn_label }}</a>
+      </div>
+      <div class="mr-blog-feat__img">
+        {%- if feat.image != blank -%}
+          <a href="{{ feat.url }}">
+            <img
+              src="{{ feat.image | image_url: width: 1200 }}"
+              srcset="{{ feat.image | image_url: width: 600 }} 600w, {{ feat.image | image_url: width: 900 }} 900w, {{ feat.image | image_url: width: 1200 }} 1200w"
+              sizes="(min-width:768px) 690px, 100vw"
+              width="{{ feat.image.width }}"
+              height="{{ feat.image.height }}"
+              alt="{{ feat.image.alt | escape }}"
+              loading="eager">
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+{%- schema -%}
+{
+  "name": "Blog featured post",
+  "tag": "section",
+  "class": "t4s-section t4s-section-all mr-section-blog-featured",
+  "settings": [
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button label",
+      "default": "LEARN MORE"
+    },
+    {
+      "type": "header",
+      "content": "Spacing (desktop)"
+    },
+    {
+      "type": "range",
+      "id": "mg_top",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "pd_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "pd_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Spacing (mobile)"
+    },
+    {
+      "type": "range",
+      "id": "mg_top_mb",
+      "label": "Margin top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mg_bottom_mb",
+      "label": "Margin bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "pd_top_mb",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "pd_bottom_mb",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog featured post"
+    }
+  ]
+}
+{%- endschema -%}
