@@ -115,7 +115,6 @@
       "type": "brc-nav-product",
       "disabled": true,
       "settings": {
-        "breadcrumb_pr": true,
         "back_next_pr": true,
         "cl_bg": "#f6f6f6",
         "cl_link": "#222222"
@@ -129,7 +128,6 @@
           "settings": {
             "image": "{{ product.metafields.custom.top_banner_image_pc.value }}",
             "image_mb": "{{ product.metafields.custom.top_banner_image_mobile.value }}",
-            "use_lazy_image": true,
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -251,7 +249,6 @@
       ],
       "disabled": true,
       "settings": {
-        "show_where_no_image": true,
         "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 600,
@@ -347,8 +344,8 @@
           "settings": {
             "des": "2",
             "text": "<p>Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>",
-            "length": 31,
             "readm": false,
+            "length": 31,
             "readm_txt": "Read more"
           }
         },
@@ -364,7 +361,6 @@
             "enable_compare": false,
             "btn_atc_full": false,
             "pr_btn_round": 0,
-            "btn_enable": false,
             "ani": "none",
             "time": 6,
             "btn_txt": "3",

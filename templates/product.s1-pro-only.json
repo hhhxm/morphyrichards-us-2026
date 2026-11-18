@@ -115,7 +115,6 @@
       "type": "brc-nav-product",
       "disabled": true,
       "settings": {
-        "breadcrumb_pr": true,
         "back_next_pr": true,
         "cl_bg": "#f6f6f6",
         "cl_link": "#222222"
@@ -129,7 +128,6 @@
           "settings": {
             "image": "{{ product.metafields.custom.top_banner_image_pc.value }}",
             "image_mb": "{{ product.metafields.custom.top_banner_image_mobile.value }}",
-            "use_lazy_image": true,
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -251,7 +249,6 @@
       ],
       "disabled": true,
       "settings": {
-        "show_where_no_image": true,
         "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 600,
@@ -347,8 +344,8 @@
           "settings": {
             "des": "2",
             "text": "<p>Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish kalles vibe.</p>",
-            "length": 31,
             "readm": false,
+            "length": 31,
             "readm_txt": "Read more"
           }
         },
@@ -364,7 +361,6 @@
             "enable_compare": false,
             "btn_atc_full": false,
             "pr_btn_round": 0,
-            "btn_enable": false,
             "ani": "none",
             "time": 6,
             "btn_txt": "3",
@@ -1220,8 +1216,61 @@
     },
     "pac_press": {
       "type": "logo_list",
+      "blocks": {
+        "logo_item_J9VYWg": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/apnews.png",
+            "url": ""
+          }
+        },
+        "logo_item_nzqrUn": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/wallstreet_Online.png",
+            "url": ""
+          }
+        },
+        "logo_item_dTfLDD": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/Lavanguardia.png",
+            "url": ""
+          }
+        },
+        "logo_item_bFG9Qa": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/Vietnam.png",
+            "url": ""
+          }
+        },
+        "logo_item_4GHfwr": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/1_6834ffe4-3d68-4a39-91b0-08eda656aa6a.png",
+            "url": ""
+          }
+        },
+        "logo_item_zMKNf7": {
+          "type": "logo_item",
+          "settings": {
+            "image": "shopify://shop_images/The_Strait_Times.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_item_J9VYWg",
+        "logo_item_nzqrUn",
+        "logo_item_dTfLDD",
+        "logo_item_bFG9Qa",
+        "logo_item_4GHfwr",
+        "logo_item_zMKNf7"
+      ],
       "settings": {
         "design_heading": "1",
+        "heading_align": "t4s-text-center",
         "top_heading": "As featured in",
         "icon_heading": "las la-gem",
         "top_subheading": "",
@@ -1259,125 +1308,8 @@
         "mg_tb": "",
         "pd_tb": "",
         "use_cus_css": false,
-        "code_cus_css": "latest_news_and_insights{}\nslider_show_half{}",
-        "blocks": {
-          "logo_item_J9VYWg": {
-            "type": "logo_item",
-            "settings": {
-              "image": "shopify://shop_images/apnews.png",
-              "title": "",
-              "url": ""
-            }
-          },
-          "logo_item_nzqrUn": {
-            "type": "logo_item",
-            "settings": {
-              "image": "shopify://shop_images/wallstreet_Online.png",
-              "title": "",
-              "url": ""
-            }
-          },
-          "logo_item_dTfLDD": {
-            "type": "logo_item",
-            "settings": {
-              "image": "shopify://shop_images/Lavanguardia.png",
-              "title": "",
-              "url": ""
-            }
-          },
-          "logo_item_bFG9Qa": {
-            "type": "logo_item",
-            "settings": {
-              "image": "shopify://shop_images/Vietnam.png",
-              "title": "",
-              "url": ""
-            }
-          },
-          "logo_item_4GHfwr": {
-            "type": "logo_item",
-            "settings": {
-              "image": "shopify://shop_images/1_6834ffe4-3d68-4a39-91b0-08eda656aa6a.png",
-              "title": "",
-              "url": ""
-            }
-          },
-          "logo_item_zMKNf7": {
-            "type": "logo_item",
-            "settings": {
-              "image": "shopify://shop_images/The_Strait_Times.png",
-              "title": "",
-              "url": ""
-            }
-          }
-        },
-        "block_order": [
-          "logo_item_J9VYWg",
-          "logo_item_nzqrUn",
-          "logo_item_dTfLDD",
-          "logo_item_bFG9Qa",
-          "logo_item_4GHfwr",
-          "logo_item_zMKNf7"
-        ],
-        "heading_align": "t4s-text-center"
-      },
-      "blocks": {
-        "logo_item_J9VYWg": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/apnews.png",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_nzqrUn": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/wallstreet_Online.png",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_dTfLDD": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/Lavanguardia.png",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_bFG9Qa": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/Vietnam.png",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_4GHfwr": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/1_6834ffe4-3d68-4a39-91b0-08eda656aa6a.png",
-            "title": "",
-            "url": ""
-          }
-        },
-        "logo_item_zMKNf7": {
-          "type": "logo_item",
-          "settings": {
-            "image": "shopify://shop_images/The_Strait_Times.png",
-            "title": "",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_item_J9VYWg",
-        "logo_item_nzqrUn",
-        "logo_item_dTfLDD",
-        "logo_item_bFG9Qa",
-        "logo_item_4GHfwr",
-        "logo_item_zMKNf7"
-      ]
+        "code_cus_css": "latest_news_and_insights{}\nslider_show_half{}"
+      }
     }
   },
   "order": [

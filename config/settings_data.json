@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "purchase_code": "89f40dbc-7a61-4f4d-a0f4-593b5d4a91ae",
+    "purchase_code": "e272b0b0-2880-4e34-ac04-0027f329c677",
     "general_layout": "custom",
     "cus_w_bd": 1450,
     "use_rtl": "0",
@@ -45,6 +45,7 @@
     "fs_h4": 18,
     "hd_fweight": 700,
     "atc_ajax_enable": true,
+    "wishlist_mode": "0",
     "enable_compe": false,
     "app_review": "1",
     "badge_shape": "1",
@@ -71,6 +72,7 @@
     "cart_ajax_enable": false,
     "cart_type": "disable",
     "gift_wrap_pr": "gift-wrap",
+    "login_side": false,
     "filter_type_search": true,
     "only_search_prs": false,
     "show_search_suggest": true,
@@ -305,9 +307,10 @@
           },
           "bl_col_qyH8ta": {
             "type": "bl_col",
+            "disabled": true,
             "settings": {
               "col_heading": "Business",
-              "menu": "footer-business-2024",
+              "menu": "",
               "menu_style": "1",
               "col_border": "none",
               "col_dk": "2",
@@ -320,8 +323,7 @@
               "col_heading_mobile": "",
               "content_align_mb": "t4s-text-start",
               "padding_inner_mb": ""
-            },
-            "disabled": true
+            }
           },
           "footer-8": {
             "type": "bl_col",
@@ -419,6 +421,7 @@
           "text_cl": "#000000",
           "link_cl": "#000000",
           "link_hover_cl": "#ec0101",
+          "link_active_cl": "#222222",
           "border_cl": "#e6e6e6",
           "layout": "t4s-container-wrap",
           "cl_bg": "rgba(0,0,0,0)",
@@ -435,8 +438,12 @@
         "type": "announcement-bar",
         "settings": {
           "show_announcement": false,
+          "design": "slider",
           "effect": "1",
           "au_time": 3.5,
+          "speed": 15,
+          "pause_when_hover": false,
+          "direction": "rtl",
           "height": 45,
           "fontsize": 12,
           "cl": "#ffffff",
@@ -775,27 +782,6 @@
               "link": "/collections/portable-air-conditioners"
             }
           },
-          "toolbar_mobile-1": {
-            "type": "wish",
-            "settings": {
-              "title": "Wishlist"
-            },
-            "disabled": true
-          },
-          "toolbar_mobile-2": {
-            "type": "cart",
-            "settings": {
-              "title": "Cart"
-            },
-            "disabled": true
-          },
-          "toolbar_mobile-3": {
-            "type": "account",
-            "settings": {
-              "title": "Account"
-            },
-            "disabled": true
-          },
           "toolbar_mobile-4": {
             "type": "search",
             "settings": {
@@ -831,20 +817,6 @@
       "mb_nav": {
         "type": "mb_nav",
         "blocks": {
-          "mb_nav-1": {
-            "type": "menu",
-            "settings": {
-              "title": "Home",
-              "url": "/",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            },
-            "disabled": true
-          },
           "mb_nav-2": {
             "type": "menu",
             "settings": {
@@ -857,20 +829,6 @@
               "icons_op": "2",
               "icon": ""
             }
-          },
-          "menu_GJj9wF": {
-            "type": "menu",
-            "settings": {
-              "title": "Business",
-              "url": "/",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            },
-            "disabled": true
           },
           "menu_JzfQfY": {
             "type": "menu",
@@ -885,19 +843,18 @@
               "icon": ""
             }
           },
-          "menu_qM49Mn": {
+          "menu_news": {
             "type": "menu",
             "settings": {
-              "title": "Explore",
-              "url": "/",
+              "title": "News",
+              "url": "/blogs/news",
               "open_link": "_self",
-              "menu": "footer-explore-2024",
+              "menu": "",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
               "icon": ""
-            },
-            "disabled": true
+            }
           },
           "menu_yhRMCY": {
             "type": "menu",
@@ -917,78 +874,6 @@
             "settings": {
               "title": "Support",
               "url": "/pages/contact#support",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "mb_nav-0": {
-            "type": "menu",
-            "disabled": true,
-            "settings": {
-              "title": "Contact",
-              "url": "",
-              "open_link": "_self",
-              "menu": "join-us",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "25fa7ecf-2db0-4747-b093-a1299099917e": {
-            "type": "menu",
-            "disabled": true,
-            "settings": {
-              "title": "Where to Buy",
-              "url": "/pages/contact",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "640249a7-defd-4310-a87a-8244ef55f403": {
-            "type": "menu",
-            "disabled": true,
-            "settings": {
-              "title": "Explore",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "mb_nav-5": {
-            "type": "sea",
-            "settings": {}
-          },
-          "mb_nav-6": {
-            "type": "acc",
-            "settings": {},
-            "disabled": true
-          },
-          "mb_nav-7": {
-            "type": "help",
-            "disabled": true,
-            "settings": {
-              "title": "Need help?",
-              "text": "<a href=\"mailto:support@morphyrichards.com\">support@morphyrichards.com</a>"
-            }
-          },
-          "menu_news": {
-            "type": "menu",
-            "settings": {
-              "title": "News",
-              "url": "/blogs/news",
               "open_link": "_self",
               "menu": "",
               "lb": "",
@@ -1022,97 +907,6 @@
               "icons_op": "1",
               "icon": "chair"
             }
-          },
-          "02afbc74-7e86-47eb-a54c-4b782b9be1ec": {
-            "type": "cat",
-            "settings": {
-              "cat": "frontpage",
-              "title": "",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "1",
-              "icon": "chair"
-            },
-            "disabled": true
-          },
-          "a8e444e6-eaae-4fff-a0dd-f13d43abd5f0": {
-            "type": "cat",
-            "settings": {
-              "cat": "accessories",
-              "title": "",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "1",
-              "icon": "chair"
-            },
-            "disabled": true
-          },
-          "a613ac38-3b02-42a8-8d06-c7fab073ed0c": {
-            "type": "catimg",
-            "settings": {
-              "cat": "shoes",
-              "title": "",
-              "url": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "1",
-              "icon": "chair",
-              "cat1": "",
-              "url1": "",
-              "cat2": "",
-              "url2": "",
-              "cat3": "",
-              "url3": "",
-              "cat4": "",
-              "url4": "",
-              "cat5": "",
-              "url5": "",
-              "cat6": "",
-              "url6": "",
-              "cat7": "",
-              "url7": "",
-              "cat8": "",
-              "url8": "",
-              "cat9": "",
-              "url9": "",
-              "cat10": "",
-              "url10": "",
-              "cat11": "",
-              "url11": "",
-              "cat12": "",
-              "url12": "",
-              "cat13": "",
-              "url13": "",
-              "cat14": "",
-              "url14": "",
-              "cat15": "",
-              "url15": "",
-              "cat16": "",
-              "url16": "",
-              "cat17": "",
-              "url17": "",
-              "cat18": "",
-              "url18": "",
-              "cat19": "",
-              "url19": "",
-              "cat20": "",
-              "url20": "",
-              "cat21": "",
-              "url21": "",
-              "cat22": "",
-              "url22": "",
-              "cat23": "",
-              "url23": "",
-              "cat24": "",
-              "url24": "",
-              "cat25": "",
-              "url25": ""
-            },
-            "disabled": true
           }
         },
         "block_order": [
@@ -1214,6 +1008,8 @@
               "txt": "{{page.metafields .custom.newsletter_popup_note_text}}",
               "btn_ck": false,
               "txt2": "{{page.metafields.custom.newsletter_popup_checkbox_text}}",
+              "code": "CODE15OFF",
+              "label_button": "Subscribe",
               "input_cl": "#878787",
               "border_cl": "#000000",
               "btn_cl": "#ffffff",
@@ -1223,7 +1019,6 @@
               "image": "shopify://shop_images/Social_Image.jpg",
               "news_layout": "1",
               "mb": false,
-              "show_in_urls": "/pages/licensee-en\n/pages/licensee-es\n/pages/licensee-ru",
               "index": false,
               "product": false,
               "collection": false,
@@ -1249,8 +1044,8 @@
               "decline": "Decline",
               "more": "Cookie Policy",
               "links": "/pages/cookie-policy",
-              "pp_version": 20261116,
-              "day_next": 180
+              "cl_btn": "#56cfe1",
+              "cl_btn_hover": "#007e91"
             }
           }
         },
@@ -1304,31 +1099,10 @@
       "header-bottom_mibao": {
         "type": "header-bottom_mibao",
         "blocks": {
-          "header-bottom_mibao-0": {
-            "type": "mega",
-            "disabled": true,
-            "settings": {
-              "title": "All Products",
-              "url": "/collections/portable-air-conditioners",
-              "open_link": "_blank",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#00badb",
-              "pos_sub": "bottom-start",
-              "wid": "full",
-              "cus_wid": 1200,
-              "id": 1,
-              "enable_packery": true,
-              "r_s_h_item": "30",
-              "r_s_v_item": "30"
-            }
-          },
           "base_krAdYi": {
             "type": "base",
             "settings": {
-              "title": "S1 Pro",
+              "title": "Ductless Portable Air Conditioner",
               "url": "/products/ductless-portable-air-conditioner-s1-pro",
               "open_link": "_self",
               "icon": "",
@@ -1337,34 +1111,6 @@
               "lb": "",
               "lb_cl": ""
             }
-          },
-          "base_gBbag9": {
-            "type": "base",
-            "settings": {
-              "title": "90th Anniversary",
-              "url": "/",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            },
-            "disabled": true
-          },
-          "header-bottom_mibao-2": {
-            "type": "base",
-            "settings": {
-              "title": "Business",
-              "url": "/",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            },
-            "disabled": true
           },
           "base_kkrhTV": {
             "type": "base",
@@ -1392,41 +1138,6 @@
               "lb_cl": ""
             }
           },
-          "base_LpyYL4": {
-            "type": "base",
-            "disabled": true,
-            "settings": {
-              "title": "Explore",
-              "url": "/",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "mega_JKxGxG": {
-            "type": "mega",
-            "settings": {
-              "title": "Inspiration",
-              "url": "/",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#00badb",
-              "pos_sub": "bottom",
-              "wid": "full",
-              "cus_wid": 550,
-              "id": 4,
-              "enable_packery": true,
-              "r_s_h_item": "20",
-              "r_s_v_item": "30"
-            },
-            "disabled": true
-          },
           "fbeebf8b-67fe-46d5-87c4-ae1ddb8af202": {
             "type": "base",
             "settings": {
@@ -1437,14 +1148,7 @@
               "cus_cl": false,
               "cl": "#ec0101",
               "lb": "",
-              "lb_cl": "#00badb",
-              "pos_sub": "bottom",
-              "wid": "full",
-              "cus_wid": 550,
-              "id": 2,
-              "enable_packery": true,
-              "r_s_h_item": "20",
-              "r_s_v_item": "30"
+              "lb_cl": "#00badb"
             }
           },
           "base_fkKk4r": {
@@ -1645,49 +1349,15 @@
           "use_cus_css": false,
           "code_cus_css": ""
         }
-      }
-    },
-    "content_for_index": [],
-    "blocks": {
-      "6279071938380501511": {
-        "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-        "disabled": false,
-        "settings": {}
       },
-      "9365423049038898845": {
-        "type": "shopify://apps/tawk-to-live-chat/blocks/widget-embed-code/91169e75-f163-40ce-90e0-9059f3c9b772",
-        "disabled": true,
-        "settings": {}
-      },
-      "11259993243251179853": {
-        "type": "shopify://apps/calpal-calendly-integration/blocks/app-embed/a8aa0544-ffd7-4753-8830-931780ec2b8e",
-        "disabled": true,
+      "mega-menu": {
+        "type": "mega-menu",
         "settings": {
-          "meeting_link": "https://calendly.com/morphyrichards/60min",
-          "button_text": "Book Meeting",
-          "color": "#ffffff",
-          "bg_color": "#ec0101",
-          "button_style": "corner",
-          "button_position": "bottom_left",
-          "text_align": "center",
-          "hover_effect": "on",
-          "hover_color_change": "off",
-          "hover_background_color": "rgba(0,0,0,0)",
-          "hover_text_color": "rgba(0,0,0,0)",
-          "close_cross_color": "#ffffff",
-          "button_font_family": "none",
-          "button_icon": "simple_calendar",
-          "button_icon_color": "#ffffff",
-          "icon_size": "22",
-          "border_radius": "25",
-          "button_padding": "15px 30px",
-          "custom_css": "",
-          "custom_mobile_css": ""
+          "bg": ""
         }
       }
     },
-    "wishlist_mode": "0",
-    "login_side": false
+    "content_for_index": []
   },
   "platform_customizations": {
     "custom_css": []

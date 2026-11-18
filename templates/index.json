@@ -119,13 +119,10 @@
         "height_tb": 750,
         "custom_mb": true,
         "height_mb": 650,
-        "auto_play": true,
-        "loop": true,
         "image": "shopify://shop_images/MR2_banner01_035e3257-23b3-40dc-9134-d155188a8fdc.jpg",
         "source": "3",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "file_link": "https://cdn.shopify.com/s/files/1/0610/5209/2628/files/Share_your_brand_story_by_adding_a_video_to_your_store.mp4?v=1641630446",
-        "video": "",
         "text_align": "start",
         "text_align_mb": "start",
         "content_width": "auto",
@@ -171,7 +168,6 @@
           "settings": {
             "image": "shopify://shop_images/mr-home-hero-pc.jpg",
             "image_mb": "shopify://shop_images/mr-home-hero-mb.jpg",
-            "use_lazy_image": false,
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -292,7 +288,6 @@
         "custom_button_6BL9fB"
       ],
       "settings": {
-        "show_where_no_image": true,
         "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 700,
@@ -390,6 +385,7 @@
       "block_order": [
         "tab_item_collection_PqK4Yk"
       ],
+      "disabled": true,
       "settings": {
         "top_heading": "Shop the S1 Series",
         "tophead_mb": 30,
@@ -408,8 +404,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": "collection_product_tabs{}"
-      },
-      "disabled": true
+      }
     },
     "tabs_collection_9NjXLd": {
       "type": "tabs-collection",
@@ -606,7 +601,6 @@
             "source": "2",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "file_link": "https://cdn.shopify.com/videos/c/vp/72fab5cc5da34b668772c86113bff198/72fab5cc5da34b668772c86113bff198.HD-720p-3.0Mbps-101518333.mp4",
-            "video": "",
             "au_video": true,
             "loop_video": true,
             "btn_close": true,
@@ -705,7 +699,6 @@
         "height_mb": 250,
         "source": "2",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video": "",
         "au_video": false,
         "loop_video": true,
         "bg_overlay": "#000000",
@@ -731,7 +724,6 @@
           "settings": {
             "image": "shopify://shop_images/smart_ideas_with_style1.jpg",
             "image_mb": "shopify://shop_images/m_smart_ideas_with_style_2x_ff8444ec-f83e-48c9-ba5c-d0a606a67f75.jpg",
-            "use_lazy_image": false,
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -889,7 +881,6 @@
         "custom_button_enGyn7"
       ],
       "settings": {
-        "show_where_no_image": true,
         "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 600,
@@ -987,7 +978,6 @@
           "settings": {
             "image": "shopify://shop_images/MR2_origin_2x_538c5017-75f7-477e-918b-e44221c5d53c.jpg",
             "image_mb": "shopify://shop_images/m_mr_video_ban_2x_aeaa297c-5b40-4367-bc91-435a13f02156.jpg",
-            "use_lazy_image": false,
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -1156,7 +1146,6 @@
         "custom_button_TXL4xh"
       ],
       "settings": {
-        "show_where_no_image": true,
         "se_height": "t4s_ratioadapt",
         "custom_dk": true,
         "height_dk": 600,
@@ -1208,7 +1197,6 @@
         "height_mb": 250,
         "source": "2",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video": "",
         "au_video": false,
         "loop_video": true,
         "bg_overlay": "#000000",
@@ -1344,6 +1332,7 @@
         "bl_col_LzGAym",
         "custom_button_PR3MKi"
       ],
+      "disabled": true,
       "name": "Custom section 保留表单",
       "settings": {
         "space_h_item": "0",
@@ -1361,8 +1350,7 @@
         "pd_mb": "15px,,15px,",
         "use_cus_css": false,
         "code_cus_css": "customer_form{}"
-      },
-      "disabled": true
+      }
     },
     "image_text_EEEJae": {
       "type": "image_text",
@@ -1371,8 +1359,6 @@
           "type": "bl_image",
           "settings": {
             "image1": "shopify://shop_images/logo_779e2803-f1a0-4ab2-8440-21215e9478df.png",
-            "image_link": "",
-            "open_link": "_blank",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -1419,10 +1405,7 @@
             "button_style": "default",
             "btn_size": "large",
             "btn_cl": "custom1",
-            "button_effect": "sweep-to-top",
-            "custom_liquid": "",
-            "hidden_mobile": false,
-            "animation": "none"
+            "button_effect": "sweep-to-top"
           }
         }
       },
@@ -1431,7 +1414,6 @@
         "bl_text_tdqwCt"
       ],
       "settings": {
-        "article": "press/from-legacy-to-innovation-morphy-richards-refreshes-at-ifa-2025",
         "design_heading": "1",
         "heading_align": "t4s-text-start",
         "top_heading": "Latest Updates",
@@ -1442,9 +1424,6 @@
         "space_v_item": "0",
         "space_h_item_mb": "0",
         "space_v_item_mb": "0",
-        "click_image": "data-goto",
-        "img_effect": "none",
-        "b_effect": "none",
         "layout": "t4s-container-wrap",
         "cl_bg": "rgba(0,0,0,0)",
         "cl_bg_gradient": "",
@@ -1465,8 +1444,6 @@
           "type": "bl_image",
           "settings": {
             "image1": "shopify://shop_images/2_ab7729c6-ad33-42f2-b6f0-b9b28ac7c32f.jpg",
-            "image_link": "",
-            "open_link": "_blank",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -1513,10 +1490,7 @@
             "button_style": "default",
             "btn_size": "large",
             "btn_cl": "custom1",
-            "button_effect": "sweep-to-top",
-            "custom_liquid": "",
-            "hidden_mobile": false,
-            "animation": "none"
+            "button_effect": "sweep-to-top"
           }
         }
       },
@@ -1526,7 +1500,6 @@
       ],
       "disabled": true,
       "settings": {
-        "article": "",
         "design_heading": "1",
         "heading_align": "t4s-text-start",
         "top_heading": "Latest Updates",
@@ -1537,9 +1510,6 @@
         "space_v_item": "0",
         "space_h_item_mb": "0",
         "space_v_item_mb": "0",
-        "click_image": "data-goto",
-        "img_effect": "none",
-        "b_effect": "none",
         "layout": "t4s-container-wrap",
         "cl_bg": "rgba(0,0,0,0)",
         "cl_bg_gradient": "",
@@ -1560,7 +1530,6 @@
           "type": "text_block",
           "disabled": true,
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/p3.jpg",
             "sub_title": "",
@@ -1568,7 +1537,6 @@
             "text": "<p>At the Olympic Games Paris 2024, the cooling of Morphy Richards ductless portable ACs is a delight for the athletes.</p>",
             "button_label": "",
             "button_link": "/blogs/news/worlds-first-ductless-portable-ac-by-morphy-richards-cooling-athletes-at-paris-olympics",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "left_arrow_link",
@@ -1581,7 +1549,6 @@
           "type": "text_block",
           "disabled": true,
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/pdf4_2x_56deacc1-576f-4821-8d5e-bd98ccd59fd1.jpg",
             "sub_title": "",
@@ -1589,7 +1556,6 @@
             "text": "<p>Morphy Richards announces a strategic brand refresh to help grow the business, and deliver a heartwarming and delightful product experience.</p>",
             "button_label": "",
             "button_link": "/blogs/news/morphy-richards-announces-strategic-brand-upgrade-and-development",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "left_arrow_link",
@@ -1601,7 +1567,6 @@
         "template--20945202282816__8bf634f6-0e8f-4536-ac06-a276e31bcaab-text_block-1": {
           "type": "text_block",
           "settings": {
-            "article": "press/from-legacy-to-innovation-morphy-richards-refreshes-at-ifa-2025",
             "enable_image": true,
             "image": "shopify://shop_images/111.jpg",
             "sub_title": "",
@@ -1609,7 +1574,6 @@
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "left_arrow_link",
@@ -1621,14 +1585,12 @@
         "text_block_pkzMXq": {
           "type": "text_block",
           "settings": {
-            "article": "press/morphy-richards-brings-innovate-for-enlightening-progress-to-ifa-berlin-2025",
             "enable_image": true,
             "sub_title": "",
             "title": "",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "left_arrow_link",
@@ -1641,7 +1603,6 @@
           "type": "text_block",
           "disabled": true,
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/20251128105859_118_1132.png",
             "sub_title": "",
@@ -1649,7 +1610,6 @@
             "text": "<p>Morphy Richards unveils cutting-edge home appliances at IFA Berlin 2025, including the S1 Ultra ductless air conditioner, Fusion Set, and innovative ice makers and espresso machines.</p>",
             "button_label": "",
             "button_link": "/blogs/news/morphy-richards-brings-innovate-for-enlightening-progress-to-ifa-berlin-2025",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "left_arrow_link",
@@ -1662,7 +1622,6 @@
           "type": "text_block",
           "disabled": true,
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/20260117112716_863_245.jpg",
             "sub_title": "",
@@ -1670,7 +1629,6 @@
             "text": "<p>May 2025 — UK appliance leader Morphy Richards has launched its Central American presence with the opening of its brand experience store.</p>",
             "button_label": "",
             "button_link": "/blogs/news/morphy-richards-expands-into-central-america-with-first-brand-experience-store",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "left_arrow_link",
@@ -1715,8 +1673,6 @@
         "col_dk": "2",
         "col_tb": "2",
         "col_mb": "1",
-        "cell_align": "left",
-        "group_cells": "100%",
         "loop": true,
         "au_time": 0,
         "au_hover": true,
@@ -1753,7 +1709,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/ln1_3x_a3582c21-585f-4d90-a8a6-6236a959b270.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1761,7 +1716,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/ln2_3x_3d5477ee-46d0-48a8-88d4-0029041f6a92.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1769,7 +1723,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/In3_3x_b216ec6f-8631-4153-8627-8d6eecf40d53.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1777,7 +1730,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/In4_3x_fa6fda66-1f02-4e04-bda6-4154b04397dc.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1785,7 +1737,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/In5_3x_967d122b-6339-4ee0-ad4c-ab9344d1b9b7.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1793,7 +1744,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/In6_3x_286cb841-1dc4-44dc-b33e-4135bb76ca14.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1801,7 +1751,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/In7_3x_8f2c59b6-d5a7-480b-b623-330adccb2da5.jpg",
-            "title": "",
             "url": ""
           }
         },
@@ -1809,7 +1758,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/apnews.png",
-            "title": "",
             "url": ""
           }
         },
@@ -1817,7 +1765,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/wallstreet_Online.png",
-            "title": "",
             "url": ""
           }
         },
@@ -1825,7 +1772,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/Lavanguardia.png",
-            "title": "",
             "url": ""
           }
         },
@@ -1833,7 +1779,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/Vietnam.png",
-            "title": "",
             "url": ""
           }
         },
@@ -1841,7 +1786,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/1_6834ffe4-3d68-4a39-91b0-08eda656aa6a.png",
-            "title": "",
             "url": ""
           }
         },
@@ -1849,7 +1793,6 @@
           "type": "logo_item",
           "settings": {
             "image": "shopify://shop_images/The_Strait_Times.png",
-            "title": "",
             "url": ""
           }
         }
@@ -1928,16 +1871,13 @@
     },
     "home_blog": {
       "type": "blog-post",
+      "disabled": true,
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-start",
         "top_heading": "This Week's Hot Reads",
         "tophead_mb": 30,
         "blog": "news",
-        "limit": 4,
-        "col_dk": "4",
-        "col_tb": "2",
-        "col_mb": "1",
         "show_cate": false,
         "show_tags": false,
         "show_cnt": true,
@@ -1947,15 +1887,18 @@
         "show_rm": false,
         "show_irm": true,
         "date": "date",
+        "limit": 4,
+        "img_effect": "zoom",
         "image_ratio": "ratio4_3",
         "image_size": "cover",
-        "img_effect": "zoom",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "1",
+        "use_pagination": "none",
         "layout": "t4s-container-wrap",
         "mg": ",,50px,",
-        "mg_mb": ",,30px,",
-        "use_pagination": "none"
-      },
-      "disabled": true
+        "mg_mb": ",,30px,"
+      }
     },
     "home_faq": {
       "type": "accordion",
@@ -2008,23 +1951,23 @@
         "faq_4",
         "faq_5"
       ],
+      "disabled": true,
       "settings": {
         "top_heading": "Frequently Asked Questions",
         "layout": "t4s-container-wrap",
         "mg": ",,50px,",
         "mg_mb": ",,30px,"
-      },
-      "disabled": true
+      }
     },
     "home_s1_spotlight": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "code": "<section class=\"mr-s1\">\n  <div class=\"t4s-container\">\n    <div class=\"mr-s1__grid\">\n      <div class=\"mr-s1__copy\">\n        <p class=\"mr-s1__eyebrow\">S1 Series</p>\n        <h2 class=\"mr-s1__title\">Shop the S1 Series</h2>\n        <p class=\"mr-s1__desc\">Ductless, portable comfort with 3-in-1 cooling, dehumidifying and air circulation. No window kit, no permanent installation &mdash; just roll it in and press start.</p>\n        <ul class=\"mr-s1__list\">\n          <li>No hose or window required</li>\n          <li>3-in-1 cool, dehumidify and circulate</li>\n          <li>Smart touchscreen control</li>\n        </ul>\n        <a class=\"mr-s1__btn\" href=\"/collections/portable-air-conditioners\">Explore the collection</a>\n      </div>\n      <a class=\"mr-s1__media\" href=\"/collections/portable-air-conditioners\" aria-label=\"Shop the S1 Series\">\n        <img src=\"https://cdn.shopify.com/s/files/1/1041/9005/0669/files/1_53dd85ce-c9a9-4f5c-be44-8db183b15b9b.png?v=1794800751\" alt=\"Morphy Richards S1 Pro ductless portable air conditioner\" width=\"853\" height=\"1280\" loading=\"lazy\">\n      </a>\n    </div>\n  </div>\n</section>",
         "layout": "t4s-container-fluid",
         "mg": ",,0px,",
         "mg_mb": ",,0px,"
-      },
-      "disabled": true
+      }
     },
     "home_products": {
       "type": "featured-collection",
@@ -2078,7 +2021,6 @@
             "button_link": "/blogs/news/before-first-use",
             "open_link": "_blank",
             "btn_icon": false,
-            "button_style": null,
             "btn_size": "medium",
             "btn_cl": "primary",
             "button_effect": "fade"
@@ -2095,7 +2037,6 @@
             "button_link": "/blogs/news/warm-thanksgiving-recipes-for-cozy-gathering",
             "open_link": "_blank",
             "btn_icon": false,
-            "button_style": null,
             "btn_size": "medium",
             "btn_cl": "primary",
             "button_effect": "fade"
@@ -2112,7 +2053,6 @@
             "button_link": "/blogs/news/how-to-use-a-steam-iron-for-everyday-garment-care",
             "open_link": "_blank",
             "btn_icon": false,
-            "button_style": null,
             "btn_size": "medium",
             "btn_cl": "primary",
             "button_effect": "fade"
@@ -2129,7 +2069,6 @@
             "button_link": "/blogs/news/a-compact-powerhouse",
             "open_link": "_blank",
             "btn_icon": false,
-            "button_style": null,
             "btn_size": "medium",
             "btn_cl": "primary",
             "button_effect": "fade"

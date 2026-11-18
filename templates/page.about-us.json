@@ -32,7 +32,6 @@
           "settings": {
             "image": "shopify://shop_images/about_top1.png",
             "image_mb": "shopify://shop_images/m_mr_video_ban_2x_aeaa297c-5b40-4367-bc91-435a13f02156.jpg",
-            "use_lazy_image": true,
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -211,7 +210,6 @@
         "custom_button_TXL4xh"
       ],
       "settings": {
-        "show_where_no_image": true,
         "se_height": "t4s_ratioadapt_f",
         "custom_dk": true,
         "height_dk": 600,
@@ -639,7 +637,6 @@
         "height_mb": 250,
         "source": "2",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video": "",
         "au_video": false,
         "loop_video": true,
         "bg_overlay": "#000000",
@@ -663,7 +660,6 @@
         "text_block_mBpR6L": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1940_2x_424882bf-d9b2-490b-b3ce-9073d40c586d.png",
             "sub_title": "1936",
@@ -671,7 +667,6 @@
             "text": "<p>Donal Morphy and Charles Richards formed the company in St Mary Cray.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -683,7 +678,6 @@
         "text_block_ePydKF": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1936_f17c4e1a-4f6d-4053-ad4a-a8a07c9cb522.jpg",
             "sub_title": "1940s",
@@ -691,7 +685,6 @@
             "text": "<p>Morphy Richards came under government contract to produce aircraft components.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -703,7 +696,6 @@
         "text_block_WtiBTP": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1950.jpg",
             "sub_title": "1950s",
@@ -711,7 +703,6 @@
             "text": "<p>Morphy Richards as a public company merged with Astral and registered a turnover of over £5.5 million with irons as its major product.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -723,7 +714,6 @@
         "text_block_UPFLqL": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1960.jpg",
             "sub_title": "1960s",
@@ -731,7 +721,6 @@
             "text": "<p>BDA was formed and became the UK's largest domestic appliance producer.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -743,7 +732,6 @@
         "text_block_J7GB96": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1970.jpg",
             "sub_title": "1970s",
@@ -751,7 +739,6 @@
             "text": "<p>Every UK household owned an average of two Morphy Richards products.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -763,7 +750,6 @@
         "text_block_Af87CG": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1980.jpg",
             "sub_title": "1980s",
@@ -771,7 +757,6 @@
             "text": "<p>Under the innovation first principle, the products represented avant-garde styles.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -783,7 +768,6 @@
         "text_block_9Fr3J9": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1990.jpg",
             "sub_title": "1990s",
@@ -791,7 +775,6 @@
             "text": "<p>Leading market share with products sold in over 30 countries.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -803,7 +786,6 @@
         "text_block_HLQPiV": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/2000.jpg",
             "sub_title": "2000s",
@@ -811,7 +793,6 @@
             "text": "<p>Established the Design Engineering Product Technology Hub (DEPTH).</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -823,7 +804,6 @@
         "text_block_FqPt4d": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/2010.jpg",
             "sub_title": "2010s",
@@ -831,7 +811,6 @@
             "text": "<p>Made things more portable and multifunctional to lead a healthy lifestyle.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -843,7 +822,6 @@
         "text_block_FqPt42": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/20240923105534.jpg",
             "sub_title": "2020s",
@@ -851,7 +829,6 @@
             "text": "<p>Bring smart ideas into more households around the world.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -899,8 +876,6 @@
         "col_dk": "6",
         "col_tb": "4",
         "col_mb": "2",
-        "cell_align": "left",
-        "group_cells": "100%",
         "loop": true,
         "au_time": 3,
         "au_hover": true,
@@ -971,14 +946,12 @@
         "template--21140418134336__1a03bfb5-8723-4af8-9b34-e566e2a52108-text_block-1": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1936",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -990,14 +963,12 @@
         "257ed76d-b9b8-49b2-80c6-f3bacf99f49a": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1940s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1009,14 +980,12 @@
         "b4d2aa14-fb7c-413a-a6c4-d30988e521a4": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1950s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1028,14 +997,12 @@
         "8acef805-6918-40c1-99f1-482db58daedd": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1960s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1047,14 +1014,12 @@
         "57264062-2e7c-4449-9c36-5cd4ae0cc3c9": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1970s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1066,14 +1031,12 @@
         "a7a98675-b0da-46e9-b4fe-78e1ca465edf": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1980s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1085,14 +1048,12 @@
         "b60b7b64-98d6-499c-9ceb-eb955156adf4": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "1990s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1104,14 +1065,12 @@
         "9a5cc7a9-7fc8-444e-a3a8-ed93ec4907c9": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "2000s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1123,14 +1082,12 @@
         "2cd93574-24df-4f6b-9ba1-f96c79bbdc06": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "2010s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1142,14 +1099,12 @@
         "0413472f-56ce-4f97-8f78-2534a6ef8496": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": false,
             "sub_title": "",
             "title": "2020s",
             "text": "",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1198,8 +1153,6 @@
         "col_dk": "6",
         "col_tb": "4",
         "col_mb": "2",
-        "cell_align": "center",
-        "group_cells": "",
         "loop": false,
         "au_time": 0,
         "au_hover": true,
@@ -1235,7 +1188,6 @@
         "template--21140418134336__01031d58-78c2-4cfa-8d2a-704dda066a0c-text_block-1": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1940_2x_424882bf-d9b2-490b-b3ce-9073d40c586d.png",
             "sub_title": "",
@@ -1243,7 +1195,6 @@
             "text": "<p>Donal Morphy and Charles Richards formed the company in St Mary Cray.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1255,7 +1206,6 @@
         "80bfdefc-3844-4598-8395-c5271c9d684a": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1936_f17c4e1a-4f6d-4053-ad4a-a8a07c9cb522.jpg",
             "sub_title": "",
@@ -1263,7 +1213,6 @@
             "text": "<p>Morphy Richards came under government contract to produce aircraft components.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1275,7 +1224,6 @@
         "4510fa8d-217d-4e99-bb35-0516bf3626ec": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1950.jpg",
             "sub_title": "",
@@ -1283,7 +1231,6 @@
             "text": "<p>Morphy Richards as a public company merged with Astral and registered a turnover of over £5.5 million with irons as its major product.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1295,7 +1242,6 @@
         "d5073085-d55e-4b2e-9bb7-5811091bf502": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1960.jpg",
             "sub_title": "",
@@ -1303,7 +1249,6 @@
             "text": "<p>BDA was formed and became the UK's largest domestic appliance producer.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1315,7 +1260,6 @@
         "1150444a-c327-45d8-b49f-4e3c0c0b651d": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1970.jpg",
             "sub_title": "",
@@ -1323,7 +1267,6 @@
             "text": "<p>Every UK household owned an average of two Morphy Richards products.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1335,7 +1278,6 @@
         "f22022a7-582d-4f60-8bd1-eaad6fbfe25d": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1980.jpg",
             "sub_title": "",
@@ -1343,7 +1285,6 @@
             "text": "<p>Under the innovation first principle, the products represented avant-garde styles.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1355,7 +1296,6 @@
         "ff3eb96b-5c26-47f2-a567-fdd2e183643b": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/1990.jpg",
             "sub_title": "",
@@ -1363,7 +1303,6 @@
             "text": "<p>Leading market share with products sold in over 30 countries.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1375,7 +1314,6 @@
         "fad7275b-6334-40fd-907c-91cc50428159": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/2000_a22226be-5775-4aa4-aff2-0a8636556eab.jpg",
             "sub_title": "",
@@ -1383,7 +1321,6 @@
             "text": "<p>Established the Design Engineering Product Technology Hub (DEPTH).</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1395,7 +1332,6 @@
         "67555c40-002f-4c17-ac8f-ef8600b27c1d": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/2010_234d71d7-3deb-4c48-87e7-e0e190bfafe7.jpg",
             "sub_title": "",
@@ -1403,7 +1339,6 @@
             "text": "<p>Made things more portable and multifunctional to lead a healthy lifestyle.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -1415,7 +1350,6 @@
         "4237200a-1c60-416b-b8da-b7755af3cf25": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/2020_434a3b73-a1c9-45f8-a90a-5367a5a5185b.jpg",
             "sub_title": "",
@@ -1423,7 +1357,6 @@
             "text": "<p>Bring smart ideas into more households around the world.</p>",
             "button_label": "",
             "button_link": "",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1472,8 +1405,6 @@
         "col_dk": "1",
         "col_tb": "1",
         "col_mb": "1",
-        "cell_align": "left",
-        "group_cells": "100%",
         "loop": false,
         "au_time": 0,
         "au_hover": true,
@@ -1510,8 +1441,6 @@
           "type": "bl_image",
           "settings": {
             "image1": "shopify://shop_images/over_80_2x_1bd6ab2a-ddb7-4166-b306-6e88e33fa74d.jpg",
-            "image_link": "",
-            "open_link": "_blank",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -1558,10 +1487,7 @@
             "button_style": "default",
             "btn_size": "extra-medium",
             "btn_cl": "custom1",
-            "button_effect": "default",
-            "custom_liquid": "",
-            "hidden_mobile": false,
-            "animation": "none"
+            "button_effect": "default"
           }
         }
       },
@@ -1570,7 +1496,6 @@
         "bl_text_m8fGPD"
       ],
       "settings": {
-        "article": "",
         "design_heading": "1",
         "heading_align": "t4s-text-center",
         "top_heading": "",
@@ -1581,9 +1506,6 @@
         "space_v_item": "0",
         "space_h_item_mb": "0",
         "space_v_item_mb": "0",
-        "click_image": "data-goto",
-        "img_effect": "none",
-        "b_effect": "none",
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
@@ -1603,7 +1525,6 @@
         "2da4ea01-f09e-4b6c-86c5-9b7472d214e3": {
           "type": "text_block",
           "settings": {
-            "article": "news/morphy-richards-brings-fresh-vision-to-its-90-year-legacy-at-ifa-berlin-2026",
             "enable_image": true,
             "image": "shopify://shop_images/the_dawn_2x_d4bb79a2-5dc7-469a-adff-c73cd18f6a04.jpg",
             "sub_title": "",
@@ -1611,7 +1532,6 @@
             "text": "<p>Amid the fast pace of modern life, Morphy Richards’ innovative spirit breaks conventional limits, shifting focus from smart home solutions to elevated lifestyle experiences. It keeps refining products to deliver greater comfort and convenience for every household.</p>",
             "button_label": "LEARN MORE",
             "button_link": "/blogs/news/morphy-richards-brings-fresh-vision-to-its-90-year-legacy-at-ifa-berlin-2026",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1623,7 +1543,6 @@
         "b08ad1a3-219a-4d92-aeaf-74bff3b91202": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/the_home_2x_07f61da4-a608-4799-9fc9-335db60c7338.jpg",
             "sub_title": "",
@@ -1631,7 +1550,6 @@
             "text": "<p>As we navigate through the fast-paced rhythm of modern life, the essence of innovation has transcended the boundaries of the home, prompting a shift in focus from creating smart home environments to enhancing overall lifestyle quality.&nbsp;</p>",
             "button_label": "LEARN MORE",
             "button_link": "/blogs/news/morphy-richards-showcases-90-years-of-smart-ideas-at-ifa-berlin-2026",
-            "is_video_link": false,
             "open_link": "_blank",
             "btn_icon": false,
             "button_style": "default",
@@ -1671,8 +1589,6 @@
         "col_dk": "2",
         "col_tb": "2",
         "col_mb": "1",
-        "cell_align": "left",
-        "group_cells": "100%",
         "loop": true,
         "au_time": 0,
         "au_hover": true,
@@ -1715,6 +1631,7 @@
       "block_order": [
         "bl_heading_MWD68m"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "1",
         "heading_align": "t4s-text-start",
@@ -1729,8 +1646,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": ""
-      },
-      "disabled": true
+      }
     },
     "banner_iAF38y": {
       "type": "banner",
@@ -1990,6 +1906,7 @@
         "custom_text_jjPYCq",
         "custom_button_BnztDJ"
       ],
+      "disabled": true,
       "settings": {
         "image_ratio": "ratioadapt",
         "image_size": "cover",
@@ -2009,8 +1926,7 @@
         "pd_mb": "",
         "use_cus_css": false,
         "code_cus_css": "award_winning_Innovation{}"
-      },
-      "disabled": true
+      }
     },
     "feature_columns_VnJYeC": {
       "type": "feature_columns",
@@ -2018,7 +1934,6 @@
         "text_block_f7M7Px": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/award_1_2x_ab66c9b5-7cb5-43f6-a961-622a88e420eb.jpg",
             "sub_title": "",
@@ -2026,7 +1941,6 @@
             "text": "<p>The iron uses vapour technology instead of steam, with an energy-efficient ThermoGlass soleplate that heats up quickly and glides smoothly. It uses 75% less energy and 80% less water than traditional steam irons.</p>",
             "button_label": "LEARN MORE",
             "button_link": "/blogs/news/looking-back-at-morphy-richards-award-winning-legacy",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -2038,7 +1952,6 @@
         "text_block_cRzVcx": {
           "type": "text_block",
           "settings": {
-            "article": "",
             "enable_image": true,
             "image": "shopify://shop_images/award_2_2x_17cd9214-40b1-422e-9757-f2a87fd3c94a.jpg",
             "sub_title": "",
@@ -2046,7 +1959,6 @@
             "text": "<p>The toaster uses unique ThermoGlass nano-film technology to create transparent heating elements that give visibility to the bread during toasting. It also enables precise temperature control and heat distribution, delivering evenly toasted bread.</p>",
             "button_label": "LEARN MORE",
             "button_link": "/blogs/news",
-            "is_video_link": false,
             "open_link": "_self",
             "btn_icon": false,
             "button_style": "default",
@@ -2087,8 +1999,6 @@
         "col_dk": "2",
         "col_tb": "2",
         "col_mb": "2",
-        "cell_align": "left",
-        "group_cells": "100%",
         "loop": true,
         "au_time": 0,
         "au_hover": true,
@@ -2125,8 +2035,6 @@
           "type": "bl_image",
           "settings": {
             "image1": "shopify://shop_images/most_2x_6cc502e2-3b23-4341-9d2b-4ba61fce9b02.jpg",
-            "image_link": "",
-            "open_link": "_blank",
             "col_dk": "6",
             "col_tb": "6",
             "layout_des": "carousel",
@@ -2173,10 +2081,7 @@
             "button_style": "default",
             "btn_size": "extra-medium",
             "btn_cl": "custom1",
-            "button_effect": "default",
-            "custom_liquid": "",
-            "hidden_mobile": false,
-            "animation": "none"
+            "button_effect": "default"
           }
         }
       },
@@ -2185,7 +2090,6 @@
         "bl_text_crYxx4"
       ],
       "settings": {
-        "article": "",
         "design_heading": "1",
         "heading_align": "t4s-text-center",
         "top_heading": "",
@@ -2196,9 +2100,6 @@
         "space_v_item": "0",
         "space_h_item_mb": "0",
         "space_v_item_mb": "0",
-        "click_image": "data-goto",
-        "img_effect": "none",
-        "b_effect": "none",
         "layout": "t4s-container-wrap",
         "cl_bg": "",
         "cl_bg_gradient": "",
@@ -2330,6 +2231,7 @@
         "bl_col_LzGAym",
         "custom_button_PR3MKi"
       ],
+      "disabled": true,
       "name": "Custom section 保留表单",
       "settings": {
         "space_h_item": "0",
@@ -2347,8 +2249,7 @@
         "pd_mb": "15px,,15px,",
         "use_cus_css": false,
         "code_cus_css": "customer_form{}"
-      },
-      "disabled": true
+      }
     },
     "about_cta": {
       "type": "custom-html",
