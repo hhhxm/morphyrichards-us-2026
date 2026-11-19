@@ -1,0 +1,78 @@
+/* 隐私合规补充组件：GPC 可见提示 */
+
+#mr-gpc-notice {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 560px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #222;
+  text-align: left;
+}
+
+#mr-gpc-notice[hidden] {
+  display: none !important;
+}
+
+#mr-gpc-notice .mr-gpc-notice__icon {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: #1a9c4c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+#mr-gpc-notice .mr-gpc-notice__text {
+  flex: 1 1 auto;
+}
+
+#mr-gpc-notice .mr-gpc-notice__link {
+  color: #222;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+#mr-gpc-notice .mr-gpc-notice__link:hover {
+  color: #ec0101;
+}
+
+/* 找不到页脚底栏时的兜底：固定悬浮（低于 Shopify 原生横幅 z-index:2000000） */
+#mr-gpc-notice.mr-gpc-notice--fixed {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1999000;
+  max-width: 360px;
+  margin-top: 0;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 767px) {
+  #mr-gpc-notice {
+    font-size: 11.5px;
+    /* 给页脚右下角的“回到顶部”按钮留出空间，避免文字压到按钮 */
+    max-width: calc(100% - 60px);
+  }
+
+  #mr-gpc-notice.mr-gpc-notice--fixed {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: none;
+  }
+}

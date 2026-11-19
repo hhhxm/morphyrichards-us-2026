@@ -1,0 +1,23 @@
+{%- comment -%}
+  隐私合规补充组件（全站生效，无需 URL 参数）
+
+  作用：
+    1) GPC 可见提示：检测到 Global Privacy Control 且访客在美国时，
+       显示“已识别并处理退出信号”，对应 11 CCR §7025(c)(6)（2026-01-01 生效）。
+    2) 页脚 “Cookie preferences” 入口：同意后随时重新打开 Shopify 原生偏好面板，
+       补足“撤回 / 修改同意”的入口。
+
+  停用：删除 layout/theme.liquid 中 render 'mr-privacy-extra' 的那一行。
+  依赖：assets/mr-privacy-extra.js、assets/mr-privacy-extra.css
+{%- endcomment -%}
+
+<div id="mr-gpc-notice" class="mr-gpc-notice" role="status" aria-live="polite" hidden>
+  <span class="mr-gpc-notice__icon" aria-hidden="true">✓</span>
+  <span class="mr-gpc-notice__text">
+    Global Privacy Control detected — we treat this as an opt-out of the sale or sharing of your personal information on this browser.
+    <a class="mr-gpc-notice__link" href="/pages/data-sharing-opt-out">Privacy choices</a>
+  </span>
+</div>
+
+{{ 'mr-privacy-extra.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mr-privacy-extra.js' | asset_url }}" defer="defer"></script>
