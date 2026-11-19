@@ -172,34 +172,9 @@ function MB_updateUrlParameter(key, value) {
     })
   }
 
-
-  // 监听表单提交成功，并发出google事件
-  async function init_globo_formbuilder(){
-    await MB_waitElementReady(".globo-formbuilder .wizard__content .message", preTime=1000, total=60)
-
-    $('.globo-formbuilder').each(function(){
-      const $message = $(this).find('.wizard__content .message.success');
-      // const $targetElement = $(this).find('.wizard__content'); // 监听父容器
-    
-      // 监听类变化
-      const observer = new MutationObserver(function() {
-        const isVisible = $message.is(':visible');
-        // <!-- Google tag (gtag.js) event -->
-        gtag('event', 'thankspage', {
-          // <event_parameters>
-        });
-        console.log("google event send, golbo formbuilder success message visibility:", isVisible);
-      });
-      observer.observe($message[0], {
-        attributes: true,
-        attributeFilter: ['class', 'style']
-      });
-    });
-  }
   document.addEventListener('DOMContentLoaded', function(){
     console.log("DOMContentLoaded")
     // init()
     initLiveChat()
-    MB_jsDeferHandle(init_globo_formbuilder, ['jQuery'])
   })
 }())
