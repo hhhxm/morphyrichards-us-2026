@@ -1,7 +1,7 @@
 {%- comment -%}
-  Cookie / Consent 测试探针（仅测试期使用，可随时撤除）
+  Cookie / 隐私合规自检面板（随主题长期保留，供客户自助验证）
 
-  启用：URL 加 ?mr_consent_probe=1
+  启用：URL 加 ?mr_consent_probe=1（不带参数时不加载 CSS/JS、不渲染 DOM、不发请求）
   关闭：不带参数，或 ?mr_consent_probe=0
   彻底移除：
     1) 删除 snippets/mr-consent-probe.liquid
@@ -11,13 +11,13 @@
 
   可选参数：
     probe_channel=a|b|both   a=只显示状态(配合 Shopify Pixel Helper 测 custom pixel)
-                             b/both=探针自门控发送 GA4 事件
+                             b/both=面板自门控发送 GA4 事件
     probe_verbose=1         默认展开详情
-    mr_ga4_id=G-XXXXXXX     探针自门控发送所需的 GA4 Measurement ID
+    mr_ga4_id=G-XXXXXXX     覆盖默认的 GA4 Measurement ID（默认已内置 G-WFEGYXT7QE）
 
   实现说明：
     Shopify 本地 / 部分环境的 Liquid request.params、request.url 取不到查询参数，
-    因此这里用一段极小的 JS 引导脚本读取 URL 参数，决定是否加载探针。
+    因此这里用一段极小的 JS 引导脚本读取 URL 参数，决定是否加载面板。
     不带 ?mr_consent_probe=1 时：不加载 CSS/JS、不渲染 DOM、不发任何请求。
 
   本组件不依赖主题任何主脚本/主样式，删除后不留痕迹。
@@ -33,7 +33,7 @@
       enabled: true,
       channel: params.get('probe_channel') || 'both',
       verbose: params.get('probe_verbose') || '0',
-      ga4Id: params.get('mr_ga4_id') || ''
+      ga4Id: params.get('mr_ga4_id') || 'G-WFEGYXT7QE'
     };
     window.MR_CONSENT_PROBE_CONFIG = cfg;
 

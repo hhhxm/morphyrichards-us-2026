@@ -1,4 +1,4 @@
-/* 仅测试期使用：Cookie / Consent 测试探针浮标
+/* Cookie / 隐私合规自检面板（随主题长期保留）
    删除本文件 + snippet + js + theme.liquid 的 render 行即可彻底移除 */
 
 #mr-consent-probe-root,
@@ -7,9 +7,8 @@
 #mr-consent-probe-root {
   position: fixed;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2147483000;
+  top: 118px; /* 固定顶部（避开 110px 站点头部），高度变化只向下生长，避免面板上下跳动 */
+  z-index: 1999000; /* 低于 Shopify 原生横幅（2000000），横幅打开时不被面板遮挡 */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   line-height: 1.45;
@@ -19,6 +18,9 @@
 
 #mr-consent-probe-root .mrcp-panel {
   width: 268px;
+  max-height: calc(100vh - 134px);
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border: 1px solid #e3e3e3;
   border-right: 0;
@@ -60,11 +62,21 @@
 
 #mr-consent-probe-root .mrcp-body {
   padding: 10px 12px 12px;
+  overflow-y: auto;
+  min-height: 0;
 }
 
 #mr-consent-probe-root .mrcp-region {
   color: #666;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+#mr-consent-probe-root .mrcp-consent {
+  color: #999;
+  font-size: 10.5px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  word-break: break-all;
 }
 
 #mr-consent-probe-root .mrcp-row {
@@ -77,6 +89,34 @@
 
 #mr-consent-probe-root .mrcp-label {
   color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+#mr-consent-probe-root .mrcp-help {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #b5b5b5;
+  background: #fff;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#mr-consent-probe-root .mrcp-help:hover,
+#mr-consent-probe-root .mrcp-help:focus {
+  border-color: #EC0101;
+  color: #EC0101;
+  outline: none;
 }
 
 #mr-consent-probe-root .mrcp-state {
@@ -116,6 +156,7 @@
 
 #mr-consent-probe-root .mrcp-result-ok { color: #1a9c4c; font-weight: 700; }
 #mr-consent-probe-root .mrcp-result-bad { color: #e01e1e; font-weight: 700; }
+#mr-consent-probe-root .mrcp-result-pending { color: #b8860b; font-weight: 700; }
 
 #mr-consent-probe-root .mrcp-req {
   color: #777;
@@ -124,8 +165,10 @@
   font-size: 11px;
 }
 
+#mr-consent-probe-root .mrcp-flashwrap[hidden] { display: none; }
+
 #mr-consent-probe-root .mrcp-flash {
-  margin-top: 8px;
+  margin-top: 0;
   padding: 6px 8px;
   border-radius: 6px;
   font-weight: 700;
@@ -179,6 +222,13 @@
   color: #fff;
 }
 
+/* 重置横幅：中性灰底，避免与红色主按钮抢视觉 */
+#mr-consent-probe-root .mrcp-btn-reset {
+  background: #f2f2f2;
+  border-color: #c9c9c9;
+  color: #333;
+}
+
 #mr-consent-probe-root .mrcp-btn:active { transform: translateY(1px); }
 
 /* 收起态 */
@@ -196,6 +246,45 @@
 #mr-consent-probe-root.mrcp-collapsed .mrcp-mini.mrcp-bad { background: #e01e1e; }
 
 @media (max-width: 767px) {
-  #mr-consent-probe-root .mrcp-panel { width: 232px; }
+  #mr-consent-probe-root { top: 72px; }
+  #mr-consent-probe-root .mrcp-panel { width: 232px; max-height: calc(100vh - 88px); }
   #mr-consent-probe-root.mrcp-collapsed .mrcp-panel { width: 38px; }
+}
+
+/* 点击问号后在按钮下方展开的说明区 */
+#mr-consent-probe-root .mrcp-btnhelp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 11.5px;
+  color: #666;
+  cursor: pointer;
+  user-select: none;
+}
+
+#mr-consent-probe-root .mrcp-btnhelp:hover {
+  color: #EC0101;
+}
+
+#mr-consent-probe-root .mrcp-helpbox {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: #333;
+  text-align: left;
+}
+
+#mr-consent-probe-root .mrcp-helpbox[hidden] {
+  display: none;
+}
+
+#mr-consent-probe-root .mrcp-help.mrcp-help-active {
+  border-color: #EC0101;
+  background: #EC0101;
+  color: #fff;
 }
