@@ -1,0 +1,60 @@
+{%- comment -%}
+  Cookie / Consent 测试探针（仅测试期使用，可随时撤除）
+
+  启用：URL 加 ?mr_consent_probe=1
+  关闭：不带参数，或 ?mr_consent_probe=0
+  彻底移除：
+    1) 删除 snippets/mr-consent-probe.liquid
+    2) 删除 assets/mr-consent-probe.js
+    3) 删除 assets/mr-consent-probe.css
+    4) 删除 layout/theme.liquid 中 render mr-consent-probe 的那一行
+
+  可选参数：
+    probe_channel=a|b|both   a=只显示状态(配合 Shopify Pixel Helper 测 custom pixel)
+                             b/both=探针自门控发送 GA4 事件
+    probe_verbose=1         默认展开详情
+    mr_ga4_id=G-XXXXXXX     探针自门控发送所需的 GA4 Measurement ID
+
+  实现说明：
+    Shopify 本地 / 部分环境的 Liquid request.params、request.url 取不到查询参数，
+    因此这里用一段极小的 JS 引导脚本读取 URL 参数，决定是否加载探针。
+    不带 ?mr_consent_probe=1 时：不加载 CSS/JS、不渲染 DOM、不发任何请求。
+
+  本组件不依赖主题任何主脚本/主样式，删除后不留痕迹。
+{%- endcomment -%}
+
+<script>
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('mr_consent_probe') !== '1') return;
+
+    var cfg = {
+      enabled: true,
+      channel: params.get('probe_channel') || 'both',
+      verbose: params.get('probe_verbose') || '0',
+      ga4Id: params.get('mr_ga4_id') || ''
+    };
+    window.MR_CONSENT_PROBE_CONFIG = cfg;
+
+    var root = document.createElement('div');
+    root.id = 'mr-consent-probe-root';
+    root.setAttribute('data-mrcp-channel', cfg.channel);
+    root.setAttribute('data-mrcp-verbose', cfg.verbose);
+    root.setAttribute('data-mrcp-ga4-id', cfg.ga4Id);
+    document.body.appendChild(root);
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = {{ 'mr-consent-probe.css' | asset_url | json }};
+    document.head.appendChild(link);
+
+    var s = document.createElement('script');
+    s.src = {{ 'mr-consent-probe.js' | asset_url | json }};
+    s.defer = true;
+    document.body.appendChild(s);
+  } catch (e) {
+    /* 静默 */
+  }
+})();
+</script>

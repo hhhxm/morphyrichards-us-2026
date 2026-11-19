@@ -104,6 +104,7 @@ t4sp-theme t4s-wrapper__{{ settings.general_layout }}{% if settings.animations_r
       render 'structured-data'
     -%}
     <script src="{{ 'mr-cookie-consent.js' | asset_url }}" defer="defer"></script>
+    {%- render 'mr-consent-probe' -%}
   </body>
 </html>
 

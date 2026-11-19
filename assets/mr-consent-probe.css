@@ -1,0 +1,201 @@
+/* 仅测试期使用：Cookie / Consent 测试探针浮标
+   删除本文件 + snippet + js + theme.liquid 的 render 行即可彻底移除 */
+
+#mr-consent-probe-root,
+#mr-consent-probe-root * { box-sizing: border-box; }
+
+#mr-consent-probe-root {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2147483000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #222;
+  text-align: left;
+}
+
+#mr-consent-probe-root .mrcp-panel {
+  width: 268px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  transition: width 0.18s ease;
+}
+
+#mr-consent-probe-root .mrcp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+#mr-consent-probe-root .mrcp-collapse {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+#mr-consent-probe-root .mrcp-mini {
+  display: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+}
+
+#mr-consent-probe-root .mrcp-body {
+  padding: 10px 12px 12px;
+}
+
+#mr-consent-probe-root .mrcp-region {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+#mr-consent-probe-root .mrcp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+#mr-consent-probe-root .mrcp-label {
+  color: #333;
+}
+
+#mr-consent-probe-root .mrcp-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#mr-consent-probe-root .mrcp-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #bbb;
+}
+
+#mr-consent-probe-root .mrcp-ok .mrcp-dot { background: #1a9c4c; }
+#mr-consent-probe-root .mrcp-bad .mrcp-dot { background: #e01e1e; }
+#mr-consent-probe-root .mrcp-unset .mrcp-dot { background: #bbb; }
+
+#mr-consent-probe-root .mrcp-ok .mrcp-state-txt { color: #1a9c4c; }
+#mr-consent-probe-root .mrcp-bad .mrcp-state-txt { color: #e01e1e; }
+#mr-consent-probe-root .mrcp-unset .mrcp-state-txt { color: #888; }
+
+#mr-consent-probe-root .mrcp-sep {
+  height: 1px;
+  background: #eee;
+  margin: 8px 0;
+}
+
+#mr-consent-probe-root .mrcp-last {
+  font-size: 11.5px;
+  color: #333;
+}
+
+#mr-consent-probe-root .mrcp-result-ok { color: #1a9c4c; font-weight: 700; }
+#mr-consent-probe-root .mrcp-result-bad { color: #e01e1e; font-weight: 700; }
+
+#mr-consent-probe-root .mrcp-req {
+  color: #777;
+  word-break: break-all;
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+#mr-consent-probe-root .mrcp-flash {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#mr-consent-probe-root .mrcp-flash-ok { background: #e8f7ee; color: #1a9c4c; }
+#mr-consent-probe-root .mrcp-flash-bad { background: #fdeaea; color: #e01e1e; }
+
+#mr-consent-probe-root .mrcp-detail {
+  margin-top: 8px;
+  padding: 8px;
+  background: #f6f6f6;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 10.5px;
+  line-height: 1.4;
+  color: #333;
+  word-break: break-all;
+  max-height: 160px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+#mr-consent-probe-root .mrcp-detail[hidden] { display: none; }
+
+#mr-consent-probe-root .mrcp-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 9px;
+  flex-wrap: wrap;
+}
+
+#mr-consent-probe-root .mrcp-btn {
+  flex: 1;
+  min-width: 92px;
+  cursor: pointer;
+  border: 1px solid #222;
+  background: #fff;
+  color: #222;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#mr-consent-probe-root .mrcp-btn-primary {
+  background: #EC0101;
+  border-color: #EC0101;
+  color: #fff;
+}
+
+#mr-consent-probe-root .mrcp-btn:active { transform: translateY(1px); }
+
+/* 收起态 */
+#mr-consent-probe-root.mrcp-collapsed .mrcp-panel { width: 40px; }
+#mr-consent-probe-root.mrcp-collapsed .mrcp-head-title { display: none; }
+#mr-consent-probe-root.mrcp-collapsed .mrcp-collapse { display: none; }
+#mr-consent-probe-root.mrcp-collapsed .mrcp-body { display: none; }
+#mr-consent-probe-root.mrcp-collapsed .mrcp-head {
+  padding: 10px 8px;
+  justify-content: center;
+  cursor: pointer;
+}
+#mr-consent-probe-root.mrcp-collapsed .mrcp-mini { display: inline-block; }
+#mr-consent-probe-root.mrcp-collapsed .mrcp-mini.mrcp-ok { background: #1a9c4c; }
+#mr-consent-probe-root.mrcp-collapsed .mrcp-mini.mrcp-bad { background: #e01e1e; }
+
+@media (max-width: 767px) {
+  #mr-consent-probe-root .mrcp-panel { width: 232px; }
+  #mr-consent-probe-root.mrcp-collapsed .mrcp-panel { width: 38px; }
+}
