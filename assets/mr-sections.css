@@ -1567,3 +1567,21 @@
 /* 底部栏官方 Footer 菜单：仿手写 HTML 横排 Privacy Policy | Terms | Cookie | Your Privacy Choices */
 .t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-menu-style2 ul li{margin:0}
 .t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-linklist li:not(:last-child)::after{content:"|";display:inline-block;margin:0 6px;color:#878787}
+
+/* 页脚 "Your privacy choices" 图标
+   Shopify 文档说明该图标由平台自动注入（.shopify-dns-link-icon），
+   但本主题（Kalles 自定义导航）实测不会注入，这里按官方样式手动补齐。 */
+.t4s-bottom-bar .shopify-dns-link-icon{
+  display:inline-block;width:30px;height:14px;margin-right:6px;vertical-align:-2px
+}
+@media(max-width:767px){
+  /* 小屏下“|”分隔符会在折行处留下孤立竖线，改为 flex 换行 + 间距 */
+  .t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-menu-style2{padding-bottom:6px}
+  .t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-linklist{
+    display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 16px
+  }
+  .t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-linklist li{margin:0}
+  .t4s-bottom-bar .bl-47f5eb4c-1063-495d-bfc4-a54c62d219aa .t4s-footer-linklist li:not(:last-child)::after{display:none}
+
+  .t4s-bottom-bar .shopify-dns-link-icon{width:26px;height:12px;margin-right:4px;vertical-align:-1px}
+}

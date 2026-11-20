@@ -47,6 +47,13 @@
   color: #ec0101;
 }
 
+/* 页脚进入视口后隐藏“回到顶部”按钮：它会压住 GPC 提示与页脚菜单 */
+html.mr-footer-in-view #t4s-backToTop {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
 /* 找不到页脚底栏时的兜底：固定悬浮（低于 Shopify 原生横幅 z-index:2000000） */
 #mr-gpc-notice.mr-gpc-notice--fixed {
   position: fixed;
@@ -65,8 +72,9 @@
 @media (max-width: 767px) {
   #mr-gpc-notice {
     font-size: 11.5px;
-    /* 给页脚右下角的“回到顶部”按钮留出空间，避免文字压到按钮 */
-    max-width: calc(100% - 60px);
+    /* 小屏占满版权栏宽度，与上下内容留出间距，避免挤在页脚菜单上 */
+    max-width: none;
+    margin: 12px 0 10px;
   }
 
   #mr-gpc-notice.mr-gpc-notice--fixed {

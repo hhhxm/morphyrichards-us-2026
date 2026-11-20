@@ -118,6 +118,28 @@
 
     li.appendChild(a);
     ul.appendChild(li);
+
+    // "Your privacy choices"（带官方退出图标）固定排在最后，避免夹在两条政策链接中间
+    var optOut = ul.querySelector('a[href*="data-sharing-opt-out"]');
+    if (optOut) {
+      var optOutLi = optOut.closest('li');
+      if (optOutLi && optOutLi !== ul.lastElementChild) ul.appendChild(optOutLi);
+    }
+  }
+
+  /* ---------------- 页脚可见时隐藏“回到顶部” ---------------- */
+
+  // 尾屏的“回到顶部”按钮会压住 GPC 提示与页脚菜单，页脚进入视口后淡出即可
+  function watchBottomBar() {
+    var bar = document.querySelector('.t4s-bottom-bar');
+    if (!bar || !('IntersectionObserver' in window)) return;
+
+    var io = new IntersectionObserver(function (entries) {
+      var e = entries[0];
+      document.documentElement.classList.toggle('mr-footer-in-view', e.isIntersecting && e.intersectionRatio > 0.05);
+    }, { threshold: [0, 0.05, 0.2] });
+
+    io.observe(bar);
   }
 
   /* ---------------- 初始化 ---------------- */
@@ -125,6 +147,7 @@
   function init() {
     showGpcNotice();
     addFooterLink();
+    watchBottomBar();
   }
 
   // 供探针或其他脚本调用
