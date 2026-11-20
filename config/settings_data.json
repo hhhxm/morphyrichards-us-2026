@@ -1163,6 +1163,23 @@
               "lb": "",
               "lb_cl": ""
             }
+          },
+          "drop_8EUrhH": {
+            "type": "drop",
+            "settings": {
+              "title": "Dropdown",
+              "url": "",
+              "open_link": "_self",
+              "menu": "main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos_sub": "bottom",
+              "pos": "left"
+            }
           }
         },
         "block_order": [
@@ -1170,7 +1187,8 @@
           "base_kkrhTV",
           "base_cyCVxN",
           "fbeebf8b-67fe-46d5-87c4-ae1ddb8af202",
-          "base_fkKk4r"
+          "base_fkKk4r",
+          "drop_8EUrhH"
         ],
         "settings": {
           "full_header": false,
